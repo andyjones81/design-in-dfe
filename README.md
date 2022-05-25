@@ -1,4 +1,4 @@
-# Apply the Service Standard in DfE
+# Design in DfE
 
 
 👉 You can find out more about setting up and managing content for this service on the [Tech Docs Template documentation](https://tdt-documentation.london.cloudapps.digital/) site.
