@@ -1,11 +1,9 @@
 @import "govuk_tech_docs";
 
-@import "govuk_tech_docs";
+body,p,h1,h2,h3,h4,h5,h6,a,span,div {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif !important;
+  }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
-*{font-family: 'Inter', sans-serif !important;}
 .govuk-header{background-color: #003a69;}
 .govuk-header__container {
     position: relative;
