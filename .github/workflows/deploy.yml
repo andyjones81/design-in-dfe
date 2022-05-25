@@ -1,4 +1,4 @@
-name: Deploy Apply service standards in DfE to GitHub Pages
+name: Deploy Design in DfE to GitHub Pages
 
 on:
   push:
