@@ -51,7 +51,7 @@
               <a class="govuk-header__link" href="/about">About</a>
             </li>
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="/">Documentation</a>
+              <a class="govuk-header__link" href="/contribute">Contribute</a>
             </li>
         </ul>
       </nav>
@@ -100,19 +100,56 @@
 <li><a href="/interaction-design/standards/"><span>Standards</span></a>
 <ul>
   <li>
-    <a href="/interaction-design/standards/accessibility.html"><span>Accessibility</span></a>
+    <a href="/interaction-design/standards/minimum-contrast.html"><span>Ensure sufficient contrast between foreground and background</span></a>
   </li>
   <li>
-    <a href="/interaction-design/standards/component-design.html"><span>Component design</span></a>
+    <a href="/interaction-design/standards/color.html"><span>Do not use colour alone to convey information</span></a>
+  </li>
+  <li>
+    <a href="/interaction-design/standards/focus.html"><span>Make it easy for people to identify interactive elements</span></a>
+  </li>
+  <li>
+    <a href="/interaction-design/standards/tab-stop.html"><span>Design interactions in a logical order</span></a>
+  </li>
+  <li>
+    <a href="/interaction-design/standards/navigation.html"><span>Make navigation options clear and consistent across the service</span></a>
+  </li>
+  <li>
+    <a href="/interaction-design/standards/labels.html"><span>Form elements include clearly associated labels</span></a>
+  </li>
+  <li>
+    <a href="/interaction-design/standards/feedback.html"><span>Feedback to the user is clear and identifiable</span></a>
+  </li>
+  <li>
+    <a href="/interaction-design/standards/headings.html"><span>Headings are used and related content is grouped together</span></a>
+  </li>
+  <li>
+    <a href="/interaction-design/standards/viewport.html"><span>Designs for different viewports are considered</span></a>
+  </li>
+  <li>
+    <a href="/interaction-design/standards/alternative-meaning.html"><span>Images and media contain alternative descriptions</span></a>
+  </li>
+  <li>
+    <a href="/interaction-design/standards/controls.html"><span>Controls for content that starts automatically are provided</span></a>
   </li>
 </ul>
 </li>
   <li>
-    <a href="/interaction-design/inclusive-design/"><span>Inclusive design</span></a>
+    <a href="/interaction-design/accessibility.html"><span>Accessibility</span></a>
   </li>
   <li>
-    <a href="/interaction-design/principles/"><span>Principles</span></a>
+    <a href="/interaction-design/component-design.html"><span>Component design</span></a>
   </li>
+  <li>
+    <a href="/interaction-design/inclusive-design.html"><span>Inclusive design</span></a>
+  </li>
+<li><a href="/interaction-design/design-assurance/"><span>Design assurance</span></a>
+<ul>
+  <li>
+    <a href="/interaction-design/design-assurance/design-critiques.html"><span>Design critiques</span></a>
+  </li>
+</ul>
+</li>
 </ul>
 </li>
   <li>
@@ -130,7 +167,150 @@
 
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
-            <h1 id="standards">Standards</h1>
+            <script src="https://kit.fontawesome.com/2f8f69be63.js" crossorigin="anonymous"></script>
+<h1 id="standards">Standards</h1>
+<p>Working to defined standards ensure services the Department for Education (DfE) create are inclusive and accessible and can be used by all people. This includes removing risk by designing how things should work, this can be achieved by:</p>
+
+<ul>
+<li>working with other designers, researchers and developers to build and test <a href="#">prototypes</a></li>
+<li>following <a href="#">inclusive design</a> principles</li>
+<li>ensuring you meet <a href="#">component design</a> criteria</li>
+<li>contributing to the <a href="https://github.com/alphagov/govuk-design-system-backlog/projects/1" target="_blank" rel="noopner noreferrer">GOV.UK Design System backlog (opens in new tab)</a></li>
+<li><a href="#">sharing your work</a> with other designers across DfE</li>
+<li>How you assure your design is meeting these standards through <a href="#">design crits</a> and <a href="#">service assessments</a></li>
+</ul>
+<h2 id="minimum-design-standards">Minimum design standards</h2>
+<p>The following standards are the minimum required for designers to meet.</p>
+
+<div class="dfe-panel">
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+    <h3>Ensure sufficient colour contrast between foreground and background</h3>
+ <p>Text and components must show up clearly against the background.</p>
+ <p><a href="/interaction-design/standards/minimum-contrast.html">Further guidance and how to meet this standard <span class="govuk-visually-hidden">to ensure sufficient colour contrast between foreground and background</span></a></p>
+  </div>
+   <div class="govuk-grid-column-one-third standards-icon">
+<i class="fa-solid fa-circle-half-stroke fa-6x"></i>
+  </div>
+</div>
+<p></div></p>
+
+<div class="dfe-panel">
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+    <h3>Do not use colour alone to convey information</h3>
+ <p>Do not use colour as the only way to explain or signal something.</p>
+ <p><a href="/interaction-design/standards/color.html">Further guidance and how to meet this standard</a></p>
+  </div>
+   <div class="govuk-grid-column-one-third standards-icon">
+<i class="fa-solid fa-droplet fa-6x"></i>
+  </div>
+</div>
+<p></div></p>
+
+<div class="dfe-panel">
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+    <h3>Make it easy for people to identify interactive elements</h3>
+ <p>Style components such as links and buttons to make them easy to identify in different states.</p>
+ <p><a href="/interaction-design/standards/focus.html">Further guidance and how to meet this standard</a></p>
+  </div>
+   <div class="govuk-grid-column-one-third standards-icon">
+<i class="fa-solid fa-arrow-pointer fa-6x"></i>
+  </div>
+</div>
+<p></div></p>
+
+<div class="dfe-panel">
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+    <h3>Design interactions in a logical order</h3>
+ <p>Good tab stop design allows keyboard users to access a services interactive elements in a predictable order.</p>
+ <p><a href="/interaction-design/standards/tab-stop.html">Further guidance and how to meet this standard</a></p>
+  </div>
+   <div class="govuk-grid-column-one-third standards-icon">
+<i class="fa-solid fa-arrow-down-wide-short fa-6x"></i>
+  </div>
+</div>
+<p></div></p>
+
+<div class="dfe-panel">
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+    <h3>Make navigation options clear and consistent across the service</h3>
+ <p>It should be easy to get around the service in a consistent way and for users to know where they are in a service.</p>
+ <p><a href="/interaction-design/standards/navigation.html">Further guidance and how to meet this standard</a></p>
+  </div>
+   <div class="govuk-grid-column-one-third standards-icon">
+<i class="fa-solid fa-sitemap fa-6x"></i>
+  </div>
+</div>
+<p></div></p>
+
+<div class="dfe-panel">
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+    <h3>Include clearly associated labels on form elements</h3>
+ <p>Ensure that all forms have an identifiable label next to, or above the field.</p>
+ <p><a href="/interaction-design/standards/labels.html">Further guidance and how to meet this standard</a></p>
+  </div>
+   <div class="govuk-grid-column-one-third standards-icon">
+<i class="fa-solid fa-grip-lines fa-6x"></i>
+  </div>
+</div>
+<p></div></p>
+
+<div class="dfe-panel">
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+    <h3>Make sure feedback to the user is clear and identifiable</h3>
+ <p>Tell users clearly if something is happening or they need to take action.</p>
+ <p><a href="/interaction-design/standards/feedback.html">Further guidance and how to meet this standard</a></p>
+  </div>
+   <div class="govuk-grid-column-one-third standards-icon">
+<i class="fa-solid fa-triangle-exclamation fa-6x"></i>
+  </div>
+</div>
+<p></div></p>
+
+<div class="dfe-panel">
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+    <h3>Design for different viewports, ideally mobile-first</h3>
+ <p>Think about how users will interact with the service on different devices and how the design will change as a result.</p>
+ <p><a href="/interaction-design/standards/viewport.html">Further guidance and how to meet this standard</a></p>
+  </div>
+   <div class="govuk-grid-column-one-third standards-icon">
+<i class="fa-solid fa-mobile-screen fa-6x"></i>
+  </div>
+</div>
+<p></div></p>
+
+<div class="dfe-panel">
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+    <h3>If you use images and media, make sure they have alternative descriptions</h3>
+ <p>Think about how to describe images, audio descriptions of video or transcripts.</p>
+ <p><a href="/interaction-design/standards/alternative-meaning.html">Further guidance and how to meet this standard</a></p>
+  </div>
+   <div class="govuk-grid-column-one-third standards-icon">
+<i class="fa-solid fa-images fa-6x"></i>
+  </div>
+</div>
+<p></div></p>
+
+<div class="dfe-panel">
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+    <h3>If you use content which starts automatically, make sure you include controls</h3>
+ <p>Allow the user to control or stop any animations or audio.</p>
+ <p><a href="/interaction-design/standards/controls.html">Further guidance and how to meet this standard</a></p>
+  </div>
+   <div class="govuk-grid-column-one-third standards-icon">
+<i class="fa-solid fa-circle-stop fa-6x"></i>
+  </div>
+</div>
+<p></div></p>
 
             
           </main>

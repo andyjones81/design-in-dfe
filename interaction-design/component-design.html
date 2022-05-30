@@ -5,23 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Design in DfE</title>
+    <title>Component design - Design in DfE</title>
 
     <link href="/stylesheets/manifest.css" rel="stylesheet" />
 
-    <link rel="canonical" href="/">
+    <link rel="canonical" href="/interaction-design/component-design.html">
 
       <meta name="robots" content="noindex" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:image" content="/images/govuk-large.png" />
-      <meta name="twitter:title" content="Design in DfE" />
-      <meta name="twitter:url" content="/" />
+      <meta name="twitter:title" content="Component design - Design in DfE" />
+      <meta name="twitter:url" content="/interaction-design/component-design.html" />
 
       <meta property="og:image" content="/images/govuk-large.png" />
       <meta property="og:site_name" content="Design in DfE" />
-      <meta property="og:title" content="Design in DfE" />
+      <meta property="og:title" content="Component design" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="/" />
+      <meta property="og:url" content="/interaction-design/component-design.html" />
 
     
   </head>
@@ -167,23 +167,52 @@
 
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
-            <h1 id="design-in-dfe">Design in DfE</h1>
-<p>This guidance helps teams understand how to design services in DfE.</p>
-<p>This service supports the following professions</p>
+            <h1 id="component-design">Component design</h1>
+<p>When designing components that are outside the GOV Frontend Design System, think whether what you are designing is needed.</p>
+<p>You can use the 4 stage acceptance criteria if you are unsure. This does not stop new components from being created, but instead puts some checks in place to prevent over-engineering of designs.</p>
+<h2 id="four-stage-acceptance-criteria">Four stage acceptance criteria</h2>
+
+<ol>
+<li><a href="#can-the-problem-be-solved-with-existing-components-or-patterns">Can the problem be solved with existing components or patterns?</a></li>
+<li><a href="#does-it-meet-user-needs-across-multiple-services">Does it meet user needs across multiple services?</a></li>
+<li><a href="#does-it-add-value-to-the-user-experience">Does it add value to the user experience?</a></li>
+<li><a href="#is-it-accessible">Is it accessible?</a></li>
+</ol>
+<h3 id="1-can-the-problem-be-solved-with-existing-components-or-patterns">1. Can the problem be solved with existing components or patterns?</h3>
+<p>The primary look and feel for digital services is the <a href="https://frontend.design-system.service.gov.uk/">GOV.UK Frontend</a> with available components, patterns and styles detailed in the <a href="https://design-system.service.gov.uk/">GOV.UK Design System</a>.</p>
+<p>Where appropriate, contributions should be made back to the design system to support the development of components for other users.</p>
+<p>The <a href="https://github.com/alphagov/govuk-design-system-backlog/projects/1">design system backlog</a> also contains components which are being considered or in development or have been built by other designers.</p>
+<p>If you decide the problem cannot be designed around by anything that exists in the design system, and it is a common problem, ask within DfE or Gov Digital slack channels to see if anyone else has designed for the same problem.</p>
 
 <ul>
-<li>content design</li>
-<li>interaction design</li>
-<li>service design</li>
+<li>interaction-design (DfE) - https://ukgovernmentdfe.slack.com/archives/C013E0LRL5S </li>
+<li>developers (DfE) - https://ukgovernmentdfe.slack.com/archives/CAGBHB4JV </li>
+<li>design (GOV Digital) - https://ukgovernmentdigital.slack.com/archives/C062GAGLW </li>
+<li>govuk-design-system (GOV Digital) - https://ukgovernmentdigital.slack.com/archives/C6DMEH5R6 </li>
 </ul>
+<h3 id="2-does-it-meet-user-needs-across-multiple-services">2. Does it meet user needs across multiple services?</h3>
+<p>Designers can often work in silos and as a result aren’t aware of what other designers across DfE are working on and designing. This becomes obvious, and a pain point, for users of multiple DfE services which have been designed and built by different teams.</p>
+<p>Using components consistently, sharing with other designers and understanding who the users are and which services they use, helps to provide a consistent experience of DfE services and will help you to meet the following standards:</p>
+
+<ul>
+<li> <a href="#">Service Standard point 3 - provide a joined up experience across all channels</a></li>
+<li> <a href="https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification.html">WCAG 3.2.4 (AA) - Consistent identification</a></li>
+</ul>
+<h3 id="3-does-it-add-value-to-the-user-experience">3. Does it add value to the user experience?</h3>
+<p>When designing a new component, you should be ensuring it is meeting a validated user need through user research activity. Designing components and features which meet user’s needs, should be shared so that other designers can use them in their services.</p>
+<p>Components and features shouldn’t be built or designed just to make something look aesthetically pleasing, but instead add value, solve a problem or make something complex, understandable.</p>
+<h3 id="4-is-it-accessible">4. Is it accessible?</h3>
+<p>Accessibility is non-negotiable. Any new components or features must meet the component design guidelines and be usable by people of all abilities.</p>
+<p>When considering a new component, it will often go through several iterations and design decisions will be made on what to take forward and what to discard, often through design crits, show and tells and user research.</p>
+<p>Involving a wide range of people in these decisions will ensure you are being inclusive in your design approach.</p>
 
             
           </main>
 
           <aside>
               <ul class="contribution-banner">
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/index.html.md.erb">View source</a></li>
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Design+in+DfE%27+%28%2F%29&amp;labels=bug&amp;title=Re%3A+%27Design+in+DfE%27">Report problem</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/interaction-design/component-design.html.md.erb">View source</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Component+design%27+%28%2Finteraction-design%2Fcomponent-design.html%29&amp;labels=bug&amp;title=Re%3A+%27Component+design%27">Report problem</a></li>
                 <li><a href="https://github.com/DFE-Digital/design-in-dfe">GitHub Repo</a></li>
               </ul>
           </aside>

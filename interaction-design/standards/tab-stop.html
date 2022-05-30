@@ -5,23 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Design in DfE</title>
+    <title>Design interactions in a logical order - Design in DfE</title>
 
     <link href="/stylesheets/manifest.css" rel="stylesheet" />
 
-    <link rel="canonical" href="/">
+    <link rel="canonical" href="/interaction-design/standards/tab-stop.html">
 
       <meta name="robots" content="noindex" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:image" content="/images/govuk-large.png" />
-      <meta name="twitter:title" content="Design in DfE" />
-      <meta name="twitter:url" content="/" />
+      <meta name="twitter:title" content="Design interactions in a logical order - Design in DfE" />
+      <meta name="twitter:url" content="/interaction-design/standards/tab-stop.html" />
 
       <meta property="og:image" content="/images/govuk-large.png" />
       <meta property="og:site_name" content="Design in DfE" />
-      <meta property="og:title" content="Design in DfE" />
+      <meta property="og:title" content="Design interactions in a logical order" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="/" />
+      <meta property="og:url" content="/interaction-design/standards/tab-stop.html" />
 
     
   </head>
@@ -167,14 +167,56 @@
 
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
-            <h1 id="design-in-dfe">Design in DfE</h1>
-<p>This guidance helps teams understand how to design services in DfE.</p>
-<p>This service supports the following professions</p>
+            <p><a href="/interaction-design/standards/" class="govuk-back-link">Back to standards</a></p>
+<h1 id="design-interactions-in-a-logical-order">Design interactions in a logical order</h1>
+<p>Users must be able to interact with a service using only a keyboard. This is because:</p>
 
 <ul>
-<li>content design</li>
-<li>interaction design</li>
-<li>service design</li>
+<li>using a mouse is impossible for people who can&rsquo;t see the pointer</li>
+<li>some people don&rsquo;t have the ability to control a pointing device like a mouse</li>
+<li>many people without disabilities prefer to use a keyboard</li>
+</ul>
+<h2 id="good-tab-stop-design-allows-keyboard-users-to">Good tab stop design allows keyboard users to:</h2>
+
+<ul>
+<li>access all of the services interactive elements in a predictable order</li>
+<li>identify which element currently has the input focus.</li>
+<li>poorly-designed tab stops create high-impact accessibility problems</li>
+</ul>
+
+<div class="DosAndDontsstyled__DosAndDontsContainerStyled">
+  <div class="DosAndDontsstyled__SectionStyled">
+    <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_do">
+      <img src="/images/tabstop-do.png">
+    </div>
+    <div class="DosAndDontsstyled__PillSectionStyled">
+      <strong class="govuk-tag govuk-tag--green">
+        <svg width="20" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" vector-effect="non-scaling-stroke">
+          <path d="M20 7L9 18l-5-5" stroke="#096034" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+        </svg> Do </strong>
+    </div>
+    <div class="DosAndDontsstyled__TextSectionStyled">Use visual hierarchy in HTML to flow left to right top to bottom.</div>
+  </div>
+  <div class="DosAndDontsstyled__SectionStyled">
+    <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_dont">
+      <img src="/images/tabstop-dont.png">
+    </div>
+    <div class="DosAndDontsstyled__PillSectionStyled">
+      <strong class="govuk-tag govuk-tag--red">
+        <svg width="20" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" vector-effect="non-scaling-stroke">
+          <path d="M18 6L6 18M6 6l12 12" stroke="#650905" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+        </svg> Don&rsquo;t </strong>
+    </div>
+    <div class="DosAndDontsstyled__TextSectionStyled">Don&rsquo;t confuse the logical order .</div>
+  </div>
+</div>
+<h3 id="example-of-testing-tab-stop-on-a-webpage">Example of testing tab stop on a webpage</h3>
+<p>You can use tools such as <a href="https://accessibilityinsights.io/" target="_blank" rel="noopner noreferrer">Accessibility Insights (opens in new tab)</a> browser plugin to test tab stops. You should also tab through your page to see if elements are selected in the order intended.</p>
+<p><img src="/images/tabstop-example.png" class="img-border"></p>
+<h2 id="tools-you-can-use">Tools you can use</h2>
+
+<ul>
+<li>Accessibility insights to test tab stop order</li>
 </ul>
 
             
@@ -182,8 +224,8 @@
 
           <aside>
               <ul class="contribution-banner">
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/index.html.md.erb">View source</a></li>
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Design+in+DfE%27+%28%2F%29&amp;labels=bug&amp;title=Re%3A+%27Design+in+DfE%27">Report problem</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/interaction-design/standards/tab-stop.html.md.erb">View source</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Design+interactions+in+a+logical+order%27+%28%2Finteraction-design%2Fstandards%2Ftab-stop.html%29&amp;labels=bug&amp;title=Re%3A+%27Design+interactions+in+a+logical+order%27">Report problem</a></li>
                 <li><a href="https://github.com/DFE-Digital/design-in-dfe">GitHub Repo</a></li>
               </ul>
           </aside>
