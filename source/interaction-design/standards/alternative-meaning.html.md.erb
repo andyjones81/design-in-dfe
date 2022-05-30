@@ -7,10 +7,55 @@ weight: 220
 
 # Images and media contain alternative descriptions
 
+Images should contain an written description of what the image is showing, for example:
 
+```html
+<img src='/path-to-image/filename.png' alt='A child in a classroom sitting at a desk listening to a teacher talk' />
+```
+
+## When not to use alternative text
+
+You do not need to provide a description when:
+
+- the image is purely decorative, like a background pattern
+- the image content is represented by adjacent real text
+
+You should simply provide an empty alt attribute on the image element as follows: 
+
+```html
+<img src='/path-to-image/filename.png' alt='' />
+```
+
+
+<div class="DosAndDontsstyled__DosAndDontsContainerStyled">
+  <div class="DosAndDontsstyled__SectionStyled">
+    <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_do">
+      <img src="/images/alt-do.png">
+    </div>
+    <div class="DosAndDontsstyled__PillSectionStyled">
+      <strong class="govuk-tag govuk-tag--green">
+        <svg width="20" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" vector-effect="non-scaling-stroke">
+          <path d="M20 7L9 18l-5-5" stroke="#096034" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+        </svg> Do </strong>
+    </div>
+    <div class="DosAndDontsstyled__TextSectionStyled">Add alt text to images to describe them, this helps screen reader users understand images and describes the image if it fails to load.</div>
+  </div>
+  <div class="DosAndDontsstyled__SectionStyled">
+    <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_dont">
+      <img src="/images/alt-dont.png">
+    </div>
+    <div class="DosAndDontsstyled__PillSectionStyled">
+      <strong class="govuk-tag govuk-tag--red">
+        <svg width="20" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" vector-effect="non-scaling-stroke">
+          <path d="M18 6L6 18M6 6l12 12" stroke="#650905" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+        </svg> Don't </strong>
+    </div>
+    <div class="DosAndDontsstyled__TextSectionStyled">Missing alt text might make it more difficult for users to understand what is being presented to them.</div>
+  </div>
+</div>
 
 
 
 ## Tools you can use
 
-- 
+- <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/" rel="noopener noreferrer" target="_blank">WCAG alt text decision tree (opens in new tab)</a>

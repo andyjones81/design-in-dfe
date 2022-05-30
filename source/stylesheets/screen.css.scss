@@ -11,10 +11,20 @@ h6,
 a,
 span,
 div {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        "Helvetica Neue",
+        sans-serif !important;
 }
 
-img{border: 1px solid #A8A8a8;}
+img {
+    border: 1px solid #A8A8a8;
+}
 
 .govuk-header {
     background-color: #003a69;
@@ -177,12 +187,14 @@ footer {
     }
 }
 
-.DosAndDontsstyled__DosAndDontsContainerStyled img{border: none;}
+.DosAndDontsstyled__DosAndDontsContainerStyled img {
+    border: none;
+}
 
 .dfe-list--contents {
     list-style-type: none;
     padding-left: 0px !important;
-    margin-left: 0px ;
+    margin-left: 0px;
 }
 
 .dfe-list--contents li {
@@ -220,11 +232,12 @@ footer {
     top: -48px;
 }
 
-.dfe-warning-callout p:first-of-type, .dfe-warning-callout ul:first-of-type {
+.dfe-warning-callout p:first-of-type,
+.dfe-warning-callout ul:first-of-type {
     margin-top: -20px;
 }
 
-.dfe-warning-callout p + ul:first-of-type {
+.dfe-warning-callout p+ul:first-of-type {
     margin-top: 20px;
 }
 
@@ -233,12 +246,12 @@ footer {
     padding-top: 30px !important;
 }
 
-.technical-documentation > h1:first-of-type {
+.technical-documentation>h1:first-of-type {
     padding-top: 0px;
 }
 
 .govuk-back-link {
-    
+
     line-height: 1.1428571429;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -277,7 +290,7 @@ footer {
     left: 0;
 }
 
-.dfe-panel{
+.dfe-panel {
     margin-bottom: 15px !important;
     margin-top: 40px !important;
     border: 1px solid #b1b4b6;
@@ -285,20 +298,33 @@ footer {
     padding: 5px 25px;
     border-radius: 5px;
 
-    p{margin-bottom: 10px;}
+    p {
+        margin-bottom: 10px;
+    }
 
-    a{font-weight: 600; font-size: 0.9em;}
+    a {
+        font-weight: 600;
+        font-size: 0.9em;
+    }
 }
 
-.icon{margin-top:40px; text-align: center;}
+.icon {
+    margin-top: 40px;
+    text-align: center;
+}
 
 @media (min-device-width: 320px) {
-    .standards-icon{display: none}
+    .standards-icon {
+        display: none
+    }
 }
 
 
 @media only screen and (min-width : 992px) {
-    .standards-icon{display: block; margin-top:50px; text-align: center; color: #003a69}
+    .standards-icon {
+        display: block;
+        margin-top: 50px;
+        text-align: center;
+        color: #003a69
+    }
 }
-
-
