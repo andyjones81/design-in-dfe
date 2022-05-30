@@ -10,7 +10,7 @@ phase: ALPHA
 # Links to show on right-hand-side of header
 header_links:
   About: /about
-  Documentation: /
+  Contribute: /contribute
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
 enable_search: true
@@ -27,10 +27,11 @@ collapsible_nav: true
 # Table of contents depth – how many levels to include in the table of contents.
 # If your ToC is too long, reduce this number and we'll only show higher-level
 # headings.
-max_toc_heading_level: 3
+max_toc_heading_level: 1
 
 # Prevent robots from indexing (e.g. whilst in development)
 prevent_indexing: true
 
 show_contribution_banner: true
+
 github_repo: DFE-Digital/design-in-dfe
