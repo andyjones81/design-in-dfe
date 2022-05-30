@@ -100,6 +100,9 @@
 <li><a href="/interaction-design/standards/"><span>Standards</span></a>
 <ul>
   <li>
+    <a href="/interaction-design/standards/branding.html"><span>Branding your service</span></a>
+  </li>
+  <li>
     <a href="/interaction-design/standards/minimum-contrast.html"><span>Ensure sufficient contrast between foreground and background</span></a>
   </li>
   <li>
@@ -169,10 +172,48 @@
           <main id="content" class="technical-documentation" data-module="anchored-headings">
             <p><a href="/interaction-design/standards/" class="govuk-back-link">Back to standards</a></p>
 <h1 id="images-and-media-contain-alternative-descriptions">Images and media contain alternative descriptions</h1>
+<p>Images should contain an written description of what the image is showing, for example:</p>
+<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">'/path-to-image/filename.png'</span> <span class="na">alt=</span><span class="s">'A child in a classroom sitting at a desk listening to a teacher talk'</span> <span class="nt">/&gt;</span>
+</code></pre></div><h2 id="when-not-to-use-alternative-text">When not to use alternative text</h2>
+<p>You do not need to provide a description when:</p>
+
+<ul>
+<li>the image is purely decorative, like a background pattern</li>
+<li>the image content is represented by adjacent real text</li>
+</ul>
+<p>You should simply provide an empty alt attribute on the image element as follows:</p>
+<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">'/path-to-image/filename.png'</span> <span class="na">alt=</span><span class="s">''</span> <span class="nt">/&gt;</span>
+</code></pre></div>
+<div class="DosAndDontsstyled__DosAndDontsContainerStyled">
+  <div class="DosAndDontsstyled__SectionStyled">
+    <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_do">
+      <img src="/images/alt-do.png">
+    </div>
+    <div class="DosAndDontsstyled__PillSectionStyled">
+      <strong class="govuk-tag govuk-tag--green">
+        <svg width="20" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" vector-effect="non-scaling-stroke">
+          <path d="M20 7L9 18l-5-5" stroke="#096034" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+        </svg> Do </strong>
+    </div>
+    <div class="DosAndDontsstyled__TextSectionStyled">Add alt text to images to describe them, this helps screen reader users understand images and describes the image if it fails to load.</div>
+  </div>
+  <div class="DosAndDontsstyled__SectionStyled">
+    <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_dont">
+      <img src="/images/alt-dont.png">
+    </div>
+    <div class="DosAndDontsstyled__PillSectionStyled">
+      <strong class="govuk-tag govuk-tag--red">
+        <svg width="20" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" vector-effect="non-scaling-stroke">
+          <path d="M18 6L6 18M6 6l12 12" stroke="#650905" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+        </svg> Don&rsquo;t </strong>
+    </div>
+    <div class="DosAndDontsstyled__TextSectionStyled">Missing alt text might make it more difficult for users to understand what is being presented to them.</div>
+  </div>
+</div>
 <h2 id="tools-you-can-use">Tools you can use</h2>
 
 <ul>
-<li></li>
+<li><a href="https://www.w3.org/WAI/tutorials/images/decision-tree/" rel="noopener noreferrer" target="_blank">WCAG alt text decision tree (opens in new tab)</a></li>
 </ul>
 
             

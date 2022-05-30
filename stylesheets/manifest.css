@@ -3751,7 +3751,8 @@ footer {
   position: relative;
   top: -48px; }
 
-.dfe-warning-callout p:first-of-type, .dfe-warning-callout ul:first-of-type {
+.dfe-warning-callout p:first-of-type,
+.dfe-warning-callout ul:first-of-type {
   margin-top: -20px; }
 
 .dfe-warning-callout p + ul:first-of-type {
