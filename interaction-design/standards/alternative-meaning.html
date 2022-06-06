@@ -93,6 +93,16 @@
     <a href="/"><span>Design in DfE</span></a>
   </li>
   <li>
+    <a href="/accessibility/"><span>Accessibility in DfE</span></a>
+  </li>
+<li><a href="/design-assurance/"><span>Design assurance</span></a>
+<ul>
+  <li>
+    <a href="/design-assurance/design-critiques.html"><span>Design critiques</span></a>
+  </li>
+</ul>
+</li>
+  <li>
     <a href="/content-design/"><span>Content design</span></a>
   </li>
 <li><a href="/interaction-design/"><span>Interaction design</span></a>
@@ -146,13 +156,6 @@
   <li>
     <a href="/interaction-design/inclusive-design.html"><span>Inclusive design</span></a>
   </li>
-<li><a href="/interaction-design/design-assurance/"><span>Design assurance</span></a>
-<ul>
-  <li>
-    <a href="/interaction-design/design-assurance/design-critiques.html"><span>Design critiques</span></a>
-  </li>
-</ul>
-</li>
   <li>
     <a href="/interaction-design/principles.html"><span>Principles</span></a>
   </li>
@@ -178,14 +181,28 @@
           <main id="content" class="technical-documentation" data-module="anchored-headings">
             <p><a href="/interaction-design/standards/" class="govuk-back-link">Back to standards</a></p>
 <h1 id="images-and-media-contain-alternative-descriptions">Images and media contain alternative descriptions</h1>
-<p>Images should contain an written description of what the image is showing, for example:</p>
-<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">'/path-to-image/filename.png'</span> <span class="na">alt=</span><span class="s">'A child in a classroom sitting at a desk listening to a teacher talk'</span> <span class="nt">/&gt;</span>
-</code></pre></div><h2 id="when-not-to-use-alternative-text">When not to use alternative text</h2>
-<p>You do not need to provide a description when:</p>
+<p>Media such as images, video and charts should contain a text alternative describing the media.</p>
+<p>This is a requirement of:</p>
 
 <ul>
-<li>the image is purely decorative, like a background pattern</li>
-<li>the image content is represented by adjacent real text</li>
+<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html" rel="noopner noreferrer" target="_blank">WCAG 1.1.1 - Non-text content (Level A)</a></li>
+<li><a href="https://www.w3.org/WAI/WCAG21/quickref/#time-based-media" rel="noopner noreferrer" target="_blank">WCAG 1.2 - Time based media section</a></li>
+</ul>
+<p>For images, this is achieved by adding a description using the alt attribute, for example:</p>
+<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">'/path-to-image/filename.png'</span> <span class="na">alt=</span><span class="s">'A child in a classroom sitting at a desk listening to a teacher talk'</span> <span class="nt">/&gt;</span>
+</code></pre></div><p>For other media like video, this should be done using other means for example:</p>
+
+<ul>
+<li>closed captions (subtitles)</li>
+<li>sign language</li>
+<li>transcript</li>
+<li>audio description</li>
+</ul>
+<h2 id="when-you-don-39-t-need-to-use-alternative-text">When you don&rsquo;t need to use alternative text</h2>
+
+<ul>
+<li>The image is purely decorative, like a background pattern</li>
+<li>The image content is represented by adjacent real text like a product description</li>
 </ul>
 <p>You should simply provide an empty alt attribute on the image element as follows:</p>
 <div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">'/path-to-image/filename.png'</span> <span class="na">alt=</span><span class="s">''</span> <span class="nt">/&gt;</span>
@@ -193,7 +210,7 @@
 <div class="DosAndDontsstyled__DosAndDontsContainerStyled">
   <div class="DosAndDontsstyled__SectionStyled">
     <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_do">
-      <img src="/images/alt-do.png">
+      <img src="/images/alt-do.png" alt="Example of adding text to images to support screenreaders">
     </div>
     <div class="DosAndDontsstyled__PillSectionStyled">
       <strong class="govuk-tag govuk-tag--green">
@@ -205,7 +222,7 @@
   </div>
   <div class="DosAndDontsstyled__SectionStyled">
     <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_dont">
-      <img src="/images/alt-dont.png">
+      <img src="/images/alt-dont.png" alt="Example of images not displaying and not showing alternative text">
     </div>
     <div class="DosAndDontsstyled__PillSectionStyled">
       <strong class="govuk-tag govuk-tag--red">
