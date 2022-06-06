@@ -25,11 +25,48 @@ Example of the GOV.UK header branding
 
 ## If the service is on education.gov.uk
 
-You should:
+You should make changes to your branding if you are using the GOV.UK prototype kit or GOV.UK Frontend and are providing your service on an education.gov.uk domain.
 
-- use the departmental Crest
-- Department for Education branding in your headers
-- use a default font-stack with cross-system support
+<div class="DosAndDontsstyled__DosAndDontsContainerStyled">
+  <div class="DosAndDontsstyled__SectionStyled">
+    <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_do">
+      <img src="/images/header-do.png">
+    </div>
+    <div class="DosAndDontsstyled__PillSectionStyled">
+      <strong class="govuk-tag govuk-tag--green">
+        <svg width="20" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" vector-effect="non-scaling-stroke">
+          <path d="M20 7L9 18l-5-5" stroke="#096034" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+        </svg> Do </strong>
+    </div>
+    <div class="DosAndDontsstyled__TextSectionStyled">
+    <ul>
+    <li>Use the Crest logo</li>
+    <li>Use Department for Education as the organisation name</li>
+    <li>Use a <a href="#example-of-a-cross-platform-compatible-font-stack">cross-platform compatible font-stack</a></li>
+    </ul>
+    </div>
+  </div>
+  <div class="DosAndDontsstyled__SectionStyled">
+    <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_dont">
+      <img src="/images/header-dont.png">
+    </div>
+    <div class="DosAndDontsstyled__PillSectionStyled">
+      <strong class="govuk-tag govuk-tag--red">
+        <svg width="20" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" vector-effect="non-scaling-stroke">
+          <path d="M18 6L6 18M6 6l12 12" stroke="#650905" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+        </svg> Don't </strong>
+    </div>
+    <div class="DosAndDontsstyled__TextSectionStyled">
+      <ul>
+    <li>Use the Crown or GOV.UK logotype</li>
+    <li>Use the GDS Transport typeface</li>
+    <li>Identify as being part of GOV.UK when it's not</li>
+    </ul>
+    </div>
+  </div>
+</div>
+
+### Example of a cross-platform compatible font-stack
 
 ```css
 body {
@@ -52,11 +89,3 @@ Example of the DfE header branding
 ```html
 DFE header code snippet
 ```
-
-You must not:
-
-- identify itself as being part of GOV.UK
-- use the crown or GOV.UK logotype in the header
-- use the GDS Transport typeface
-- suggest that it’s an official UK government website if it’s not
-

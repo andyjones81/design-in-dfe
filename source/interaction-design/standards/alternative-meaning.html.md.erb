@@ -7,18 +7,30 @@ weight: 220
 
 # Images and media contain alternative descriptions
 
-Images should contain an written description of what the image is showing, for example:
+Media such as images, video and charts should contain a text alternative describing the media. 
+
+This is a requirement of:
+
+- <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html" rel="noopner noreferrer" target="_blank">WCAG 1.1.1 - Non-text content (Level A)</a>
+- <a href="https://www.w3.org/WAI/WCAG21/quickref/#time-based-media" rel="noopner noreferrer" target="_blank">WCAG 1.2 - Time based media section</a>
+
+For images, this is achieved by adding a description using the alt attribute, for example:
 
 ```html
 <img src='/path-to-image/filename.png' alt='A child in a classroom sitting at a desk listening to a teacher talk' />
 ```
 
-## When not to use alternative text
+For other media like video, this should be done using other means for example:
 
-You do not need to provide a description when:
+- closed captions (subtitles)
+- sign language
+- transcript
+- audio description
 
-- the image is purely decorative, like a background pattern
-- the image content is represented by adjacent real text
+## When you don't need to use alternative text
+
+- The image is purely decorative, like a background pattern
+- The image content is represented by adjacent real text like a product description
 
 You should simply provide an empty alt attribute on the image element as follows: 
 
@@ -26,11 +38,10 @@ You should simply provide an empty alt attribute on the image element as follows
 <img src='/path-to-image/filename.png' alt='' />
 ```
 
-
 <div class="DosAndDontsstyled__DosAndDontsContainerStyled">
   <div class="DosAndDontsstyled__SectionStyled">
     <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_do">
-      <img src="/images/alt-do.png">
+      <img src="/images/alt-do.png" alt="Example of adding text to images to support screenreaders">
     </div>
     <div class="DosAndDontsstyled__PillSectionStyled">
       <strong class="govuk-tag govuk-tag--green">
@@ -42,7 +53,7 @@ You should simply provide an empty alt attribute on the image element as follows
   </div>
   <div class="DosAndDontsstyled__SectionStyled">
     <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_dont">
-      <img src="/images/alt-dont.png">
+      <img src="/images/alt-dont.png" alt="Example of images not displaying and not showing alternative text">
     </div>
     <div class="DosAndDontsstyled__PillSectionStyled">
       <strong class="govuk-tag govuk-tag--red">
