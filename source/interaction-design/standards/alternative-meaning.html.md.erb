@@ -11,8 +11,7 @@ Media such as images, video and charts should contain a text alternative describ
 
 This is a requirement of:
 
-- <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html" rel="noopner noreferrer" target="_blank">WCAG 1.1.1 - Non-text content (Level A)</a>
-- <a href="https://www.w3.org/WAI/WCAG21/quickref/#time-based-media" rel="noopner noreferrer" target="_blank">WCAG 1.2 - Time based media section</a>
+<%= signpost_link("http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html", "WCAG 1.1.1 - Non-text content (Level A)", true)%>
 
 For images, this is achieved by adding a description using the alt attribute, for example:
 
@@ -32,7 +31,7 @@ For other media like video, this should be done using other means for example:
 - The image is purely decorative, like a background pattern
 - The image content is represented by adjacent real text like a product description
 
-You should simply provide an empty alt attribute on the image element as follows: 
+You should add ant alt attribute but leave it empty.
 
 ```html
 <img src='/path-to-image/filename.png' alt='' />
@@ -64,7 +63,6 @@ You should simply provide an empty alt attribute on the image element as follows
     <div class="DosAndDontsstyled__TextSectionStyled">Missing alt text might make it more difficult for users to understand what is being presented to them.</div>
   </div>
 </div>
-
 
 
 ## Tools you can use
