@@ -3,14 +3,15 @@
 
 # Header-related options
 show_govuk_logo: false
-service_name: Design in DfE
+service_name: DfE Design
 service_link: https://design-in-dfe.education.gov.uk
 phase: ALPHA
 
 # Links to show on right-hand-side of header
 header_links:
   About: /about
-  Contribute: /contribute
+  Contribute: /contribute/
+  Community: /community/
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
 enable_search: true
