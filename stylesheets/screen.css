@@ -4399,6 +4399,22 @@ ol.dfe-standards-list {
   display: flex;
   flex-direction: column; }
 
+.cards.top-text .card .text {
+  flex: 0 0 auto; }
+
+@supports (display: grid) {
+  .cards.top-text > ul {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem; }
+  .cards.top-text .card + .card {
+    margin-top: 0; }
+  @media (max-width: 400px) {
+    .cards.top-text > ul {
+      grid-gap: 4.5rem; } } }
+
 .card p {
   max-width: 60ch; }
 
