@@ -4,7 +4,7 @@
 # Header-related options
 show_govuk_logo: false
 service_name: DfE Design
-service_link: https://design-in-dfe.education.gov.uk
+service_link: https://design.education.gov.uk
 phase: ALPHA
 
 # Links to show on right-hand-side of header
