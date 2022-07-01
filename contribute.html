@@ -5,23 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Design interactions in a logical order - DfE Design</title>
+    <title>Contribute - DfE Design</title>
 
     <link href="/stylesheets/manifest.css" rel="stylesheet" />
 
-    <link rel="canonical" href="/design-standards/tab-stop.html">
+    <link rel="canonical" href="/contribute.html">
 
       <meta name="robots" content="noindex" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:image" content="/images/govuk-large.png" />
-      <meta name="twitter:title" content="Design interactions in a logical order - DfE Design" />
-      <meta name="twitter:url" content="/design-standards/tab-stop.html" />
+      <meta name="twitter:title" content="Contribute - DfE Design" />
+      <meta name="twitter:url" content="/contribute.html" />
 
       <meta property="og:image" content="/images/govuk-large.png" />
       <meta property="og:site_name" content="DfE Design" />
-      <meta property="og:title" content="Design interactions in a logical order" />
+      <meta property="og:title" content="Contribute" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="/design-standards/tab-stop.html" />
+      <meta property="og:url" content="/contribute.html" />
 
     
   </head>
@@ -47,7 +47,7 @@
       <nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
         <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu">Menu</button>
         <ul id="navigation" class="govuk-header__navigation-list">
-            <li class="govuk-header__navigation-item">
+            <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
               <a class="govuk-header__link" href="/contribute.html">Contribute</a>
             </li>
         </ul>
@@ -211,74 +211,17 @@
 
   gtag('config', 'G-D2V3LRNYBJ');
 </script>
-<p><a href="/design-standards/" class="govuk-back-link">Back to standards</a></p>
-<h1 id="design-interactions-in-a-logical-order">Design interactions in a logical order</h1>
-<p>Users must be able to interact with a service using only a keyboard. This is because:</p>
-
-<ul>
-<li>using a mouse is impossible for people who can&rsquo;t see the pointer</li>
-<li>some people don&rsquo;t have the ability to control a pointing device like a mouse</li>
-<li>many people without disabilities prefer to use a keyboard</li>
-</ul>
-<p>This is a requirement of:</p>
-
-<div class='dfeuk-action-link'><a target=_blank class='dfeuk-action-link__link' href='https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html'><svg class='dfeuk-icon dfeuk-icon__arrow-right-circle' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true' width='36' height='36'>
-<path d='M0 0h24v24H0z' fill='none'></path>
-<path d='M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z'></path>
-</svg>
-<span class='dfeuk-action-link__text'>WCAG 2.1.1 - Keyboard (Level A)</span>
-</a>
-</div>
-<h2 id="good-tab-stop-design-allows-keyboard-users-to">Good tab stop design allows keyboard users to:</h2>
-
-<ul>
-<li>access all of the services interactive elements in a predictable order</li>
-<li>identify which element currently has the input focus.</li>
-<li>poorly-designed tab stops create high-impact accessibility problems</li>
-</ul>
-
-<div class="DosAndDontsstyled__DosAndDontsContainerStyled">
-  <div class="DosAndDontsstyled__SectionStyled">
-    <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_do">
-      <img src="/images/tabstop-do.png">
-    </div>
-    <div class="DosAndDontsstyled__PillSectionStyled">
-      <strong class="govuk-tag govuk-tag--green">
-        <svg width="20" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" vector-effect="non-scaling-stroke">
-          <path d="M20 7L9 18l-5-5" stroke="#096034" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
-        </svg> Do </strong>
-    </div>
-    <div class="DosAndDontsstyled__TextSectionStyled">Use visual hierarchy in HTML to flow left to right top to bottom.</div>
-  </div>
-  <div class="DosAndDontsstyled__SectionStyled">
-    <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_dont">
-      <img src="/images/tabstop-dont.png">
-    </div>
-    <div class="DosAndDontsstyled__PillSectionStyled">
-      <strong class="govuk-tag govuk-tag--red">
-        <svg width="20" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" vector-effect="non-scaling-stroke">
-          <path d="M18 6L6 18M6 6l12 12" stroke="#650905" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
-        </svg> Don&rsquo;t </strong>
-    </div>
-    <div class="DosAndDontsstyled__TextSectionStyled">Don&rsquo;t confuse the logical order .</div>
-  </div>
-</div>
-<h3 id="example-of-testing-tab-stop-on-a-webpage">Example of testing tab stop on a webpage</h3>
-<p>You can use tools such as <a href="https://accessibilityinsights.io/" target="_blank" rel="noopner noreferrer">Accessibility Insights (opens in new tab)</a> browser plugin to test tab stops. You should also tab through your page to see if elements are selected in the order intended.</p>
-<p><img src="/images/tabstop-example.png" class="img-border"></p>
-<h2 id="tools-you-can-use">Tools you can use</h2>
-
-<ul>
-<li>Accessibility insights to test tab stop order</li>
-</ul>
+<h1 id="contribute">Contribute</h1>
+<p>If you want to contribute to this manual, and are a DfE empoyee or contractor working for DfE, get in touch with us using the Slack channel - <a href="https://ukgovernmentdfe.slack.com/archives/C03LP9VRQSJ">#Standards-and-Assurance-Contribute</a></p>
+<p>Otherwise, you can use the links on this page to raise an issue in the GitHub repo.</p>
 
             
           </main>
 
           <aside>
               <ul class="contribution-banner">
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/design-standards/tab-stop.html.md.erb">View source</a></li>
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Design+interactions+in+a+logical+order%27+%28%2Fdesign-standards%2Ftab-stop.html%29&amp;labels=bug&amp;title=Re%3A+%27Design+interactions+in+a+logical+order%27">Report problem</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/contribute.html.md.erb">View source</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Contribute%27+%28%2Fcontribute.html%29&amp;labels=bug&amp;title=Re%3A+%27Contribute%27">Report problem</a></li>
                 <li><a href="https://github.com/DFE-Digital/design-in-dfe">GitHub Repo</a></li>
               </ul>
           </aside>
