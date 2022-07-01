@@ -5,23 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Images and media contain alternative descriptions - DfE Design</title>
+    <title>3. Follow Gestalt laws - DfE Design</title>
 
     <link href="/stylesheets/manifest.css" rel="stylesheet" />
 
-    <link rel="canonical" href="/design-standards/alternative-meaning.html">
+    <link rel="canonical" href="/interaction-design/principle/3-gestalt.html">
 
       <meta name="robots" content="noindex" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:image" content="/images/govuk-large.png" />
-      <meta name="twitter:title" content="Images and media contain alternative descriptions - DfE Design" />
-      <meta name="twitter:url" content="/design-standards/alternative-meaning.html" />
+      <meta name="twitter:title" content="3. Follow Gestalt laws - DfE Design" />
+      <meta name="twitter:url" content="/interaction-design/principle/3-gestalt.html" />
 
       <meta property="og:image" content="/images/govuk-large.png" />
       <meta property="og:site_name" content="DfE Design" />
-      <meta property="og:title" content="Images and media contain alternative descriptions" />
+      <meta property="og:title" content="3. Follow Gestalt laws" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="/design-standards/alternative-meaning.html" />
+      <meta property="og:url" content="/interaction-design/principle/3-gestalt.html" />
 
     
   </head>
@@ -217,67 +217,15 @@
 
   gtag('config', 'G-D2V3LRNYBJ');
 </script>
-<p><a href="/design-standards/" class="govuk-back-link">Back to standards</a></p>
-<h1 id="images-and-media-contain-alternative-descriptions">Images and media contain alternative descriptions</h1>
-<p>Media such as images, video and charts should contain a text alternative describing the media.</p>
-<p>This is a requirement of:</p>
-
-<div class='dfeuk-action-link'><a target=_blank class='dfeuk-action-link__link' href='http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html'><svg class='dfeuk-icon dfeuk-icon__arrow-right-circle' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true' width='36' height='36'>
-<path d='M0 0h24v24H0z' fill='none'></path>
-<path d='M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z'></path>
-</svg>
-<span class='dfeuk-action-link__text'>WCAG 1.1.1 - Non-text content (Level A)</span>
-</a>
-</div>
-<p>For images, this is achieved by adding a description using the alt attribute, for example:</p>
-<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">'/path-to-image/filename.png'</span> <span class="na">alt=</span><span class="s">'A child in a classroom sitting at a desk listening to a teacher talk'</span> <span class="nt">/&gt;</span>
-</code></pre></div><p>For other media like video, this should be done using other means for example:</p>
+<h1 id="3-follow-gestalt-laws">3. Follow Gestalt laws</h1>
+<p>Gestalt laws are principles which relate to how people naturally perceive visual stimuli, group things together and simplify complex objects.</p>
+<h2 id="gestalt-laws-to-consider-for-good-practice">Gestalt laws to consider for good practice</h2>
 
 <ul>
-<li>closed captions (subtitles)</li>
-<li>sign language</li>
-<li>transcript</li>
-<li>audio description</li>
-</ul>
-<h2 id="when-you-don-39-t-need-to-use-alternative-text">When you don&rsquo;t need to use alternative text</h2>
-
-<ul>
-<li>The image is purely decorative, like a background pattern</li>
-<li>The image content is represented by adjacent real text like a product description</li>
-</ul>
-<p>You should add ant alt attribute but leave it empty.</p>
-<div class="highlight"><pre class="highlight html" tabindex="0"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">'/path-to-image/filename.png'</span> <span class="na">alt=</span><span class="s">''</span> <span class="nt">/&gt;</span>
-</code></pre></div>
-<div class="DosAndDontsstyled__DosAndDontsContainerStyled">
-  <div class="DosAndDontsstyled__SectionStyled">
-    <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_do">
-      <img src="/images/alt-do.png" alt="Example of adding text to images to support screenreaders">
-    </div>
-    <div class="DosAndDontsstyled__PillSectionStyled">
-      <strong class="govuk-tag govuk-tag--green">
-        <svg width="20" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" vector-effect="non-scaling-stroke">
-          <path d="M20 7L9 18l-5-5" stroke="#096034" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
-        </svg> Do </strong>
-    </div>
-    <div class="DosAndDontsstyled__TextSectionStyled">Add alt text to images to describe them, this helps screen reader users understand images and describes the image if it fails to load.</div>
-  </div>
-  <div class="DosAndDontsstyled__SectionStyled">
-    <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_dont">
-      <img src="/images/alt-dont.png" alt="Example of images not displaying and not showing alternative text">
-    </div>
-    <div class="DosAndDontsstyled__PillSectionStyled">
-      <strong class="govuk-tag govuk-tag--red">
-        <svg width="20" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" vector-effect="non-scaling-stroke">
-          <path d="M18 6L6 18M6 6l12 12" stroke="#650905" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
-        </svg> Don&rsquo;t </strong>
-    </div>
-    <div class="DosAndDontsstyled__TextSectionStyled">Missing alt text might make it more difficult for users to understand what is being presented to them.</div>
-  </div>
-</div>
-<h2 id="tools-you-can-use">Tools you can use</h2>
-
-<ul>
-<li><a href="https://www.w3.org/WAI/tutorials/images/decision-tree/" rel="noopener noreferrer" target="_blank">WCAG alt text decision tree (opens in new tab)</a></li>
+<li><p><a href='' rel='noopner noreferrer' target='_blank'>Law of proximity</a></p></li>
+<li><p><a href='' rel='noopner noreferrer' target='_blank'>Law of closure</a></p></li>
+<li><p><a href='' rel='noopner noreferrer' target='_blank'>Law of similarity</a></p></li>
+<li><p><a href='' rel='noopner noreferrer' target='_blank'>Law of continuity</a></p></li>
 </ul>
 
             
@@ -285,8 +233,8 @@
 
           <aside>
               <ul class="contribution-banner">
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/design-standards/alternative-meaning.html.md.erb">View source</a></li>
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Images+and+media+contain+alternative+descriptions%27+%28%2Fdesign-standards%2Falternative-meaning.html%29&amp;labels=bug&amp;title=Re%3A+%27Images+and+media+contain+alternative+descriptions%27">Report problem</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/interaction-design/principle/3-gestalt.html.md.erb">View source</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%273.+Follow+Gestalt+laws%27+%28%2Finteraction-design%2Fprinciple%2F3-gestalt.html%29&amp;labels=bug&amp;title=Re%3A+%273.+Follow+Gestalt+laws%27">Report problem</a></li>
                 <li><a href="https://github.com/DFE-Digital/design-in-dfe">GitHub Repo</a></li>
               </ul>
           </aside>
