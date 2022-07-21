@@ -1419,3 +1419,17 @@ ol.dfe-standards-list {
     box-shadow: inset 0 0 0 1px #fd0;
 }
 
+
+
+.dfeuk-border-top--thick{border-top: 5px solid $accent; padding-top: 15px;}
+
+.dfe-cta{
+    background-color: $accent;
+    padding: 15px;
+
+    >.govuk-button{
+        margin-bottom:0px;
+        background: #ffffff;
+        color: #1b1c1c !important;
+    }
+}
