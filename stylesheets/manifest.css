@@ -3573,23 +3573,6 @@
 .fixedsticky-on + .fixedsticky-dummy {
   display: block; }
 
-body,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-span,
-div,
-table,
-th,
-td,
-tr {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; }
-
 img {
   border: 1px solid #A8A8a8; }
 
@@ -4591,16 +4574,6 @@ ol.dfe-standards-list {
         z-index: 2;
         left: -37px;
         top: 2px; }
-      .timeline ol > li h3:before {
-        content: "";
-        display: block;
-        width: calc(2 * 10px);
-        background-color: #b1b4b6;
-        border: 3px solid #b1b4b6;
-        position: absolute;
-        z-index: 2;
-        left: -50px;
-        top: 14px; }
     .timeline ol ul li a {
       text-decoration: underline; }
 
@@ -4675,6 +4648,85 @@ ol.dfe-standards-list {
     margin-bottom: 0px;
     background: #ffffff;
     color: #1b1c1c !important; }
+
+.dfe-horizontal-card {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #efefef;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden; }
+
+.dfe-horizontal-card p.subtitle {
+  opacity: 0.9;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.8em; }
+
+.dfe-horizontal-card h2 {
+  margin: 10px 0; }
+
+.dfe-horizontal-card-preview {
+  background-color: #2A265F;
+  color: #fff !important;
+  padding: 40px 30px 30px 30px;
+  min-width: 75px;
+  max-width: 250px;
+  text-align: center;
+  vertical-align: middle; }
+
+.dfe-horizontal-card-preview a {
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 30px;
+  text-decoration: none; }
+
+.dfe-horizontal-card-info {
+  padding: 30px;
+  position: relative;
+  width: 100%; }
+
+.dfe-horizontal-card-button {
+  background-color: #2A265F;
+  border: 0;
+  border-radius: 2px;
+  color: #fff !important;
+  font-size: 16px;
+  padding: 12px 25px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  letter-spacing: 1px;
+  text-decoration: none !important; }
+  .dfe-horizontal-card-button:hover {
+    border-color: #fd0;
+    color: #1b1c1c !important;
+    background-color: #fd0;
+    box-shadow: 0 2px 0 #0b0c0c; }
+  .dfe-horizontal-card-button:focus {
+    color: #1b1c1c !important; }
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+div,
+table,
+th,
+td,
+tr {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; }
 
 
 
