@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://design-in-dfe.education.gov.uk/sitemap.xml
+Sitemap: https://design.education.gov.uk/sitemap.xml
