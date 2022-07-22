@@ -13,5 +13,6 @@ activate :banner_panel
 activate :example_panel
 activate :basic_panel
 
+config[:host] = "https://design.education.gov.uk"
 
 GovukTechDocs.configure(self)
