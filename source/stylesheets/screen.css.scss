@@ -1,10 +1,34 @@
 @import "govuk_tech_docs";
 
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+div,
+table,
+th,
+td,
+tr {
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        "Helvetica Neue",
+        sans-serif !important;
+}
 
 
 $dfe-blue: #003a69;
-$accent: #f47738;
-
+$accent: #DD2C00;
 
 
 img {
@@ -261,6 +285,48 @@ footer {
         font-weight: 700;
         font-size: 1em;
     }
+
+}
+
+.dfe-large-panel {
+    margin-top: 30px !important;
+    padding: 30px;
+    border-left: 10px solid $accent;
+    background-color: #FBE9E7;
+    &:hover{
+        background-color: $accent;
+
+        color: #ffffff !important;
+        p > a {background-color: #ffffff;
+        color: $accent !important;
+        }
+
+        .fa-solid{color: #ffffff;}
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    p > a {
+        font-weight: 700;
+        font-size: 0.9em;
+        text-decoration: none;
+        border-radius: 4px;
+        padding: 8px 12px;
+        color: #ffffff !important;
+        background-color: $accent;
+
+     
+    }
+
+    h2 a {
+        font-weight: 700;
+        font-size: 1em;
+        color: #ffffff;
+    }
+
+    .fa-solid{color: $accent}
 
 }
 
@@ -1421,6 +1487,8 @@ ol.dfe-standards-list {
     font-size:0.8em;
 }
 
+
+
 .dfe-horizontal-card h2 {
 	margin: 10px 0;
 }
@@ -1433,6 +1501,10 @@ ol.dfe-standards-list {
 	max-width: 250px;
     text-align: center;
     vertical-align: middle;
+
+    &.first{
+        background-color: $accent;
+    }
 }
 
 .dfe-horizontal-card-preview a {
@@ -1442,6 +1514,11 @@ ol.dfe-standards-list {
 	opacity: 0.6;
 	margin-top: 30px;
 	text-decoration: none;
+}
+
+.dfe-horizontal-card-info h2 a {
+	color: $dfe-blue;
+	text-decoration: underline;
 }
 
 .dfe-horizontal-card-info {
@@ -1479,28 +1556,3 @@ ol.dfe-standards-list {
 }
 
 
-body,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-span,
-div,
-table,
-th,
-td,
-tr {
-    font-family: -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Oxygen-Sans,
-        Ubuntu,
-        Cantarell,
-        "Helvetica Neue",
-        sans-serif !important;
-}
