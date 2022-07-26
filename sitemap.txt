@@ -29,7 +29,7 @@ https://design.education.gov.uk/interaction-design/standard/headings.html
 https://design.education.gov.uk/interaction-design/standard/color.html
 https://design.education.gov.uk/interaction-design/standard/alternative-meaning.html
 https://design.education.gov.uk/interaction-design/standard/feedback.html
-https://design.education.gov.uk/interaction-design/standards.html
+https://design.education.gov.uk/interaction-design/accessibility.html
 https://design.education.gov.uk/contribute.html
 https://design.education.gov.uk/design-assurance/design-histories.html
 https://design.education.gov.uk/design-assurance/design-critiques.html
@@ -50,6 +50,8 @@ https://design.education.gov.uk/patterns-and-components/
 https://design.education.gov.uk/standards/inclusive-design.html
 https://design.education.gov.uk/standards/branding.html
 https://design.education.gov.uk/standards/
+https://design.education.gov.uk/standards/accessibility.html
+https://design.education.gov.uk/standards/privacy.html
 https://design.education.gov.uk/standards/standards.html
 https://design.education.gov.uk/googlefacf5ebcd086d0a0.html
 https://design.education.gov.uk/service-design/
