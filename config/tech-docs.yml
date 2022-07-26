@@ -4,7 +4,7 @@
 # Header-related options
 show_govuk_logo: false
 service_name: Design
-service_link: https://design.education.gov.uk
+service_link: /
 phase: 
 
 # Links to show on right-hand-side of header
