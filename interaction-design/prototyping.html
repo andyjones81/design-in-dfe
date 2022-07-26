@@ -5,22 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Component design - Design</title>
+    <title>Prototyping - Design</title>
 
     <link href="/stylesheets/manifest.css" rel="stylesheet" />
 
-    <link rel="canonical" href="/interaction-design/component-design.html">
+    <link rel="canonical" href="/interaction-design/prototyping.html">
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:image" content="/images/govuk-large.png" />
-      <meta name="twitter:title" content="Component design - Design" />
-      <meta name="twitter:url" content="/interaction-design/component-design.html" />
+      <meta name="twitter:title" content="Prototyping - Design" />
+      <meta name="twitter:url" content="/interaction-design/prototyping.html" />
 
       <meta property="og:image" content="/images/govuk-large.png" />
       <meta property="og:site_name" content="Design" />
-      <meta property="og:title" content="Component design" />
+      <meta property="og:title" content="Prototyping" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="/interaction-design/component-design.html" />
+      <meta property="og:url" content="/interaction-design/prototyping.html" />
 
     
   </head>
@@ -184,63 +184,51 @@
   gtag('config', 'G-D2V3LRNYBJ');
 </script>
 <p><a href="/interaction-design/" class="govuk-back-link">Back to interaction design</a></p>
-<h1 id="component-design">Component design</h1>
-<p>When designing a new service, always start with what is available already. Check the <a href="https://frontend.design-system.service.gov.uk/">GOV.UK Design System</a>  before designing anything new because those patterns and components have already been researched and tested to make sure they’re accessible.</p>
-<p>If you design anything new, your team will have to do all of the user research and <a href="/accessibility/audit.html">accessibility testing and audit</a> work to make sure that it is meeting the needs of your users and the accessibility standards.</p>
-<p>If your service is only for staff or if won’t be GOV.UK branded, it is still recommended to use the GOV.UK Design System and its unbranded layout. You will still get the benefits of the accessibility work that has gone into it. For example resizing the screen, the line spacing and the components.</p>
-<h2 id="four-stage-acceptance-criteria">Four stage acceptance criteria</h2>
-<p>If the GOV.UK Design System doesn&rsquo;t feature a component which you can use to meet a user need, you can use the 4 stage acceptance criteria to validate if building a new component is the right thing to do.</p>
-<p>This does not stop new components from being created, but instead puts some checks in place to prevent over-engineering of service frontends.</p>
+<h1 id="prototyping">Prototyping</h1>
+<p>We design and build prototypes to test solutions to problems.</p>
+<p>Prototypes can be simple wireframe sketches, mockups through to low-code clickable prototypes using the GOV.UK prototype kit.</p>
 
-<ol>
-<li><a href="#can-the-problem-be-solved-with-existing-components-or-patterns">Can the problem be solved with existing components or patterns?</a></li>
-<li><a href="#does-it-meet-user-needs-across-multiple-services">Does it meet user needs across multiple services?</a></li>
-<li><a href="#does-it-add-value-to-the-user-experience">Does it add value to the user experience?</a></li>
-<li><a href="#is-it-accessible">Is it accessible?</a></li>
-</ol>
-<h3 id="1-can-the-problem-be-solved-with-existing-components-or-patterns">1. Can the problem be solved with existing components or patterns?</h3>
-<p>The primary look and feel for digital services is the <a href="https://frontend.design-system.service.gov.uk/">GOV.UK Frontend</a> with available components, patterns and styles detailed in the <a href="https://design-system.service.gov.uk/">GOV.UK Design System</a>.</p>
-<p>Where appropriate, contributions should be made back to the design system to support the development of components for other users.</p>
-<p>The <a href="https://github.com/alphagov/govuk-design-system-backlog/projects/1">GOV.UK Design System backlog</a> also contains components which are being considered or in development or have been built by other designers.</p>
-<p>If you decide the problem cannot be designed around by anything that exists in the design system, and it is a common problem, ask within DfE or Gov Digital slack channels to see if anyone else has designed for the same problem.</p>
+<blockquote>
+<p>You can read more about prototyping and the differences between <a href="https://www.nngroup.com/articles/ux-prototype-hi-lo-fidelity/" target="_blank" rel="noopener noreferrer">high and low fidelity prototypes</a> on the Nielsen Normal Group (NNG) website.</p>
+</blockquote>
+<h2 id="how-we-do-prototyping-in-dfe">How we do prototyping in DfE</h2>
+<p>We use differnet approaches to prototyping, depending on the audience, the complexity or what we want to test and find out. This means we could:</p>
 
 <ul>
-<li><a href="https://ukgovernmentdfe.slack.com/archives/C013E0LRL5S " target="_blank" rel="noopner noreferrer">interaction-design (DfE Slack)</a></li>
-<li><a href="https://ukgovernmentdfe.slack.com/archives/CAGBHB4JV " target="_blank" rel="noopner noreferrer">developers (DfE Slack)</a></li>
-<li><a href="https://ukgovernmentdigital.slack.com/archives/C062GAGLW " target="_blank" rel="noopner noreferrer">design (GOV Digital Slack) </a></li>
-<li><a href="https://ukgovernmentdigital.slack.com/archives/C6DMEH5R6 " target="_blank" rel="noopner noreferrer">govuk-design-system (GOV Digital Slack)</a></li>
+<li>test simple sketches with pen and paper </li>
+<li>create realistic mockups and simple user journeys using <a href="https://figma.com" target="_blank" rel="noopener noreferrer">Figma</a> </li>
+<li>build clickable prototypes using the <a href="https://govuk-prototype-kit.herokuapp.com/docs/install" target="_blank" rel="noopener noreferrer">GOV.UK Prototype Kit</a> which look and behave like real digital services</li>
 </ul>
-<h3 id="2-does-it-meet-user-needs-across-multiple-services">2. Does it meet user needs across multiple services?</h3>
-<p>Designers can often work in silos and as a result aren’t aware of what other designers across DfE are working on and designing. This becomes obvious, and a pain point, for users of multiple DfE services which have been designed and built by different teams.</p>
-<p>Using components consistently, sharing with other designers and understanding who the users are and which services they use, helps to provide a consistent experience of DfE services and will help you to meet the following standards:</p>
+<h2 id="using-the-gov-uk-prototype-kit">Using the GOV.UK Prototype Kit</h2>
+<p>Using the kit means you can build prototypes that look like a real GOV.UK service. This helps to make it easier to test for usability issues and get feedback on how the service might perform if it were a real service.</p>
+<p>The kit is used across Government and supported thorugh the cross-gov <a href="https://ukgovernmentdigital.slack.com/archives/C0647LW4R"  target="_blank" rel="noopener noreferrer"> #prototype-kit</a> Slack channel.</p>
+<p>There are tutorials and example code on the prototype kit website and you can make use of components and patterns from the <a href="https://design-system.service.gov.uk/" target="_blank" rel="noopener noreferrer">GOV.UK Design System</a> by copying HTML or Nunjucks code snippets into your prototype.</p>
+<p>To be able to use the prototype kit, you&rsquo;ll need to ensure your device has the following software installed:</p>
 
-<ul>
-<li> <a href="https://apply-the-service-standard.education.gov.uk/service-standard/3-join-up-across-channels.html" target="_blank" rel="noopner noreferrer">Service Standard point 3 - provide a joined up experience across all channels</a></li>
-<li> <a href="https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification.html" target="_blank" rel="noopner noreferrer">WCAG 3.2.4 (AA) - Consistent identification</a></li>
+<ul class="govuk-list">
+<li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code (VS Code)</a> - This is a code editor that enables you to make changes and run the kit as a website on your device.</li>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Node.JS (LTS Version)</a> - Node is a Javascript based framework for building websites and applications.</li>
+<li>If on a Windows device, you&rsquo;ll need to install <a href="https://git-scm.com/download/win"  target="_blank" rel="noopener noreferrer">Git Bash</a></li>
 </ul>
-<h3 id="3-does-it-add-value-to-the-user-experience">3. Does it add value to the user experience?</h3>
-<p>When designing a new component, you should be ensuring it is meeting a validated user need through user research activity. Designing components and features which meet user’s needs, should be shared so that other designers can use them in their services.</p>
-<p>Components and features shouldn’t be built or designed just to make something look aesthetically pleasing, but instead add value, solve a problem or make something complex, understandable.</p>
-<h3 id="4-is-it-accessible">4. Is it accessible?</h3>
-<p>Accessibility is non-negotiable. Any new components or features must meet the component design guidelines and be usable by people of all abilities.</p>
-<p>When considering a new component, it will often go through several iterations and design decisions will be made on what to take forward and what to discard, often through design crits, show and tells and user research.</p>
-<p>Involving a wide range of people in these decisions will ensure you are being inclusive in your design approach.</p>
-<p>You can read the <a href="https://github.com/alphagov/govuk-frontend/blob/main/docs/contributing/test-components-using-accessibility-acceptance-criteria.md" target="_blank" rel="noopner noreferrer">full guidance for accessibility acceptance criteria for components</a> on GOV.UK</p>
-<h2 id="find-out-more">Find out more</h2>
-<p>The following links open in a new tab</p>
+<h3 id="testing-your-prototype-with-users">Testing your prototype with users</h3>
+<p>Depending on what testing you plan to do with users, you might want to run your prototype as a website, rather than on your local device.</p>
+<p>We use <a href="https://www.heroku.com/"  target="_blank" rel="noopener noreferrer">Heroku</a> to host prototypes and this is free for basic usage and sufficient for most prototype testing. You&rsquo;ll need to create an account using your DfE email address.</p>
+<p>You&rsquo;ll also need a <a href="https://github.com" target="_blank" rel="noopner noreferrer">GitHub</a> account to store your code and enable it to be deployed to Heroku.</p>
+<p>Prototypes should be created in the GitHub DFE-Digital organisation, clearly identifying them as a prototype. You can request access to GitHub through <a href="https://sites.google.com/digital.education.gov.uk/digitaltools/home?authuser=0" rel="nofollow" target="_blank" >Digital Tools support</a>.</p>
 
-<ul>
-<li><a href="https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices" target="_blank" rel="noopner noreferrer">Designing for different browsers and devices</a></li>
-<li><a href="https://github.com/alphagov/govuk-frontend/blob/main/CONTRIBUTING.md#conventions-to-follow" target="_blank" rel="noopner noreferrer">GOV.UK Frontend coding standards</a></li>
-</ul>
+<blockquote>
+<p>Full instructions on how to set up a Heroku account and deploy your prototype can be found on the <a href="https://govuk-prototype-kit.herokuapp.com/docs/publishing-on-heroku"  target="_blank" rel="noopner noreferrer">publishing to Heroku guidance</a> on the GOV.UK Design System.</p>
+</blockquote>
+<h3 id="branding-your-prototype">Branding your prototype</h3>
+<p>If your prototype is not intended for publishing to GOV.UK or service.gov.uk you should follow the <a href="/standards/branding.html#branding-your-service.html">branding your service</a> guidance so that you do not cause confusion with your users.</p>
 
             
           </main>
 
           <aside>
               <ul class="contribution-banner">
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/interaction-design/component-design.html.md.erb">View source</a></li>
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Component+design%27+%28%2Finteraction-design%2Fcomponent-design.html%29&amp;labels=bug&amp;title=Re%3A+%27Component+design%27">Report problem</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/interaction-design/prototyping.html.md.erb">View source</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Prototyping%27+%28%2Finteraction-design%2Fprototyping.html%29&amp;labels=bug&amp;title=Re%3A+%27Prototyping%27">Report problem</a></li>
                 <li><a href="https://github.com/DFE-Digital/design-in-dfe">GitHub Repo</a></li>
               </ul>
           </aside>
