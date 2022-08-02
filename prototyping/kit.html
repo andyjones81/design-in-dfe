@@ -5,22 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Patterns and components - Design</title>
+    <title>Prototype kit - Design</title>
 
     <link href="/stylesheets/manifest.css" rel="stylesheet" />
 
-    <link rel="canonical" href="/patterns-and-components/">
+    <link rel="canonical" href="/prototyping/kit.html">
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:image" content="/images/govuk-large.png" />
-      <meta name="twitter:title" content="Patterns and components - Design" />
-      <meta name="twitter:url" content="/patterns-and-components/" />
+      <meta name="twitter:title" content="Prototype kit - Design" />
+      <meta name="twitter:url" content="/prototyping/kit.html" />
 
       <meta property="og:image" content="/images/govuk-large.png" />
       <meta property="og:site_name" content="Design" />
-      <meta property="og:title" content="Patterns and components" />
+      <meta property="og:title" content="Prototype kit" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="/patterns-and-components/" />
+      <meta property="og:url" content="/prototyping/kit.html" />
 
     
   </head>
@@ -195,45 +195,38 @@
 
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
-            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <p><a href="/prototyping/" class="govuk-back-link">Back to prototyping</a></p>
+<h1 id="prototype-kit">Prototype kit</h1>
+<p>Using the kit means you can build prototypes that look like a real GOV.UK service. This helps to make it easier to test for usability issues and get feedback on how the service might perform if it were a real service.</p>
+<p>The kit is used across Government and supported thorugh the cross-gov <a href="https://ukgovernmentdigital.slack.com/archives/C0647LW4R"  target="_blank" rel="noopener noreferrer"> #prototype-kit</a> Slack channel.</p>
+<p>There are tutorials and example code on the prototype kit website and you can make use of components and patterns from the <a href="https://design-system.service.gov.uk/" target="_blank" rel="noopener noreferrer">GOV.UK Design System</a> by copying HTML or Nunjucks code snippets into your prototype.</p>
+<p>To be able to use the prototype kit, you&rsquo;ll need to ensure your device has the following software installed:</p>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D2V3LRNYBJ"></script>
+<ul class="govuk-list">
+<li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code (VS Code)</a> - This is a code editor that enables you to make changes and run the kit as a website on your device.</li>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Node.JS (LTS Version)</a> - Node is a Javascript based framework for building websites and applications.</li>
+<li>If you&rsquo;re unfamiliar with using commands in a terminal to work with GitHub, you can download <a href="https://desktop.github.com/" target="_blank" rel="noopener noreferrer">GitHub Desktop</a> to make it easier.</li>
+<li>If on a Windows device, you&rsquo;ll need to install <a href="https://git-scm.com/download/win"  target="_blank" rel="noopener noreferrer">Git Bash</a></li>
+</ul>
+<h2 id="branding-your-prototype">Branding your prototype</h2>
+<p>If your prototype is not intended for publishing to GOV.UK or service.gov.uk you should follow the <a href="/standards/branding.html#branding-your-service.html">branding your service</a> guidance so that you do not cause confusion with your users.</p>
+<h2 id="testing-your-prototype-with-users">Testing your prototype with users</h2>
+<p>Depending on what testing you plan to do with users, you might want to run your prototype as a website, rather than on your local device.</p>
+<p>We use <a href="https://www.heroku.com/"  target="_blank" rel="noopener noreferrer">Heroku</a> to host prototypes and this is free for basic usage and sufficient for most prototype testing. You&rsquo;ll need to create an account using your DfE email address.</p>
+<p>You&rsquo;ll also need a <a href="https://github.com" target="_blank" rel="noopner noreferrer">GitHub</a> account to store your code and enable it to be deployed to Heroku.</p>
+<p>Prototypes should be created in the GitHub DFE-Digital organisation, clearly identifying them as a prototype. You can request access to GitHub through <a href="https://sites.google.com/digital.education.gov.uk/digitaltools/home?authuser=0" rel="nofollow" target="_blank" >Digital Tools support</a>.</p>
 
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D2V3LRNYBJ');
-</script>
-
-<script src="https://kit.fontawesome.com/2f8f69be63.js" crossorigin="anonymous"></script>
-
-<div class="dfe-hero">
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl govuk-!-font-size-80">Patterns and components</h1>
-      <p class="govuk-body-l">Common service patterns and components to design consistent, trusted, services.</p>
-    </div>
-    <div class="govuk-grid-column-one-third standards-icon">
-    <i class="fa-solid fa-layer-group fa-10x"></i>
-    </div>
-  </div>
-</div>
-
-<div class="dfe-section-grey">
-  <h2 class="govuk-heading-m">We&rsquo;re working on this</h2>
-    <p class="govuk-body">We haven&rsquo;t published content for this section yet. Rather than hide it away, we can accept contributions through GitHub. </p>
-    <p class="govuk-body">Using the View source link at the bottom of this page, you can submit a change and pull request for consideration.</p>
-</div>
+<blockquote>
+<p>Full instructions on how to set up a Heroku account and deploy your prototype can be found on the <a href="https://govuk-prototype-kit.herokuapp.com/docs/publishing-on-heroku"  target="_blank" rel="noopner noreferrer">publishing to Heroku guidance</a> on the GOV.UK Design System.</p>
+</blockquote>
 
             
           </main>
 
           <aside>
               <ul class="contribution-banner">
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/patterns-and-components/index.html.md.erb">View source</a></li>
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Patterns+and+components%27+%28%2Fpatterns-and-components%2F%29&amp;labels=bug&amp;title=Re%3A+%27Patterns+and+components%27">Report problem</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/prototyping/kit.html.md.erb">View source</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Prototype+kit%27+%28%2Fprototyping%2Fkit.html%29&amp;labels=bug&amp;title=Re%3A+%27Prototype+kit%27">Report problem</a></li>
                 <li><a href="https://github.com/DFE-Digital/design-in-dfe">GitHub Repo</a></li>
               </ul>
           </aside>

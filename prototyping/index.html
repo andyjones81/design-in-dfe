@@ -9,18 +9,18 @@
 
     <link href="/stylesheets/manifest.css" rel="stylesheet" />
 
-    <link rel="canonical" href="/interaction-design/prototyping.html">
+    <link rel="canonical" href="/prototyping/">
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:image" content="/images/govuk-large.png" />
       <meta name="twitter:title" content="Prototyping - Design" />
-      <meta name="twitter:url" content="/interaction-design/prototyping.html" />
+      <meta name="twitter:url" content="/prototyping/" />
 
       <meta property="og:image" content="/images/govuk-large.png" />
       <meta property="og:site_name" content="Design" />
       <meta property="og:title" content="Prototyping" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="/interaction-design/prototyping.html" />
+      <meta property="og:url" content="/prototyping/" />
 
     
   </head>
@@ -95,6 +95,22 @@
   <li>
     <a href="/standards/branding.html"><span>Branding your service</span></a>
   </li>
+<li><a href="/standards/accessibility-standards/"><span>Accessibility standards</span></a>
+<ul>
+  <li>
+    <a href="/standards/accessibility-standards/alternative-meaning.html"><span>Images and media contain alternative descriptions</span></a>
+  </li>
+  <li>
+    <a href="/standards/accessibility-standards/color.html"><span>Do not use colour alone to convey information</span></a>
+  </li>
+  <li>
+    <a href="/standards/accessibility-standards/feedback.html"><span>Feedback to the user is clear and identifiable</span></a>
+  </li>
+  <li>
+    <a href="/standards/accessibility-standards/focus.html"><span>Make it easy for people to identify interactive elements</span></a>
+  </li>
+</ul>
+</li>
   <li>
     <a href="/standards/inclusive-design.html"><span>Inclusive design</span></a>
   </li>
@@ -144,13 +160,23 @@
     <a href="/interaction-design/component-design.html"><span>Component design</span></a>
   </li>
   <li>
-    <a href="/interaction-design/prototyping.html"><span>Prototyping</span></a>
-  </li>
-  <li>
     <a href="/interaction-design/principles.html"><span>Principles</span></a>
   </li>
   <li>
     <a href="/interaction-design/ways-of-working.html"><span>Ways of working</span></a>
+  </li>
+</ul>
+</li>
+<li><a href="/prototyping/"><span>Prototyping</span></a>
+<ul>
+  <li>
+    <a href="/prototyping/types-of-prototyping.html"><span>Types of prototyping</span></a>
+  </li>
+  <li>
+    <a href="/prototyping/tools-and-templates.html"><span>Tools and templates</span></a>
+  </li>
+  <li>
+    <a href="/prototyping/kit.html"><span>Prototype kit</span></a>
   </li>
 </ul>
 </li>
@@ -180,57 +206,59 @@
 
   gtag('config', 'G-D2V3LRNYBJ');
 </script>
-<p><a href="/interaction-design/" class="govuk-back-link">Back to interaction design</a></p>
-<h1 id="prototyping">Prototyping</h1>
-<p>We design and build prototypes to test solutions to problems.</p>
-<p>Prototypes can be simple wireframe sketches, mockups through to low-code clickable prototypes using the GOV.UK prototype kit.</p>
 
-<blockquote>
-<p>You can read more about prototyping and the differences between <a href="https://www.nngroup.com/articles/ux-prototype-hi-lo-fidelity/" target="_blank" rel="noopener noreferrer">high and low fidelity prototypes</a> on the Nielsen Normal Group (NNG) website.</p>
-</blockquote>
-<h2 id="how-we-do-prototyping-in-dfe">How we do prototyping in DfE</h2>
-<p>We use differnet approaches to prototyping, depending on the audience, the complexity or what we want to test and find out. This means we could:</p>
+<script src="https://kit.fontawesome.com/2f8f69be63.js" crossorigin="anonymous"></script>
 
-<ul>
-<li>test simple sketches with pen and paper </li>
-<li>create realistic mockups and simple user journeys using <a href="https://figma.com" target="_blank" rel="noopener noreferrer">Figma</a> </li>
-<li>build clickable prototypes using the <a href="https://govuk-prototype-kit.herokuapp.com/docs/install" target="_blank" rel="noopener noreferrer">GOV.UK Prototype Kit</a> which look and behave like real digital services</li>
-</ul>
-<h3 id="templates-and-resources-for-design-tools">Templates and resources for design tools</h3>
-<p>To make wireframing and no-code prototyping easier, there are several templates and libraries available to use.</p>
-<p><a href="https://www.figma.com/file/NWuFffKvPQhl3aJ9nKU0p3/GOV.UK-Design-System" target="_blank" rel="noopener noreferrer">GOV.UK Design System Figma Library</a> - Library of up to date design system componenets, styles and patterns to use in Figma design files.</p>
-<p><a href="https://github.com/dwp/sketch_wireframing_kit" target="_blank" rel="noopener noreferrer">Sketch wireframing kit</a> for use in Sketch (Mac only).</p>
-<p><a href="https://github.com/alirawashdeh/govuk-userflow-icons" target="_blank" rel="noopener noreferrer">SVG user flow icons</a> SVG graphics of desktop and mobile screens for quick journey mapping or user flow diagrams.</p>
-<h2 id="using-the-gov-uk-prototype-kit">Using the GOV.UK Prototype Kit</h2>
-<p>Using the kit means you can build prototypes that look like a real GOV.UK service. This helps to make it easier to test for usability issues and get feedback on how the service might perform if it were a real service.</p>
-<p>The kit is used across Government and supported thorugh the cross-gov <a href="https://ukgovernmentdigital.slack.com/archives/C0647LW4R"  target="_blank" rel="noopener noreferrer"> #prototype-kit</a> Slack channel.</p>
-<p>There are tutorials and example code on the prototype kit website and you can make use of components and patterns from the <a href="https://design-system.service.gov.uk/" target="_blank" rel="noopener noreferrer">GOV.UK Design System</a> by copying HTML or Nunjucks code snippets into your prototype.</p>
-<p>To be able to use the prototype kit, you&rsquo;ll need to ensure your device has the following software installed:</p>
-
-<ul class="govuk-list">
-<li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code (VS Code)</a> - This is a code editor that enables you to make changes and run the kit as a website on your device.</li>
-<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Node.JS (LTS Version)</a> - Node is a Javascript based framework for building websites and applications.</li>
-<li>If on a Windows device, you&rsquo;ll need to install <a href="https://git-scm.com/download/win"  target="_blank" rel="noopener noreferrer">Git Bash</a></li>
-</ul>
-<h3 id="branding-your-prototype">Branding your prototype</h3>
-<p>If your prototype is not intended for publishing to GOV.UK or service.gov.uk you should follow the <a href="/standards/branding.html#branding-your-service.html">branding your service</a> guidance so that you do not cause confusion with your users.</p>
-<h3 id="testing-your-prototype-with-users">Testing your prototype with users</h3>
-<p>Depending on what testing you plan to do with users, you might want to run your prototype as a website, rather than on your local device.</p>
-<p>We use <a href="https://www.heroku.com/"  target="_blank" rel="noopener noreferrer">Heroku</a> to host prototypes and this is free for basic usage and sufficient for most prototype testing. You&rsquo;ll need to create an account using your DfE email address.</p>
-<p>You&rsquo;ll also need a <a href="https://github.com" target="_blank" rel="noopner noreferrer">GitHub</a> account to store your code and enable it to be deployed to Heroku.</p>
-<p>Prototypes should be created in the GitHub DFE-Digital organisation, clearly identifying them as a prototype. You can request access to GitHub through <a href="https://sites.google.com/digital.education.gov.uk/digitaltools/home?authuser=0" rel="nofollow" target="_blank" >Digital Tools support</a>.</p>
-
-<blockquote>
-<p>Full instructions on how to set up a Heroku account and deploy your prototype can be found on the <a href="https://govuk-prototype-kit.herokuapp.com/docs/publishing-on-heroku"  target="_blank" rel="noopner noreferrer">publishing to Heroku guidance</a> on the GOV.UK Design System.</p>
-</blockquote>
+<div class="dfe-hero">
+   <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+         <h1 class="govuk-heading-xl govuk-!-font-size-80">Prototyping</h1>
+         <p class="govuk-body-l">Design and build prototypes of services using tools like Figma or the Prototyping kit.</p>
+      </div>
+      <div class="govuk-grid-column-one-third standards-icon">
+         <i class="fa-solid fa-laptop-code fa-10x"></i>
+      </div>
+       <div class="govuk-grid-column-full">
+         <h2 class="govuk-heading-m bordered-top">Accessible design and prototyping</h2>
+         <div class="cards">
+            <ul>
+               <li class="card">
+                  <div class="text">
+                     <h3>
+                        <a href="/prototyping/types-of-prototyping.html">Types of prototyping</a>
+                     </h3>
+                     <p>How to decide when to design a new component and the criteria it must meet to be accepted.</p>
+                  </div>
+               </li>
+               <li class="card">
+               <div class="text">
+                  <h3>
+                     <a href="/prototyping/tools-and-templates.html">Tools and templates</a>
+                  </h3>
+                  <p>Tools, templates and resources to easily design prototypes.</p>
+               </div>
+            </li>
+            <li class="card">
+               <div class="text">
+                  <h3>
+                     <a href="/prototyping/kit.html">Prototype kit</a>
+                  </h3>
+                  <p>How to use the GOV.UK prototype kit, advanced usage and troubleshooting.</p>
+               </div>
+            </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
 
             
           </main>
 
           <aside>
               <ul class="contribution-banner">
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/interaction-design/prototyping.html.md.erb">View source</a></li>
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Prototyping%27+%28%2Finteraction-design%2Fprototyping.html%29&amp;labels=bug&amp;title=Re%3A+%27Prototyping%27">Report problem</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/prototyping/index.html.md.erb">View source</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Prototyping%27+%28%2Fprototyping%2F%29&amp;labels=bug&amp;title=Re%3A+%27Prototyping%27">Report problem</a></li>
                 <li><a href="https://github.com/DFE-Digital/design-in-dfe">GitHub Repo</a></li>
               </ul>
           </aside>

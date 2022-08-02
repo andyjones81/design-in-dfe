@@ -4715,7 +4715,11 @@ ol.dfe-standards-list {
     margin-top: 0; }
   @media (max-width: 400px) {
     .cards > ul {
-      grid-gap: 4.5rem; } } }
+      grid-gap: 4.5rem; } }
+  .cards.cards-single > ul {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); }
+    .cards.cards-single > ul > li {
+      width: 60%; } }
 
 .card {
   border: 1px solid #4073ac;
@@ -4750,12 +4754,11 @@ ol.dfe-standards-list {
   background-color: #fff; }
   .card h3 {
     font-size: 19px;
-    padding-top: 0px; }
-  .card p {
-    font-size: 16px; }
-  .card h3 {
+    padding-top: 0px;
     margin-top: 0px;
     margin-bottom: 0px; }
+  .card p {
+    font-size: 16px; }
   .card h3 a {
     text-decoration: none; }
   .card h3 a::after {
@@ -4796,7 +4799,16 @@ ol.dfe-standards-list {
 
 .card .text > :last-child {
   margin-top: auto;
-  padding-top: 0.75rem; }
+  padding-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px; }
+
+.card .text p.meta {
+  color: #505a5f;
+  font-size: 1rem !important; }
+
+.card .text h3 + p {
+  margin-top: 15px !important; }
 
 blockquote {
   font-stretch: expanded; }

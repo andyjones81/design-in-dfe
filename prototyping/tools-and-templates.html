@@ -5,22 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Design interactions in a logical order - Design</title>
+    <title>Tools and templates - Design</title>
 
     <link href="/stylesheets/manifest.css" rel="stylesheet" />
 
-    <link rel="canonical" href="/interaction-design/standard/tab-stop.html">
+    <link rel="canonical" href="/prototyping/tools-and-templates.html">
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:image" content="/images/govuk-large.png" />
-      <meta name="twitter:title" content="Design interactions in a logical order - Design" />
-      <meta name="twitter:url" content="/interaction-design/standard/tab-stop.html" />
+      <meta name="twitter:title" content="Tools and templates - Design" />
+      <meta name="twitter:url" content="/prototyping/tools-and-templates.html" />
 
       <meta property="og:image" content="/images/govuk-large.png" />
       <meta property="og:site_name" content="Design" />
-      <meta property="og:title" content="Design interactions in a logical order" />
+      <meta property="og:title" content="Tools and templates" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="/interaction-design/standard/tab-stop.html" />
+      <meta property="og:url" content="/prototyping/tools-and-templates.html" />
 
     
   </head>
@@ -95,6 +95,22 @@
   <li>
     <a href="/standards/branding.html"><span>Branding your service</span></a>
   </li>
+<li><a href="/standards/accessibility-standards/"><span>Accessibility standards</span></a>
+<ul>
+  <li>
+    <a href="/standards/accessibility-standards/alternative-meaning.html"><span>Images and media contain alternative descriptions</span></a>
+  </li>
+  <li>
+    <a href="/standards/accessibility-standards/color.html"><span>Do not use colour alone to convey information</span></a>
+  </li>
+  <li>
+    <a href="/standards/accessibility-standards/feedback.html"><span>Feedback to the user is clear and identifiable</span></a>
+  </li>
+  <li>
+    <a href="/standards/accessibility-standards/focus.html"><span>Make it easy for people to identify interactive elements</span></a>
+  </li>
+</ul>
+</li>
   <li>
     <a href="/standards/inclusive-design.html"><span>Inclusive design</span></a>
   </li>
@@ -144,13 +160,23 @@
     <a href="/interaction-design/component-design.html"><span>Component design</span></a>
   </li>
   <li>
-    <a href="/interaction-design/prototyping.html"><span>Prototyping</span></a>
-  </li>
-  <li>
     <a href="/interaction-design/principles.html"><span>Principles</span></a>
   </li>
   <li>
     <a href="/interaction-design/ways-of-working.html"><span>Ways of working</span></a>
+  </li>
+</ul>
+</li>
+<li><a href="/prototyping/"><span>Prototyping</span></a>
+<ul>
+  <li>
+    <a href="/prototyping/types-of-prototyping.html"><span>Types of prototyping</span></a>
+  </li>
+  <li>
+    <a href="/prototyping/tools-and-templates.html"><span>Tools and templates</span></a>
+  </li>
+  <li>
+    <a href="/prototyping/kit.html"><span>Prototype kit</span></a>
   </li>
 </ul>
 </li>
@@ -169,85 +195,20 @@
 
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D2V3LRNYBJ"></script>
-
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D2V3LRNYBJ');
-</script>
-<p><a href="/interaction-design/" class="govuk-back-link">Back to interaction design</a></p>
-<h1 id="design-interactions-in-a-logical-order">Design interactions in a logical order</h1>
-<p>Users must be able to interact with a service using only a keyboard. This is because:</p>
-
-<ul>
-<li>using a mouse is impossible for people who can&rsquo;t see the pointer</li>
-<li>some people don&rsquo;t have the ability to control a pointing device like a mouse</li>
-<li>many people without disabilities prefer to use a keyboard</li>
-</ul>
-<p>This is a requirement of:</p>
-
-<div class='dfeuk-action-link'><a target=_blank class='dfeuk-action-link__link' href='https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html'><svg class='dfeuk-icon dfeuk-icon__arrow-right-circle' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true' width='36' height='36'>
-<path d='M0 0h24v24H0z' fill='none'></path>
-<path d='M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z'></path>
-</svg>
-<span class='dfeuk-action-link__text'>WCAG 2.1.1 - Keyboard (Level A)</span>
-</a>
-</div>
-<h2 id="good-tab-stop-design-allows-keyboard-users-to">Good tab stop design allows keyboard users to:</h2>
-
-<ul>
-<li>access all of the services interactive elements in a predictable order</li>
-<li>identify which element currently has the input focus.</li>
-<li>poorly-designed tab stops create high-impact accessibility problems</li>
-</ul>
-
-<div class="DosAndDontsstyled__DosAndDontsContainerStyled">
-  <div class="DosAndDontsstyled__SectionStyled">
-    <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_do">
-      <img src="/images/tabstop-do.png">
-    </div>
-    <div class="DosAndDontsstyled__PillSectionStyled">
-      <strong class="govuk-tag govuk-tag--green">
-        <svg width="20" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" vector-effect="non-scaling-stroke">
-          <path d="M20 7L9 18l-5-5" stroke="#096034" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
-        </svg> Do </strong>
-    </div>
-    <div class="DosAndDontsstyled__TextSectionStyled">Use visual hierarchy in HTML to flow left to right top to bottom.</div>
-  </div>
-  <div class="DosAndDontsstyled__SectionStyled">
-    <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_dont">
-      <img src="/images/tabstop-dont.png">
-    </div>
-    <div class="DosAndDontsstyled__PillSectionStyled">
-      <strong class="govuk-tag govuk-tag--red">
-        <svg width="20" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" vector-effect="non-scaling-stroke">
-          <path d="M18 6L6 18M6 6l12 12" stroke="#650905" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
-        </svg> Don&rsquo;t </strong>
-    </div>
-    <div class="DosAndDontsstyled__TextSectionStyled">Don&rsquo;t confuse the logical order .</div>
-  </div>
-</div>
-<h3 id="example-of-testing-tab-stop-on-a-webpage">Example of testing tab stop on a webpage</h3>
-<p>You can use tools such as <a href="https://accessibilityinsights.io/" target="_blank" rel="noopner noreferrer">Accessibility Insights (opens in new tab)</a> browser plugin to test tab stops. You should also tab through your page to see if elements are selected in the order intended.</p>
-<p><img src="/images/tabstop-example.png" class="img-border"></p>
-<h2 id="tools-you-can-use">Tools you can use</h2>
-
-<ul>
-<li>Accessibility insights to test tab stop order</li>
-</ul>
+            <p><a href="/prototyping/" class="govuk-back-link">Back to prototyping</a></p>
+<h1 id="tools-and-templates">Tools and templates</h1>
+<p>To make wireframing and no-code prototyping easier, there are several templates and libraries available to use.</p>
+<p><a href="https://www.figma.com/file/NWuFffKvPQhl3aJ9nKU0p3/GOV.UK-Design-System" target="_blank" rel="noopener noreferrer">GOV.UK Design System Figma Library</a> - Library of up to date design system componenets, styles and patterns to use in Figma design files.</p>
+<p><a href="https://github.com/dwp/sketch_wireframing_kit" target="_blank" rel="noopener noreferrer">Sketch wireframing kit</a> for use in Sketch (Mac only).</p>
+<p><a href="https://github.com/alirawashdeh/govuk-userflow-icons" target="_blank" rel="noopener noreferrer">SVG user flow icons</a> SVG graphics of desktop and mobile screens for quick journey mapping or user flow diagrams.</p>
 
             
           </main>
 
           <aside>
               <ul class="contribution-banner">
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/interaction-design/standard/tab-stop.html.md.erb">View source</a></li>
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Design+interactions+in+a+logical+order%27+%28%2Finteraction-design%2Fstandard%2Ftab-stop.html%29&amp;labels=bug&amp;title=Re%3A+%27Design+interactions+in+a+logical+order%27">Report problem</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/prototyping/tools-and-templates.html.md.erb">View source</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Tools+and+templates%27+%28%2Fprototyping%2Ftools-and-templates.html%29&amp;labels=bug&amp;title=Re%3A+%27Tools+and+templates%27">Report problem</a></li>
                 <li><a href="https://github.com/DFE-Digital/design-in-dfe">GitHub Repo</a></li>
               </ul>
           </aside>
