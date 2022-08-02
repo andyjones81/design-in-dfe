@@ -1,9 +1,8 @@
 ---
-title: Feedback to the user is clear and identifiable
+title: Make it easy for people to identify interactive elements
 
-weight: 217
+weight: 15
 
-hide_in_navigation: true
 ---
 
 <%= partial "ga" %>
@@ -11,17 +10,20 @@ hide_in_navigation: true
 
 <a href="/interaction-design/" class="govuk-back-link">Back to interaction design</a>
 
-# Feedback to the user is clear and identifiable
+# Make it easy for people to identify interactive elements
+
+It must be possible for a person to know which element among multiple elements has the keyboard focus.
 
 This is a requirement of:
 
-<%= signpost_link("https://www.w3.org/WAI/WCAG21/Understanding/use-of-color", "WCAG 1.4.1 - Use of colour (Level A)", true)%>
+<%= signpost_link("https://www.w3.org/WAI/WCAG21/Understanding/focus-visible", "WCAG 2.4.7 - Focus Visible (Level AA)", true)%>
 
+<%= signpost_link("https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification", "WCAG 3.2.4 - Consistent Identification (Level AA)", true)%>
 
 <div class="DosAndDontsstyled__DosAndDontsContainerStyled">
   <div class="DosAndDontsstyled__SectionStyled">
     <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_do">
-      <img src="/images/feedback-do.png">
+      <img src="/images/focus-do.png">
     </div>
     <div class="DosAndDontsstyled__PillSectionStyled">
       <strong class="govuk-tag govuk-tag--green">
@@ -29,11 +31,11 @@ This is a requirement of:
           <path d="M20 7L9 18l-5-5" stroke="#096034" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
         </svg> Do </strong>
     </div>
-    <div class="DosAndDontsstyled__TextSectionStyled">By using error summaries and highlighting fields in error along with useful error messages, users will know how to correct mistakes.</div>
+    <div class="DosAndDontsstyled__TextSectionStyled">Make it obvious when componenets which are interactive are tabbed onto, hovered, clicked or are in focus.</div>
   </div>
   <div class="DosAndDontsstyled__SectionStyled">
     <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_dont">
-      <img src="/images/feedback-dont.png">
+      <img src="/images/focus-dont.png">
     </div>
     <div class="DosAndDontsstyled__PillSectionStyled">
       <strong class="govuk-tag govuk-tag--red">
@@ -41,13 +43,11 @@ This is a requirement of:
           <path d="M18 6L6 18M6 6l12 12" stroke="#650905" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
         </svg> Don't </strong>
     </div>
-    <div class="DosAndDontsstyled__TextSectionStyled">Don't leave the user guessing what the problem is and struggling to use the service.</div>
+    <div class="DosAndDontsstyled__TextSectionStyled">Keyboard-only users will find it difficult to understand how to use a service, if a component doesn't signal it can be interacted with.</div>
   </div>
 </div>
 
 
-
-
 ## Tools you can use
 
-- 
+- Acessibility Insights
