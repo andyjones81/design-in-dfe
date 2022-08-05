@@ -1442,6 +1442,7 @@ ol.dfe-standards-list {
     background-color: $accent;
     padding: 30px;
     color: #fff;
+    margin-bottom: 30px;
 
     @media (max-width: 40.0625em) {
         .fa-solid {
@@ -1454,9 +1455,14 @@ ol.dfe-standards-list {
     h1,
     h2,
     p,
-    a {
+    a{
 
         color: #fff;
+    }
+
+    p>a {
+
+        color: #fff !important;
     }
 
     .bordered-top {
@@ -1669,7 +1675,10 @@ ol.dfe-standards-list {
 .card .text h3+p{margin-top: 15px !important;}
 
 
-
 blockquote {
     font-stretch: expanded;
+}
+
+.govuk-list--spaced>li {
+    margin-bottom: 15px !important;
 }

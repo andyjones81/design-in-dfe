@@ -1,27 +1,29 @@
 ---
-title: Headings are used and related content is grouped together
-weight: 16
+title: Make it easy for people to identify interactive elements
+
+weight: 15
+hide_in_navigation: true
+
 ---
 
 <%= partial "ga" %>
 
 <a href="/standards/accessibility-standards/" class="govuk-back-link">Back to accessibility standards</a>
 
-# Headings are used and related content is grouped together
+# Make it easy for people to identify interactive elements
 
-Help users understand what information is contained in Web pages and how that information is organised. 
-
-When headings are clear and descriptive, users can find the information they seek more easily, and they can understand the relationships between different parts of the content more easily.
+It must be possible for a person to know which element among multiple elements has the keyboard focus.
 
 This is a requirement of:
 
-<%= signpost_link("https://www.w3.org/WAI/WCAG21/Understanding/use-of-color", "WCAG 2.4.6 Headings and Labels (Level AA)", true)%>
+<%= signpost_link("https://www.w3.org/WAI/WCAG21/Understanding/focus-visible", "WCAG 2.4.7 - Focus Visible (Level AA)", true)%>
 
+<%= signpost_link("https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification", "WCAG 3.2.4 - Consistent Identification (Level AA)", true)%>
 
 <div class="DosAndDontsstyled__DosAndDontsContainerStyled">
   <div class="DosAndDontsstyled__SectionStyled">
     <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_do">
-      <img src="/images/headings-do.png">
+      <img src="/images/focus-do.png">
     </div>
     <div class="DosAndDontsstyled__PillSectionStyled">
       <strong class="govuk-tag govuk-tag--green">
@@ -29,11 +31,11 @@ This is a requirement of:
           <path d="M20 7L9 18l-5-5" stroke="#096034" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
         </svg> Do </strong>
     </div>
-    <div class="DosAndDontsstyled__TextSectionStyled">Use consistent hierarchy in headings.</div>
+    <div class="DosAndDontsstyled__TextSectionStyled">Make it obvious when componenets which are interactive are tabbed onto, hovered, clicked or are in focus.</div>
   </div>
   <div class="DosAndDontsstyled__SectionStyled">
     <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_dont">
-      <img src="/images/headings-dont.png">
+      <img src="/images/focus-dont.png">
     </div>
     <div class="DosAndDontsstyled__PillSectionStyled">
       <strong class="govuk-tag govuk-tag--red">
@@ -41,12 +43,11 @@ This is a requirement of:
           <path d="M18 6L6 18M6 6l12 12" stroke="#650905" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
         </svg> Don't </strong>
     </div>
-    <div class="DosAndDontsstyled__TextSectionStyled">Don't use more than one H1 on a page or confuse the order.</div>
+    <div class="DosAndDontsstyled__TextSectionStyled">Keyboard-only users will find it difficult to understand how to use a service, if a component doesn't signal it can be interacted with.</div>
   </div>
 </div>
 
 
-
 ## Tools you can use
 
-- 
+- Acessibility Insights
