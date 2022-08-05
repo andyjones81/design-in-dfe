@@ -12,6 +12,9 @@ https://design.education.gov.uk/search/
 https://design.education.gov.uk/api/pages.json
 https://design.education.gov.uk/favicon.ico
 https://design.education.gov.uk/sitemap.xml
+https://design.education.gov.uk/accessibility/overview.html
+https://design.education.gov.uk/accessibility/tools.html
+https://design.education.gov.uk/accessibility/profiles.html
 https://design.education.gov.uk/interaction-design/ways-of-working.html
 https://design.education.gov.uk/interaction-design/principles.html
 https://design.education.gov.uk/interaction-design/component-design.html
