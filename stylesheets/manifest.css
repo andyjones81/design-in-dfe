@@ -4661,7 +4661,8 @@ ol.dfe-standards-list {
 .dfe-hero {
   background-color: #4073ac;
   padding: 30px;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 30px; }
   @media (max-width: 40.0625em) {
     .dfe-hero .fa-solid {
       display: none; } }
@@ -4670,6 +4671,8 @@ ol.dfe-standards-list {
   .dfe-hero p,
   .dfe-hero a {
     color: #fff; }
+  .dfe-hero p > a {
+    color: #fff !important; }
   .dfe-hero .bordered-top {
     border-top: 2px solid #fff;
     padding: 15px 0px 10px 0px;
@@ -4812,6 +4815,9 @@ ol.dfe-standards-list {
 
 blockquote {
   font-stretch: expanded; }
+
+.govuk-list--spaced > li {
+  margin-bottom: 15px !important; }
 
 
 

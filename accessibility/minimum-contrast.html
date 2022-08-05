@@ -5,22 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Standards - Design</title>
+    <title>Ensure sufficient contrast between foreground and background - Design</title>
 
     <link href="/stylesheets/manifest.css" rel="stylesheet" />
 
-    <link rel="canonical" href="/standards/">
+    <link rel="canonical" href="/accessibility/minimum-contrast.html">
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:image" content="/images/govuk-large.png" />
-      <meta name="twitter:title" content="Standards - Design" />
-      <meta name="twitter:url" content="/standards/" />
+      <meta name="twitter:title" content="Ensure sufficient contrast between foreground and background - Design" />
+      <meta name="twitter:url" content="/accessibility/minimum-contrast.html" />
 
       <meta property="og:image" content="/images/govuk-large.png" />
       <meta property="og:site_name" content="Design" />
-      <meta property="og:title" content="Standards" />
+      <meta property="og:title" content="Ensure sufficient contrast between foreground and background" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="/standards/" />
+      <meta property="og:url" content="/accessibility/minimum-contrast.html" />
 
     
   </head>
@@ -90,43 +90,13 @@
   <li>
     <a href="/"><span>Design in the Department for Education</span></a>
   </li>
-<li><a href="/standards/"><span>Standards</span></a>
+<li><a href="/accessibility/"><span>Accessibility</span></a>
 <ul>
-  <li>
-    <a href="/standards/branding.html"><span>Branding your service</span></a>
-  </li>
-<li><a href="/standards/accessibility-standards/"><span>Accessibility standards</span></a>
-<ul>
-  <li>
-    <a href="/standards/accessibility-standards/alternative-meaning.html"><span>Images and media contain alternative descriptions</span></a>
-  </li>
-  <li>
-    <a href="/standards/accessibility-standards/color.html"><span>Do not use colour alone to convey information</span></a>
-  </li>
-  <li>
-    <a href="/standards/accessibility-standards/feedback.html"><span>Feedback to the user is clear and identifiable</span></a>
-  </li>
-  <li>
-    <a href="/standards/accessibility-standards/focus.html"><span>Make it easy for people to identify interactive elements</span></a>
-  </li>
-  <li>
-    <a href="/standards/accessibility-standards/headings.html"><span>Headings are used and related content is grouped together</span></a>
-  </li>
-  <li>
-    <a href="/standards/accessibility-standards/labels.html"><span>Form elements include clearly associated labels</span></a>
-  </li>
-  <li>
-    <a href="/standards/accessibility-standards/minimum-contrast.html"><span>Ensure sufficient contrast between foreground and background</span></a>
-  </li>
-</ul>
-</li>
-  <li>
-    <a href="/standards/inclusive-design.html"><span>Inclusive design</span></a>
-  </li>
-</ul>
-</li>
   <li>
     <a href="/accessibility/overview.html"><span>Overview</span></a>
+  </li>
+  <li>
+    <a href="/accessibility/inclusive-design.html"><span>Inclusive design</span></a>
   </li>
   <li>
     <a href="/accessibility/tools.html"><span>Tools and testing</span></a>
@@ -134,6 +104,8 @@
   <li>
     <a href="/accessibility/profiles.html"><span>Profiles</span></a>
   </li>
+</ul>
+</li>
   <li>
     <a href="/patterns-and-components/"><span>Patterns and components</span></a>
   </li>
@@ -174,6 +146,9 @@
 </li>
 <li><a href="/interaction-design/"><span>Interaction design</span></a>
 <ul>
+  <li>
+    <a href="/interaction-design/branding.html"><span>Branding your service</span></a>
+  </li>
   <li>
     <a href="/interaction-design/component-design.html"><span>Component design</span></a>
   </li>
@@ -224,59 +199,69 @@
 
   gtag('config', 'G-D2V3LRNYBJ');
 </script>
+<p><a href="/standards/accessibility-standards/" class="govuk-back-link">Back to accessibility standards</a></p>
+<h1 id="ensure-sufficient-contrast-between-foreground-and-background">Ensure sufficient contrast between foreground and background</h1>
+<p>Text and components, like buttons, must be clearly perceivable from their background. This helps people who may not be able to distinguish colour (colour blindness) or have poor or low vision.</p>
+<p>This is a requirement of:</p>
 
-<script src="https://kit.fontawesome.com/2f8f69be63.js" crossorigin="anonymous"></script>
+<div class='dfeuk-action-link'><a target=_blank class='dfeuk-action-link__link' href='https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html'><svg class='dfeuk-icon dfeuk-icon__arrow-right-circle' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true' width='36' height='36'>
+<path d='M0 0h24v24H0z' fill='none'></path>
+<path d='M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z'></path>
+</svg>
+<span class='dfeuk-action-link__text'>WCAG 1.4.3 - Contrast (Minimum) (Level AA)</span>
+</a>
+</div>
+<p>This does not apply for logos or text that is in a photograph.</p>
+<p>The contrast ratio should be at least:</p>
 
-<div class="dfe-hero">
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl govuk-!-font-size-80">Standards</h1>
-      <p class="govuk-body-l">Working to defined standards and principles ensure services we create are inclusive and accessible and can be used by all people.</p>
+<ul>
+<li>4.5:1 for text smaller than 24px, or 19px if bold</li>
+<li>3:1 for text larger than 24px, or 19px if bold and components (like a text input field or button) and graphic elements (like an icon)</li>
+</ul>
+<p>You should also check the colors you use work for people with colorblindness, and that <a href="/design-standards/color.html">color alone is not being used to convey meaning</a>.</p>
+
+<div class="DosAndDontsstyled__DosAndDontsContainerStyled">
+  <div class="DosAndDontsstyled__SectionStyled">
+    <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_do">
+      <img src="/images/contrast-do.png">
     </div>
-    <div class="govuk-grid-column-one-third standards-icon">
-    <i class="fa-solid fa-arrows-spin fa-10x"></i>
+    <div class="DosAndDontsstyled__PillSectionStyled">
+      <strong class="govuk-tag govuk-tag--green">
+        <svg width="20" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" vector-effect="non-scaling-stroke">
+          <path d="M20 7L9 18l-5-5" stroke="#096034" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+        </svg> Do </strong>
     </div>
-    <div class="govuk-grid-column-full">
-      <h2 class="govuk-heading-m bordered-top">Standards and guidance</h2>
-      <div class="cards">
-        <ul>
-        <li class="card">
-            <div class="text">
-              <h3>
-                <a href="/standards/accessibility-standards/">Accessibility standards</a>
-              </h3>
-              <p>Standards that all services must meet, how to test them and understand them.</p>
-            </div>
-          </li>
-          <li class="card">
-            <div class="text">
-              <h3>
-                <a href="/standards/branding.html">Branding your service</a>
-              </h3>
-              <p>There are certain guidelines that must be followed when styling your sevice depending on where it&rsquo;s being provided.</p>
-            </div>
-          </li>
-          <li class="card">
-            <div class="text">
-              <h3>
-                <a href="/standards/inclusive-design.html">Inclusive design</a>
-              </h3>
-              <p>Inclusive design aims to remove barriers that create extra effort for some groups of users and enables and draws on the full range of human diversity.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
+    <div class="DosAndDontsstyled__TextSectionStyled">Ensure text and components can be perceived from the background easily.</div>
+  </div>
+  <div class="DosAndDontsstyled__SectionStyled">
+    <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_dont">
+      <img src="/images/contrast-dont.png">
     </div>
+    <div class="DosAndDontsstyled__PillSectionStyled">
+      <strong class="govuk-tag govuk-tag--red">
+        <svg width="20" height="20" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg" vector-effect="non-scaling-stroke">
+          <path d="M18 6L6 18M6 6l12 12" stroke="#650905" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+        </svg> Don&rsquo;t </strong>
+    </div>
+    <div class="DosAndDontsstyled__TextSectionStyled">Users with vision problems, poor eyesight or color blindness will struggle to identify text and components with low contrast.</div>
   </div>
 </div>
+<h2 id="tools-you-can-use">Tools you can use</h2>
+
+<ul>
+<li><a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a></li>
+<li><a href="https://contrast-grid.eightshapes.com/">Contrast Grid</a> - tool for checking a wide range of colour combinations against Levels AA and AAA</li>
+<li><a href="https://contrast-checker.glitch.me/">Contrast checker</a> - Built by designers from within Government.</li>
+<li><a href="https://microsoftedge.microsoft.com/addons/detail/colour-contrast-checker/jkmnghgbaaoohmjdblniohhjnpjmnand">Colour contrast checker</a> - Edge plugin to check web pages from within the browser.</li>
+</ul>
 
             
           </main>
 
           <aside>
               <ul class="contribution-banner">
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/standards/index.html.md.erb">View source</a></li>
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Standards%27+%28%2Fstandards%2F%29&amp;labels=bug&amp;title=Re%3A+%27Standards%27">Report problem</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/accessibility/minimum-contrast.html.md.erb">View source</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Ensure+sufficient+contrast+between+foreground+and+background%27+%28%2Faccessibility%2Fminimum-contrast.html%29&amp;labels=bug&amp;title=Re%3A+%27Ensure+sufficient+contrast+between+foreground+and+background%27">Report problem</a></li>
                 <li><a href="https://github.com/DFE-Digital/design-in-dfe">GitHub Repo</a></li>
               </ul>
           </aside>
