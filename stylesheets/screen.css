@@ -4662,7 +4662,7 @@ ol.dfe-standards-list {
   background-color: #4073ac;
   padding: 30px;
   color: #fff;
-  margin-bottom: 30px; }
+  margin-bottom: 0px; }
   @media (max-width: 40.0625em) {
     .dfe-hero .fa-solid {
       display: none; } }
