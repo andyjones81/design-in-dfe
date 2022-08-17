@@ -26,7 +26,6 @@ https://design.education.gov.uk/api/pages.json
 https://design.education.gov.uk/googlefacf5ebcd086d0a0.html
 https://design.education.gov.uk/robots.txt
 https://design.education.gov.uk/sitemap.xml
-https://design.education.gov.uk/design-assurance/what-assurance-is.html
 https://design.education.gov.uk/design-assurance/
 https://design.education.gov.uk/design-assurance/show-and-tell.html
 https://design.education.gov.uk/design-assurance/design-critiques.html
