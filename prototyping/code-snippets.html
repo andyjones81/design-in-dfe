@@ -5,22 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Designs for different viewports are considered - Design</title>
+    <title>Code snippets - Design</title>
 
     <link href="/stylesheets/manifest.css" rel="stylesheet" />
 
-    <link rel="canonical" href="/accessibility/viewport.html">
+    <link rel="canonical" href="/prototyping/code-snippets.html">
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:image" content="/images/govuk-large.png" />
-      <meta name="twitter:title" content="Designs for different viewports are considered - Design" />
-      <meta name="twitter:url" content="/accessibility/viewport.html" />
+      <meta name="twitter:title" content="Code snippets - Design" />
+      <meta name="twitter:url" content="/prototyping/code-snippets.html" />
 
       <meta property="og:image" content="/images/govuk-large.png" />
       <meta property="og:site_name" content="Design" />
-      <meta property="og:title" content="Designs for different viewports are considered" />
+      <meta property="og:title" content="Code snippets" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="/accessibility/viewport.html" />
+      <meta property="og:url" content="/prototyping/code-snippets.html" />
 
     
   </head>
@@ -197,30 +197,81 @@
     document.getElementsByTagName("head")[0].appendChild(mf);
   })();
 </script>
-<p><a href="/interaction-design/" class="govuk-back-link">Back to interaction design</a></p>
-<h1 id="designs-for-different-viewports-are-considered">Designs for different viewports are considered</h1>
-<p>This is a requirement of:</p>
+<p><a href="/prototyping/" class="govuk-back-link">Back to prototyping</a></p>
+<h1 id="code-snippets">Code snippets</h1>
+<p>These code snippets will work in the GOV.UK Prototype Kit, if used as directed.</p>
+<h2 id="redirecting-to-another-page">Redirecting to another page</h2>
+<p>If you have a page with a form, you can redirect to another page using a router post method.</p>
+<p>Make sure the following code is before the <code class="language-js">module.exports = router</code> line in your route.js file.</p>
 
-<div class='dfeuk-action-link'><a target=_blank class='dfeuk-action-link__link' href='https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html'><svg class='dfeuk-icon dfeuk-icon__arrow-right-circle' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true' width='36' height='36'>
-<path d='M0 0h24v24H0z' fill='none'></path>
-<path d='M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z'></path>
-</svg>
-<span class='dfeuk-action-link__text'>WCAG 2.1.1 - Keyboard (Level A)</span>
-</a>
-</div>
-<h2 id="tools-you-can-use">Tools you can use</h2>
+<pre>
+<code class="language-js">router.post('/from-path', (req, res) => {
+  res.redirect(307, '/to-path');
+});</code>
+</pre>
+<h2 id="passing-and-getting-a-parameter-from-a-url">Passing and getting a parameter from a URL</h2>
+<p>You might want to do some simple logic based on a parameter in a url for example: <code class="language-js">/path/page/12345</code> where 12345 is the parameter value being passed to the next page.</p>
+<p>Make sure the following code is before the <code class="language-js">module.exports = router</code> line in your route.js file.</p>
 
-<ul>
-<li></li>
-</ul>
+<pre>
+<code class="language-js">router.get('/page/:id', (req, res) => {
+    var paramValue = req.params.id //id is the same name as your route param name
+
+    // Do something with the paramValue
+
+    // You can also pass it to the view to display
+    // return res.render('/page', {paramValue});
+
+    // This is open to abuse so be aware of how you use it as anything passed to the param is a security risk
+    // Ideally, you'd validate the value against known criteria but for prototyping it can be a quick and dirty approach to do some logic work
+
+    return res.render('/page');
+});</code>
+</pre>
+<h2 id="loading-a-json-file-to-use-in-a-view">Loading a JSON file to use in a view</h2>
+<p>If you have a JSON dataset, you can load it from a file and pass it into your view.</p>
+<p>This is useful for mocking up tables or lists which can then be easily amended in the file without changing the view.</p>
+<p>Example json-file.json</p>
+<p>Put data files in the <code class="language-js">app/data</code> folder</p>
+
+<pre>
+<code class="language-json">[
+    {
+        "dataField": "value 1"
+    },
+    {
+        "dataField": "value 2"
+    },
+    {
+        "dataField": "value 3"
+    }
+]</code>
+</pre>
+<p>In your routes.js file:</p>
+
+<pre>
+<code class="language-js">router.get('/path-to-view', function (req, res) {
+    var jsonData = require('./data/json-file.json');
+    return res.render('path-to-view', { jsonData });
+});</code>
+</pre>
+<p>In your view file</p>
+
+<pre>
+<code class="language-handlebars">&lt;ul&gt;
+{% for item in jsonData %}
+    &lt;li&gt;{{item.dataField}}&lt;/li&gt;
+{% endfor %}
+&lt;/ul&gt;</code>
+</pre>
 
             
           </main>
 
           <aside>
               <ul class="contribution-banner">
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/accessibility/viewport.html.md.erb">View source</a></li>
-                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Designs+for+different+viewports+are+considered%27+%28%2Faccessibility%2Fviewport.html%29&amp;labels=bug&amp;title=Re%3A+%27Designs+for+different+viewports+are+considered%27">Report problem</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/blob/master/source/prototyping/code-snippets.html.md.erb">View source</a></li>
+                <li><a href="https://github.com/DFE-Digital/design-in-dfe/issues/new?body=Problem+with+%27Code+snippets%27+%28%2Fprototyping%2Fcode-snippets.html%29&amp;labels=bug&amp;title=Re%3A+%27Code+snippets%27">Report problem</a></li>
                 <li><a href="https://github.com/DFE-Digital/design-in-dfe">GitHub Repo</a></li>
               </ul>
           </aside>

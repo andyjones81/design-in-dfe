@@ -45,6 +45,7 @@ https://design.education.gov.uk/prototyping/
 https://design.education.gov.uk/prototyping/tools-and-templates.html
 https://design.education.gov.uk/prototyping/types-of-prototyping.html
 https://design.education.gov.uk/prototyping/kit.html
+https://design.education.gov.uk/prototyping/code-snippets.html
 https://design.education.gov.uk/content-design/
 https://design.education.gov.uk/content-design/principles.html
 https://design.education.gov.uk/content-design/preparing-for-assessments.html
