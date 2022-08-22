@@ -4698,10 +4698,7 @@ ol.dfe-standards-list {
 .dfe-hero {
   background-color: #4073ac;
   padding: 30px 30px 0px 30px;
-  color: #fff;
-  margin-bottom: 40px; }
-  .dfe-hero + div.dfe-section-grey, .dfe-hero + .fullCTA {
-    margin-top: -40px; }
+  color: #fff; }
   @media (max-width: 40.0625em) {
     .dfe-hero .fa-solid {
       display: none; } }
