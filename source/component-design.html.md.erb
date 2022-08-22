@@ -1,25 +1,23 @@
 ---
 title: Component design
-weight: 230
+weight: 400
+description: Use the 4 stage acceptance criteria to validate if building a new component is the right thing to do.
 ---
 
 <%= partial "ga" %>
 
-<a href="/interaction-design/" class="govuk-back-link">Back to interaction design</a>
+<%= hero(current_page.data.title,current_page.data.description)%>
+
+> When designing a new service, always start with what is available already. 
+>
+> Check the <a href="https://design-system.service.gov.uk" target="_blank" rel="noopner noreferrer">GOV.UK Design System (opens in new tab)</a> before designing anything new because those patterns and components have already been researched and tested to make sure they're accessible.
 
 
+If you design anything new, your team will have to do all of the user research and [accessibility testing and audit](https://apply-the-service-standard.education.gov.uk/accessibility/accessibility-audit.html) work to make sure that it is meeting the needs of your users and the accessibility standards.
 
-# Component design
-
-When designing a new service, always start with what is available already. Check the <a href="https://design-system.service.gov.uk" target="_blank" rel="noopner noreferrer">GOV.UK Design System (opens in new tab)</a> before designing anything new because those patterns and components have already been researched and tested to make sure they're accessible.
-
-If you design anything new, your team will have to do all of the user research and [accessibility testing and audit](/accessibility/audit.html) work to make sure that it is meeting the needs of your users and the accessibility standards.
-
-If your service is for staff only or if won't be GOV.UK branded, it is still recommended to use the GOV.UK Design System and its unbranded layout. You will still get the benefits of the accessibility work that has gone into it. For example resizing the screen, the line spacing and the components.
+You can also consider if there are components from <a href="https://github.com/ctdesign/gov-design-systems-list" target="_blank">design systems from other government departments</a> that can support meeting your user needs. 
 
 ## Four stage acceptance criteria
-
-If the GOV.UK Design System doesn't feature a component which you can use to meet a user need, you can use the 4 stage acceptance criteria to validate if building a new component is the right thing to do.
 
 This does not stop new components being created, but instead, puts checks in place to prevent over-engineering of service frontends.
 
@@ -27,6 +25,7 @@ This does not stop new components being created, but instead, puts checks in pla
 2. [Does it meet user needs across multiple services?](#does-it-meet-user-needs-across-multiple-services)
 3. [Does it add value to the user experience?](#does-it-add-value-to-the-user-experience)
 4. [Is it accessible?](#is-it-accessible)
+
 
 ### 1. Can the problem be solved with existing components or patterns?
 
@@ -75,3 +74,5 @@ The following links open in a new tab
 
 - <a href="https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices" target="_blank" rel="noopner noreferrer">Designing for different browsers and devices</a>
 - <a href="https://github.com/alphagov/govuk-frontend/blob/main/CONTRIBUTING.md#conventions-to-follow" target="_blank" rel="noopner noreferrer">GOV.UK Frontend coding standards</a>
+
+

@@ -1,33 +1,28 @@
 ---
 title: Branding your service
-weight: 11
+weight: 300
+description: You need to make sure the service uses the right header, footer and typeface for where it's being provided, or you risk confusing users.
 ---
 
 <%= partial "ga" %>
-<a href="/standards/" class="govuk-back-link">Back to standards</a>
+
+<%= hero(current_page.data.title,current_page.data.description)%>
 
 
-# Branding your service
-
-You need to make sure the service uses the right header, footer and typeface for where it’s being provided, or you risk confusing users.
-
-Your site must look like GOV.UK if it’s on one of the following domains:
-
-- gov.uk/myservice
-- myservice.service.gov.uk
-- myblog.blog.gov.uk
-
-
-You should follow the guidance on the <a href="https://www.gov.uk/service-manual/design/making-your-service-look-like-govuk" target="_blank" rel="noopner noreferrer">GOV.UK Service Manual for making the service look like GOV.UK (opens in new tab)</a>
-
-Example of the GOV.UK header branding
-
-<img src="/images/govheader.png" alt="Image of the GOV.UK header">
+> ## Services on gov.uk domains
+>
+> You must follow the guidance on the <a href="https://www.gov.uk/service-manual/design/making-your-service-look-like-govuk" target="_blank" rel="noopner noreferrer">GOV.UK Service Manual for making the service look like GOV.UK (opens in new tab)</a> if your service is on one of the following domains:
+>
+> - gov.uk/myservice
+> - myservice.service.gov.uk
+> - myblog.blog.gov.uk
 
 
 ## If the service is on education.gov.uk
 
-You should make changes to your branding if you are using the GOV.UK prototype kit or GOV.UK Frontend and are providing your service on an education.gov.uk domain.
+You must make changes to your branding if you are using the GOV.UK prototype kit or GOV.UK Frontend and are providing your service on an education.gov.uk domain or your prototype is not intended to be a service provided on GOV.UK.
+
+### Examples of how to brand your service
 
 <div class="DosAndDontsstyled__DosAndDontsContainerStyled">
   <div class="DosAndDontsstyled__SectionStyled">
@@ -42,7 +37,7 @@ You should make changes to your branding if you are using the GOV.UK prototype k
     </div>
     <div class="DosAndDontsstyled__TextSectionStyled">
     <ul>
-    <li>Use the Crest logo</li>
+    <li>Use the departmental crest logo</li>
     <li>Use Department for Education as the organisation name</li>
     <li>Use a <a href="#example-of-a-cross-platform-compatible-font-stack">cross-platform compatible font-stack</a></li>
     </ul>
@@ -60,9 +55,9 @@ You should make changes to your branding if you are using the GOV.UK prototype k
     </div>
     <div class="DosAndDontsstyled__TextSectionStyled">
       <ul>
-    <li>Use the Crown or GOV.UK logotype</li>
-    <li>Use the GDS Transport typeface</li>
-    <li>Identify as being part of GOV.UK when it's not</li>
+    <li>Don't use the Crown or GOV.UK logotype</li>
+    <li>Don't use the GDS Transport typeface</li>
+    <li>Don't identify the service as being part of GOV.UK when it's not</li>
     </ul>
     </div>
   </div>
@@ -142,13 +137,13 @@ $accent: #4073ac;
 
 ### Crest logo
 
-You must not use the GOV.UK Crown logotype on services not provided on GOV.UK or services.gov.uk. Instead, use the Department Crest.
+You must not use the GOV.UK Crown logotype on services not provided on GOV.UK or services.gov.uk. Instead, use the department crest.
 
-If using the GOV.UK Prototype Kit, download the following Crest file and save it to your <code>/app/assets/images</code> folder, and make sure it's named <code>crest.png</code>
+If using the GOV.UK Prototype Kit, download the following crest file and save it to your <code>/app/assets/images</code> folder, and make sure it's named <code>crest.png</code>
 
 The crest image is white on a transparent background, so for display purposes is shown on the blue background.
 
-<a href="/images/crest.png">
+<a href="/images/crest.png" target="_blank">
 
 <img src="/images/crest.png" height="50px" width="50px" style="background: #003a69; padding: 20px;">
 
