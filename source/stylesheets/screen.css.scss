@@ -33,7 +33,9 @@ $dfe-blue: #003a69;
 $accent: #4073ac;
 $secondary: #ac4059;
 
-h3{padding-top: 20px;}
+h3 {
+    padding-top: 20px;
+}
 
 img {
     border: 1px solid #A8A8a8;
@@ -1252,7 +1254,7 @@ ol.dfe-standards-list {
     }
 }
 
-.timeline.timeline-steps ol > li:before {
+.timeline.timeline-steps ol>li:before {
     content: "";
     display: block;
     width: calc(2 * 10px);
@@ -1266,7 +1268,7 @@ ol.dfe-standards-list {
     top: 10px;
 }
 
-.timeline.timeline-steps ol > li > ul > li:before {
+.timeline.timeline-steps ol>li>ul>li:before {
     content: "";
     display: block;
     width: 15px;
@@ -1381,10 +1383,24 @@ ol.dfe-standards-list {
     padding: 15px;
     font-weight: 600;
     border-top: 5px solid $dfe-blue;
-    p{margin-left: 50px;}
-    >p,a{color: #ffffff !important;}
-    svg{float: left; margin-top: 8px;}
-    &+p{margin-top: 20px;}
+
+    p {
+        margin-left: 50px;
+    }
+
+    >p,
+    a {
+        color: #ffffff !important;
+    }
+
+    svg {
+        float: left;
+        margin-top: 8px;
+    }
+
+    &+p {
+        margin-top: 20px;
+    }
 }
 
 .dfe-horizontal-card {
@@ -1490,7 +1506,7 @@ ol.dfe-standards-list {
     h1,
     h2,
     p,
-    a{
+    a {
 
         color: #fff;
     }
@@ -1573,7 +1589,7 @@ ol.dfe-standards-list {
         >li {
             width: 60%;
 
-            
+
         }
     }
 }
@@ -1696,9 +1712,14 @@ ol.dfe-standards-list {
     padding-bottom: 0px;
 }
 
-.card .text p.meta{color: #505a5f; font-size: 1rem !important;}
+.card .text p.meta {
+    color: #505a5f;
+    font-size: 1rem !important;
+}
 
-.card .text h3+p{margin-top: 15px !important;}
+.card .text h3+p {
+    margin-top: 15px !important;
+}
 
 
 blockquote {
@@ -1714,31 +1735,45 @@ blockquote {
 @media only screen and (min-width: 900px) {
     .technical-documentation {
         max-width: 100% !important;
-    
+
         & p,
         .govuk-list,
         .dfeuk-example-callout {
             max-width: 100%;
         }
-    
-        .DosAndDontsstyled__DosAndDontsContainerStyled, div.highlight{
+
+        .DosAndDontsstyled__DosAndDontsContainerStyled,
+        div.highlight {
             max-width: 100%;
         }
     }
-  }
+}
 
-  @media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1400px) {
     .technical-documentation {
         max-width: 100% !important;
-    
+
         & p,
         .govuk-list,
         .dfeuk-example-callout {
-            max-width: 70ch;
+            max-width: 80%;
         }
-    
-        .DosAndDontsstyled__DosAndDontsContainerStyled, div.highlight{
+
+        .DosAndDontsstyled__DosAndDontsContainerStyled,
+        div.highlight {
             max-width: 80%;
         }
     }
-  }
+
+
+    @supports (display: grid) {
+        .cards>ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+            grid-column-gap: 1rem;
+            grid-row-gap: 1rem;
+        }
+
+    }
+
+}
