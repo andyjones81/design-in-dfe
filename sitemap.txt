@@ -73,9 +73,9 @@ https://design.education.gov.uk/design-histories.html
 https://design.education.gov.uk/about.html
 https://design.education.gov.uk/ways-of-working/content-ways-of-working.html
 https://design.education.gov.uk/ways-of-working/
+https://design.education.gov.uk/ways-of-working/working-as-a-team.html
 https://design.education.gov.uk/ways-of-working/being-an-interaction-designer.html
 https://design.education.gov.uk/ways-of-working/interaction-design-artefacts-and-documents.html
-https://design.education.gov.uk/ways-of-working/working-as-a-clan.html
 https://design.education.gov.uk/ways-of-working/stages-of-interaction-design.html
 https://design.education.gov.uk/CNAME
 https://design.education.gov.uk/design-critiques.html
