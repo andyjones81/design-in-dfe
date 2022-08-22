@@ -4621,7 +4621,8 @@ ol.dfe-standards-list {
   border-top: 5px solid #003a69; }
   .fullCTA p {
     margin-left: 50px; }
-  .fullCTA > p, .fullCTA a {
+  .fullCTA > p,
+  .fullCTA a {
     color: #ffffff !important; }
   .fullCTA svg {
     float: left;
@@ -4852,7 +4853,8 @@ blockquote {
     .technical-documentation .govuk-list,
     .technical-documentation .dfeuk-example-callout {
       max-width: 100%; }
-    .technical-documentation .DosAndDontsstyled__DosAndDontsContainerStyled, .technical-documentation div.highlight {
+    .technical-documentation .DosAndDontsstyled__DosAndDontsContainerStyled,
+    .technical-documentation div.highlight {
       max-width: 100%; } }
 
 @media only screen and (min-width: 1400px) {
@@ -4861,6 +4863,14 @@ blockquote {
     .technical-documentation p,
     .technical-documentation .govuk-list,
     .technical-documentation .dfeuk-example-callout {
-      max-width: 70ch; }
-    .technical-documentation .DosAndDontsstyled__DosAndDontsContainerStyled, .technical-documentation div.highlight {
-      max-width: 80%; } }
+      max-width: 80%; }
+    .technical-documentation .DosAndDontsstyled__DosAndDontsContainerStyled,
+    .technical-documentation div.highlight {
+      max-width: 80%; }
+  @supports (display: grid) {
+    .cards > ul {
+      display: -ms-grid;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+      grid-column-gap: 1rem;
+      grid-row-gap: 1rem; } } }
