@@ -64,7 +64,6 @@ https://design.education.gov.uk/prototyping/code-snippets.html
 https://design.education.gov.uk/content-design/
 https://design.education.gov.uk/content-design/preparing-for-assessments.html
 https://design.education.gov.uk/content-design/agile-content-design.html
-https://design.education.gov.uk/content-design/ways-of-working.html
 https://design.education.gov.uk/content-design/other-resources.html
 https://design.education.gov.uk/inclusive-design.html
 https://design.education.gov.uk/working-in-dfe/
