@@ -3595,8 +3595,10 @@ tr {
 h3 {
   padding-top: 20px; }
 
-img {
-  border: 1px solid #A8A8a8; }
+img.img-bordered {
+  padding: 35px;
+  background-color: #f3f2f1;
+  border: 1px solid #b1b4b6; }
 
 .govuk-header {
   background-color: #003a69; }
