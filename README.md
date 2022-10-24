@@ -75,3 +75,5 @@ The documentation is [© Crown copyright][copyright] and available under the ter
 [install-middleman]: https://tdt-documentation.london.cloudapps.digital/install_macs.html#install-middleman
 [gem]: https://github.com/alphagov/tech-docs-gem
 [template]: https://github.com/alphagov/tech-docs-template
+
+This project is tested with BrowserStack.
