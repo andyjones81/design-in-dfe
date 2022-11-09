@@ -3,7 +3,7 @@
 
 # Header-related options
 show_govuk_logo: false
-service_name: Design
+service_name: User Centred Design
 service_link: /
 phase: 
 
@@ -11,6 +11,7 @@ phase:
 header_links:
   Contribute: /contribute.html
   Feedback: https://forms.gle/WfLUr8K6SDVERwzbA
+
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
 enable_search: true
@@ -35,3 +36,8 @@ prevent_indexing: false
 show_contribution_banner: true
 
 github_repo: DFE-Digital/design-in-dfe
+
+
+redirects:
+  /branding.html: /design-library/branding-guidelines/
+  /design-histories.html: /design-histories/

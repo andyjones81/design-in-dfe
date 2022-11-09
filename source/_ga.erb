@@ -1,4 +1,7 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="/javascripts/govuk-frontend-4.3.1.min.js"></script>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D2V3LRNYBJ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -18,4 +21,24 @@
     mf.src = "//cdn.mouseflow.com/projects/e79fe13c-4aa1-4e00-80f1-c542552f0135.js";
     document.getElementsByTagName("head")[0].appendChild(mf);
   })();
+</script>
+
+<div id='search-results'></div>
+
+<script type="text/javascript">
+function addCss(fileName) {
+
+  var head = document.head;
+  var link = document.createElement("link");
+
+  link.type = "text/css";
+  link.rel = "stylesheet";
+  link.href = fileName;
+
+
+head.insertBefore(link, head.firstChild);
+
+}
+
+addCss('/stylesheets/govuk-frontend-4.3.1.min.css');
 </script>
