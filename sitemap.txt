@@ -28,6 +28,7 @@ https://design.education.gov.uk/prototyping/types-of-prototyping.html
 https://design.education.gov.uk/prototyping/code-snippets.html
 https://design.education.gov.uk/prototyping/kit.html
 https://design.education.gov.uk/prototyping/tools-and-templates.html
+https://design.education.gov.uk/images/postit.webp
 https://design.education.gov.uk/patterns-and-components/
 https://design.education.gov.uk/ways-of-working/working-as-a-team.html
 https://design.education.gov.uk/ways-of-working/
