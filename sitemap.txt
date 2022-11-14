@@ -31,10 +31,12 @@ https://design.education.gov.uk/prototyping/tools-and-templates.html
 https://design.education.gov.uk/images/postit.webp
 https://design.education.gov.uk/patterns-and-components/
 https://design.education.gov.uk/ways-of-working/working-as-a-team.html
+https://design.education.gov.uk/ways-of-working/publishing-content-on-gov-uk.html
 https://design.education.gov.uk/ways-of-working/
 https://design.education.gov.uk/ways-of-working/content-ways-of-working.html
 https://design.education.gov.uk/ways-of-working/being-an-interaction-designer.html
 https://design.education.gov.uk/ways-of-working/interaction-design-artefacts-and-documents.html
+https://design.education.gov.uk/ways-of-working/joining-user-journeys-with-gov-uk.html
 https://design.education.gov.uk/ways-of-working/stages-of-interaction-design.html
 https://design.education.gov.uk/
 https://design.education.gov.uk/community/
