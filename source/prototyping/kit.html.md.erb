@@ -9,9 +9,13 @@ weight: 255
 
 Using the kit means you can build prototypes that look like a real GOV.UK service. This helps to make it easier to test for usability issues and get feedback on how the service might perform if it were a real service. 
 
+> The prototype kit does not have production quality security measures so you must not use it for production-quality, or live, scenario testing.
+
 The kit is used across Government and supported thorugh the cross-gov <a href="https://ukgovernmentdigital.slack.com/archives/C0647LW4R"  target="_blank" rel="noopener noreferrer"> #prototype-kit</a> Slack channel. 
 
-> Follow the instructions to <a href="https://govuk-prototype-kit.herokuapp.com/docs/install/requirements.md" target="_blank">install prototype kit required software</a> for Mac and Windows users.
+## Installing the kit
+
+Follow the instructions to <a href="https://govuk-prototype-kit.herokuapp.com/docs/install/requirements.md" target="_blank">install prototype kit required software</a> for Mac and Windows users.
 
 There are tutorials and example code on the prototype kit website and you can make use of components and patterns from the <a href="https://design-system.service.gov.uk/" target="_blank" rel="noopener noreferrer">GOV.UK Design System</a> by copying HTML or Nunjucks code snippets into your prototype.
 
@@ -20,6 +24,15 @@ There are tutorials and example code on the prototype kit website and you can ma
 If your prototype is not intended for publishing to GOV.UK or service.gov.uk you should follow the <a href="/branding.html#branding-your-service.html">branding your service</a> guidance so that you do not cause confusion with your users.
 
 ## Testing your prototype with users
+
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+    You must not use real user information or department data in any of your prototypes. Any display of information must be mock information. 
+  </strong>
+</div>
+
 
 Depending on what testing you plan to do with users, you might want to run your prototype as a website, rather than on your local device.
 
