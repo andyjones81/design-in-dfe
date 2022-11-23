@@ -1,0 +1,66 @@
+---
+title: Design System
+description: Library of components, patterns, use-cases and example pages for building DfE services.
+weight: 500
+last_reviewed_on: 2022-10-21
+---
+
+<%= partial "ga" %>
+
+
+<div class="dfe-hero">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl govuk-!-font-size-48"><%=current_page.data.title%></h1>
+      <p class="govuk-body-l"><%=current_page.data.description%></p>
+    </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+
+ <div class="govuk-grid-column-full">
+
+ <h2 class="govuk-heading-m">Getting started</h2>
+
+<div class="cards card-thirds">
+    <ul> 
+    <li class="card">
+       <div class="text">
+        <strong class="govuk-tag">Updated</strong>
+          <h3>
+            <a href="/design-system/branding-guidelines/">Service branding guidlines</a>
+          </h3>
+          <p>Guidance and updated components for styling your service when it's not on GOV.UK.</p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="text">
+          <h3>
+            <a href="/design-system/components/">Components</a>
+          </h3>
+          <p>Components which can be used to ensure consistent user experiences in services built by the Department.</p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="text">
+          <h3>
+            <a href="/design-system/patterns/">Patterns</a>
+          </h3>
+          <p>Common and repeatable patterns in services which enable users to do things quickly and consistently.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+    <h2 class="govuk-heading-m">Prototyping</h2>
+    <p>Prototyping is a powerful way to test or demonstrate an idea, there are several ways to do this.</p>
+   <%= signpost_link("/prototyping/", "Prototype kit and guidance", false)%>
+
+ </div>
+  <div class="govuk-grid-column-one-third">
+
+
+
+  </div>
+</div>

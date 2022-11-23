@@ -1,0 +1,159 @@
+---
+title: Conditional redirect
+description: Send a user to a different page depending on a form choice.
+weight: 653
+---
+
+<%= partial "ga" %>
+
+<div class="dfe-hero">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+    <a href="/prototyping/" class="dfe-hero-back">Prototyping</a> > <a href="/prototyping/code-snippets.html" class="dfe-hero-back">Code snippets</a>
+      <h1 class="govuk-heading-xl govuk-!-font-size-48"><%=current_page.data.title%></h1>
+      <p class="govuk-body-l"><%=current_page.data.description%></p>
+    </div>
+  </div>
+</div>
+
+
+> **Scenario**
+>
+> You have a form on a page with a Yes and No radio option and send the user to a page which is specific to their response. 
+
+
+## Question page
+
+<div class="govuk-tabs" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+  <ul class="govuk-tabs__list">
+    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#question-example">
+        Example
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#question-code">
+        Code
+      </a>
+    </li>
+  </ul>
+  <div class="govuk-tabs__panel" id="question-example">
+
+  <p>Page named <code>conditional-redirect/question.html</code> which has a basic yes or no radio option.</p>
+
+<img src="/images/question.png" class="govuk-!-width-one-half" alt="screenshot showing the question page">
+
+  </div>
+  <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="question-code">
+
+    <p>Code to display the question. Note, this is wrapped inside a form, which POSTS to a URL called <code>/conditional-redirect/question</code></p>
+
+   <pre><code class="language-html">&lt;div class=&quot;govuk-grid-row&quot;&gt;
+   &lt;div class=&quot;govuk-grid-column-two-thirds&quot;&gt;
+      &lt;form action=&quot;/conditional-redirect/question&quot; method=&quot;post&quot;&gt;
+      &lt;div class=&quot;govuk-form-group&quot;&gt;
+         &lt;fieldset class=&quot;govuk-fieldset&quot; aria-describedby=&quot;changed-name-hint&quot;&gt;
+            &lt;legend class=&quot;govuk-fieldset__legend govuk-fieldset__legend--l&quot;&gt;
+               &lt;h1 class=&quot;govuk-fieldset__heading&quot;&gt;
+                  Have you changed your name?
+               &lt;/h1&gt;
+            &lt;/legend&gt;
+            &lt;div id=&quot;changed-name-hint&quot; class=&quot;govuk-hint&quot;&gt;
+               This includes changing your last name or spelling your name differently.
+            &lt;/div&gt;
+            &lt;div class=&quot;govuk-radios govuk-radios--inline&quot; data-module=&quot;govuk-radios&quot;&gt;
+               &lt;div class=&quot;govuk-radios__item&quot;&gt;
+                  &lt;input class=&quot;govuk-radios__input&quot; id=&quot;changed-name&quot; name=&quot;changed-name&quot; type=&quot;radio&quot; value=&quot;yes&quot;&gt;
+                  &lt;label class=&quot;govuk-label govuk-radios__label&quot; for=&quot;changed-name&quot;&gt;
+                  Yes
+                  &lt;/label&gt;
+               &lt;/div&gt;
+               &lt;div class=&quot;govuk-radios__item&quot;&gt;
+                  &lt;input class=&quot;govuk-radios__input&quot; id=&quot;changed-name-2&quot; name=&quot;changed-name&quot; type=&quot;radio&quot; value=&quot;no&quot;&gt;
+                  &lt;label class=&quot;govuk-label govuk-radios__label&quot; for=&quot;changed-name-2&quot;&gt;
+                  No
+                  &lt;/label&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/fieldset&gt;
+      &lt;/div&gt;
+      &lt;button type=&quot;submit&quot; class=&quot;govuk-button&quot; data-module=&quot;govuk-button&quot;&gt;Continue&lt;/button&gt;
+   &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+  </div>
+
+</div>
+
+
+
+## Routing
+
+<div class="govuk-tabs" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+  <ul class="govuk-tabs__list">
+    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#routing-example">
+        Example
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#routing-code">
+        Code
+      </a>
+    </li>
+  </ul>
+  <div class="govuk-tabs__panel" id="routing-example">
+
+  <p>If the user selects "Yes" we want to send them to the <code>conditional-redirect/yes.html</code> page.</p>
+
+<img src="/images/yes.png" class="govuk-!-width-one-half" alt="screenshot showing the yes page">
+
+  <p>If the user selects "No" we want to send them to the <code>conditional-redirect/no.html</code> page.</p>
+
+<img src="/images/no.png" class="govuk-!-width-one-half" alt="screenshot showing the no page">
+  </div>
+  <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="routing-code">
+
+    <p>Open up your <code>/app/routes.js</code> file, and before the <code>module.exports = router</code> line, use the following code:</p>
+    
+   <pre><code class="language-clike">// Identifies that this is a POST request to the /conditional-redirect/question route as set on the question page &lt;form action=&quot;/conditional-redirect/question&quot; method=&quot;post&quot;&gt;
+router.post('/conditional-redirect/question', function(req,res){
+
+  // changed-name is the name of the radio option and we want to check if the value is yes
+  if(req.session.data['changed-name'] === 'yes'){
+  return res.redirect(307, '/conditional-redirect/yes')
+  }
+
+  // changed-name is the name of the radio option and we want to check if the value is no
+  if(req.session.data['changed-name'] === 'no'){
+  return res.redirect(307, '/conditional-redirect/no')
+  }
+
+  // Render the question page as nothing has been selected
+  return res.render('conditional-redirect/question')
+})</code></pre>
+
+
+You can also write this as an if, else statement.
+
+   <pre><code  class="language-clike">router.post('/conditional-redirect/question', function(req,res){
+
+    if(req.session.data['changed-name'] === 'yes'){
+        return res.redirect(307, '/conditional-redirect/yes')
+    } else if(req.session.data['changed-name'] === 'no'){
+        return res.redirect(307, '/conditional-redirect/no')
+    } else{ return res.render('conditional-redirect/question')}
+
+})</code></pre>
+
+
+
+  </div>
+
+</div>

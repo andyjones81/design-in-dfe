@@ -1,0 +1,47 @@
+[
+    {
+        "ref": "3-1-x",
+        "guideline": "3.1.x - Language of page and parts",
+        "guidance": "The written language of the page must be identified in the code of the web page.\n\nWhere multiple written languages are included on a single page, the individual written language must be indentified in the code of the web page."
+    },
+    {
+        "ref": "3-2-1",
+        "guideline": "3.2.1 - On Focus",
+        "guidance": "When a keyboard user focuses on a control it must not cause a change of context, such as loading a new page or tab."
+    },
+    {
+        "ref": "3-2-2",
+        "guideline": "3.2.2 - On Input",
+        "guidance": "Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behaviour before using the component."
+    },
+    {
+        "ref": "3-2-3",
+        "guideline": "3.2.3 - Consistent navigation",
+        "guidance": "When ways to navigate content are repeated on multiple pages, they must be presented in a consistent manner."
+    },
+    {
+        "ref": "3-2-4",
+        "guideline": "3.2.4 - Consistent identification",
+        "guidance": "When features with the same functionality are used in multiple places, they must be identified in a consistent way."
+    },
+    {
+        "ref": "3-3-1",
+        "guideline": "3.3.1 - Error identification",
+        "guidance": "When an error occurs the user is informed what caused the error, and the error is described in text in an accessible way."
+    },
+    {
+        "ref": "3-3-2",
+        "guideline": "3.3.2 - Labels or instructions",
+        "guidance": "When data must be entered in a specific format or in a particular way, clear instructions must be associated with the form field.\n\nPassword fields should allow a user to view and check the entry."
+    },
+    {
+        "ref": "3-3-3",
+        "guideline": "3.3.3 - Error Suggestions",
+        "guidance": "When data must be entered in a specific format or in a particular way, clear instructions must be associated with the form field.\n\nPassword fields should allow a user to view and check the entry."
+    },
+    {
+        "ref": "3-3-4",
+        "guideline": "3.3.4 - Error prevention",
+        "guidance": "All transactions should be reversible, or confirmation must be required before submission."
+    }
+]

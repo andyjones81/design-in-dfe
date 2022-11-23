@@ -3,13 +3,13 @@
 
 # Header-related options
 show_govuk_logo: false
-service_name: User Centred Design
+service_name: Design
 service_link: /
 phase: 
 
 # Links to show on right-hand-side of header
 header_links:
-  Contribute: /contribute.html
+  Contact Design Ops: /contact.html
   Feedback: https://forms.gle/WfLUr8K6SDVERwzbA
 
 
@@ -39,5 +39,4 @@ github_repo: DFE-Digital/design-in-dfe
 
 
 redirects:
-  /branding.html: /design-library/branding-guidelines/
-  /design-histories.html: /design-histories/
+  /branding.html: /design-system/branding-guidelines/
