@@ -94,6 +94,7 @@ last_reviewed_on: 2022-11-23
         <h2  class="govuk-heading-l">Keyboard Accessible</h2>
 
         <h3 class="govuk-heading-m" id="2-1-1">2.1.1 - Keyboard accessible</h3>
+         <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>It must be possible for someone using a keyboard to complete all tasks in a service.</p>
         <p>This approach will also ensure that users on touch devices that are running assistive technology will also have access to all parts of a service.</p>
         <p>
@@ -112,6 +113,7 @@ last_reviewed_on: 2022-11-23
       
         <%= partial "p-top" %>
         <h3 class="govuk-heading-m" id="2-1-2">2.1.2 - No keyboard trap</h3>
+         <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>No item traps the keyboard focus; upon reaching any item on the page, it is possible to move to the item that precedes or follows it using the keyboard.</p>
         <p>
             <a href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap"  target="_blank">Understanding Success Criterion 2.1.2: No Keyboard Trap</a>
@@ -127,6 +129,7 @@ last_reviewed_on: 2022-11-23
         </ul>
         <%= partial "p-top" %>
         <h3 class="govuk-heading-m" id="2-1-4">2.1.4 - Character key shortcuts</h3>
+         <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>If single character key shortcuts have been set up within a page, the user can switch them off or remap them.</p>
         <p>Character keys should only work where keyboard focus is on the component the key relates to.</p>
         <p>
@@ -154,6 +157,7 @@ last_reviewed_on: 2022-11-23
         <h2  class="govuk-heading-l">Enough time</h2>
 
         <h3 class="govuk-heading-m" id="2-2-1">2.2.1 - Timing adjustable</h3>
+         <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>When a time limit, like a session timeout, is set ensure a user is informed, especially if this may result in a loss of data.</p>
         <p>It must be possible for the user to define the length of the timeout (e.g. in settings),  turn it off, delay it, or extend the length of time.</p>
         <p>
@@ -164,9 +168,21 @@ last_reviewed_on: 2022-11-23
         <ul class="govuk-list govuk-list--bullet">
             <li>tell users about the timeout, and what the timeout limit is, at the start of the process</li>
             <li>alert users when they are about to reach the timeout limit, giving them enough time(at least 60 seconds) to opt to extend it</li>
-            <li>provide functionality to allow time limits to be extended</li>
-            <li>provide functionality that allows users to set a timeout limit before they encounter a timeout, for example in settings</li>
+            <li>you could provide functionality to allow time limits to be extended</li>
+            <li>timouts should only be allowed to be extended up to 10 times</li>
+            <li>you could also provide functionality that allows users to set a timeout limit before they encounter a timeout, for example in settings</li>
         </ul>
+       
+        <p>Where timeouts are implemented using Javascript, you should have a non-javascript based approach to allow the user to manage the timeout.</p>
+         <p>In addition to the implementation guidance, you should:</p>
+        <ul class="govuk-list govuk-list--bullet">
+            <li>provide an indication on the page as to when the page will time out and how to extend the timeout</li>
+            </ul>
+
+        <p>This could be by using the <a href="https://design-system.service.gov.uk/components/inset-text/" target="_blank">Inset text</a> component for example:</p>
+
+        <div class="govuk-inset-text">This page will time out at 4:30pm. To prevent the loss of information, refresh or save the page to extend the timeout period.</div>
+
         <p>When a user experiences a timeout, provide a way to get back to where they were.</p>
         <h4 class="govuk-heading-s">How to test with a visual check</h4>
         <p>If timeouts exist, conduct the following checks:</p>
@@ -188,6 +204,7 @@ last_reviewed_on: 2022-11-23
       
         <%= partial "p-top" %>
         <h3 class="govuk-heading-m" id="2-2-2">2.2.2 - Pause, stop, hide</h3>
+         <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>Avoid moving or animated content on pages.</p>
         <p>When content moves (is animated, blinks or scrolls) automatically for more than five seconds, or when content automatically updates on the page, it must be possible for users to pause, stop or hide it.</p>
         <p>
@@ -205,6 +222,7 @@ last_reviewed_on: 2022-11-23
         <h2  class="govuk-heading-l">Seizures and physical reactions</h2>
 
         <h3 class="govuk-heading-m" id="2-3-1">2.3.1 - Three flashes or below</h3>
+         <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>A page must not contain content that flashes more than three times a second.</p>
         <p>
             <a href="https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold"  target="_blank">Understanding Success Criterion 2.3.1: Three Flashes or Below Threshold</a>
@@ -220,7 +238,7 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
         <h2  class="govuk-heading-l">Navigable</h2>
 
-        <h3 class="govuk-heading-m" id="2-4-1">2.4.1 - Bypass blocks</h3>
+        <h3 class="govuk-heading-m" id="2-4-1">2.4.1 - Bypass blocks</h3> <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>When there is repeated content (like a header) at the top of the page, there must be a way for keyboard users to move focus directly to the start of the main content area of the page.</p>
         <p>Consider including shortcuts to allow the user to jump between other parts of the content on long pages</p>
         <p>
@@ -234,7 +252,7 @@ last_reviewed_on: 2022-11-23
         <p>Verify that activiating the link moves the visual and keyboard focus to the start of the main content.</p>
      
         <%= partial "p-top" %>
-        <h3 class="govuk-heading-m" id="2-4-2">2.4.2 - Page title</h3>
+        <h3 class="govuk-heading-m" id="2-4-2">2.4.2 - Page title</h3> <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>Each page must have a unique title that indicates its topic or purpose.</p>
         <p>
             <a href="https://www.w3.org/WAI/WCAG21/Understanding/page-titled"  target="_blank">Understanding Success Criterion 2.4.2: Page Titled</a>
@@ -252,7 +270,7 @@ last_reviewed_on: 2022-11-23
         <h4 class="govuk-heading-s">How to test with JAWS and NVDA</h4>
         <p>Check the title tag is read out and is clear.  Use <strong class="govuk-tag govuk-tag--grey">insert</strong> + <strong class="govuk-tag govuk-tag--grey">T</strong>  to read current window title</p>
         <%= partial "p-top" %>
-        <h3 class="govuk-heading-m" id="2-4-3">2.4.3 - Focus order</h3>
+        <h3 class="govuk-heading-m" id="2-4-3">2.4.3 - Focus order</h3> <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>It must be possible to navigate through content in a way that makes sense.</p>
         <p>
             <a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order"  target="_blank">Understanding Success Criterion 2.4.3: Focus Order</a>
@@ -273,7 +291,7 @@ last_reviewed_on: 2022-11-23
         <p>Check that the focus is not reset or moved to the top of the page by dynamic controls.</p>
        
         <%= partial "p-top" %>
-        <h3 class="govuk-heading-m" id="2-4-4">2.4.4 - Link purpose in contex</h3>
+        <h3 class="govuk-heading-m" id="2-4-4">2.4.4 - Link purpose in contex</h3> <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>Link text should make it clear what the link is i.e. where the links goes.  Links should make sense out of context e.g. when using a links list.</p>
         <p>
             <a href="https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context"  target="_blank">Understanding Success Criterion 2.4.4: Link Purpose (In Context)</a>
@@ -293,7 +311,7 @@ last_reviewed_on: 2022-11-23
             <a href="https://design-system.service.gov.uk/styles/typography/#links" target="_blank">GOV.UK Design System - Links</a>
         </p>
         <%= partial "p-top" %>
-        <h3 class="govuk-heading-m" id="2-4-5">2.4.5 - Multiple ways</h3>
+        <h3 class="govuk-heading-m" id="2-4-5">2.4.5 - Multiple ways</h3> <strong class="govuk-tag govuk-tag--yellow">Level AA</strong> 
         <p>Unless the service is a series of steps, there must be different ways for people to locate and navigate content.</p>
         <p>
             <a href="https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways"  target="_blank">Understanding Success Criterion 2.4.5: Multiple Ways</a>
@@ -310,7 +328,7 @@ last_reviewed_on: 2022-11-23
         <h4 class="govuk-heading-s">How to test with a visual check</h4>
         <p>If the page is part of a website containing different sections of content (as opposed to be a step in a process, for example), check that it contains a Site Search functionality or a link to a site map or to an A-Z index of pages.</p>
         <%= partial "p-top" %>
-        <h3 class="govuk-heading-m" id="2-4-6">2.4.6 - Headings and labels</h3>
+        <h3 class="govuk-heading-m" id="2-4-6">2.4.6 - Headings and labels</h3> <strong class="govuk-tag govuk-tag--yellow">Level AA</strong> 
         <p>Headings must indicate the topic or purpose of the content in that section of the page, and labels must indicate the purpose of the field they relate to.</p>
         <p>
             <a href="https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels"  target="_blank">Understanding Success Criterion 2.4.6: Headings and Labels</a>
@@ -337,7 +355,7 @@ last_reviewed_on: 2022-11-23
             <a href="https://design-system.service.gov.uk/styles/typography/#headings" target="_blank">GOV.UK Design System - Headings</a>
         </p>
         <%= partial "p-top" %>
-        <h3 class="govuk-heading-m" id="2-4-7">2.4.7 - Focus visible</h3>
+        <h3 class="govuk-heading-m" id="2-4-7">2.4.7 - Focus visible</h3> <strong class="govuk-tag govuk-tag--yellow">Level AA</strong> 
         <p>It must be easy to tell which element has keyboard focus.</p>
         <p>
             <a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible"  target="_blank">Understanding Success Criterion 2.4.7: Focus Visible</a>
@@ -354,7 +372,7 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
         <h2  class="govuk-heading-l">Input Modalities</h2>
 
-        <h3 class="govuk-heading-m" id="2-5-1">2.5.1 - Pointer gestures</h3>
+        <h3 class="govuk-heading-m" id="2-5-1">2.5.1 - Pointer gestures</h3> <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>Any functionality which requires a multipoint or path based gestures has an alternative single pointer, non path-based gesture.</p>
         <p>
             <a href="https://www.w3.org/WAI/WCAG21/Understanding/pointer-gestures"  target="_blank">Understanding Success Criterion 2.5.1: Pointer Gestures</a>
@@ -373,7 +391,7 @@ last_reviewed_on: 2022-11-23
         <p>Ensure that gestures available on a mobile device have an accessible alternative which is communciated to screen reader users.</p>
       
         <%= partial "p-top" %>
-        <h3 class="govuk-heading-m" id="2-5-2">2.5.2 - Pointer cancellation</h3>
+        <h3 class="govuk-heading-m" id="2-5-2">2.5.2 - Pointer cancellation</h3> <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>Any script triggering must be done on the ‘up’ event – not the ‘down’ event.</p>
         <p>
             <a href="https://www.w3.org/WAI/WCAG21/Understanding/pointer-cancellation"  target="_blank">Understanding Success Criterion 2.5.2: Pointer Cancellation</a>
@@ -385,7 +403,7 @@ last_reviewed_on: 2022-11-23
         <p>Using the mouse move over an item and left click and hold. Ensure that no action was triggered.</p>
         <p>Move the cursor away from the item and release the left mouse button. Ensure that no action was triggered.</p>
         <%= partial "p-top" %>
-        <h3 class="govuk-heading-m" id="2-5-3">2.5.3 - Label in name</h3>
+        <h3 class="govuk-heading-m" id="2-5-3">2.5.3 - Label in name</h3> <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>For user interface components with labels that include text or images of text, the Accessible name contains the text that is presented visually.</p>
         <p>
             <a href="https://www.w3.org/WAI/WCAG21/Understanding/label-in-name"  target="_blank">Understanding Success Criterion 2.5.3: Label in Name</a>
@@ -400,11 +418,24 @@ last_reviewed_on: 2022-11-23
         <p>Move to control or form field.  The readout for the screen reader should match the visual label if there is one</p>
         <p>For example a button visually showing submit should read this, not continue.</p>
         <%= partial "p-top" %>
-        <h3 class="govuk-heading-m" id="2-5-4">2.5.4 - Motion actuation</h3>
+        <h3 class="govuk-heading-m" id="2-5-4">2.5.4 - Motion actuation</h3> <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>Any functionality that is initiated by tilting or shaking (etc) a device, must be able to be intiated by a button, or other control.</p>
         <p>Users must be able to switch off motion acutation.</p>
         <p>
-            <a href="https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation"  target="_blank">Understanding Success Criterion 2.5.4: Motion Actuation</a>
+            <a href="https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation"  target="_blank">Understanding Success Criterion 2.5.4: Motion Actuation</a> <strong class="govuk-tag govuk-tag--red">Level A</strong> 
+        </p>
+        <h4 class="govuk-heading-s">Implementation guidance</h4>
+        <p>On mobile applications, where functionality is performed when the user tilts or shakes the device, provide an alternative way of performing the functionality that does not rely on motion.</p>
+        <p>Provide a way to switch off motion actuation in settings.</p>
+        <h4 class="govuk-heading-s">How to test with a visual check</h4>
+        <p>Identify any functionality which requires motion. Check if an alternative option is available.</p>
+        <p>Check that controls exist to allow users to switch off motion actuation.</p>
+        <%= partial "p-top" %>
+           <h3 class="govuk-heading-m" id="2-5-4">2.5.4 - Motion actuation</h3> <strong class="govuk-tag govuk-tag--red">Level A</strong> 
+        <p>Any functionality that is initiated by tilting or shaking (etc) a device, must be able to be intiated by a button, or other control.</p>
+        <p>Users must be able to switch off motion acutation.</p>
+        <p>
+            <a href="https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation"  target="_blank">Understanding Success Criterion 2.5.4: Motion Actuation</a> <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         </p>
         <h4 class="govuk-heading-s">Implementation guidance</h4>
         <p>On mobile applications, where functionality is performed when the user tilts or shakes the device, provide an alternative way of performing the functionality that does not rely on motion.</p>

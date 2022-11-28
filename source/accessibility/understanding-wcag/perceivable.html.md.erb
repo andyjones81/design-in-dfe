@@ -93,6 +93,7 @@ last_reviewed_on: 2022-11-23
         </ul>
         <h2  class="govuk-heading-l">Text Alternatives</h2>
         <h3 class="govuk-heading-m" id="1-1-1">1.1.1 - Non Text content</h3>
+        <strong class="govuk-tag govuk-tag--red">Level A</strong>
         <p>All non-text content like images, charts, icons and infographics, must have an appropriate text equivalent. This ensures that information conveyed by non-text content is available to people who cannot see it, like screen reader users.</p>
         <p>The exception to this is decorative images which should not be described or announced to screen reader users.</p>
         <p>
@@ -141,6 +142,7 @@ last_reviewed_on: 2022-11-23
 
         <h2  class="govuk-heading-l">Time based media</h2>
         <h3 class="govuk-heading-m" id="1-2-x">1.2.x - Alternatives for audio and video</h3>
+             <strong class="govuk-tag govuk-tag--red">Level A</strong> <strong class="govuk-tag govuk-tag--yellow">Level AA</strong>
         <p>Audio and video content has appropriate alternatives to ensure that everyone has a comparable experience when interacting with this content. This may include transcripts, captions and audio description depending on the type of audio or video content.</p>
         <ul class="govuk-list govuk-list--spaced">
             <li>
@@ -178,6 +180,7 @@ last_reviewed_on: 2022-11-23
 
         <h2  class="govuk-heading-l">Adaptable</h2>
         <h3 class="govuk-heading-m" id="1-3-1a">1.3.1a - Info and relationships - Tables</h3>
+         <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>When information is visually presented as a table, this structure must be conveyed appropriately to assistive technologies. This ensure that tables are available to screen reader, screen magnification and speech recognition tool users.</p>
         <p>Where possible, you should use semantic HTML to implement content structures.</p>
         <p>
@@ -210,6 +213,7 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
 
         <h3 class="govuk-heading-m" id="1-3-1b">1.3.1b - Info and relationships - Lists</h3>
+         <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>When presenting lists of information, you must communicate this list in a way that assistive technology users can understand.</p>
         <p>Where possible, you should use semantic HTML list options which are appropriate to the information being presented.</p>
         <p>
@@ -239,6 +243,7 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
 
         <h3 class="govuk-heading-m" id="1-3-1c">1.3.1c - Info and relationships - Headings</h3>
+         <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>Where visual headings are used to communicate the structure of a page, they must also be communicated in a way that supports assistive technology users to access this structure.</p>
         <p>You should use semanatic HTML headings to structure your page. Heads should cascade from H1-H6. Each page must have at least a Level 1 Heading (H1).</p>
         <p>
@@ -247,7 +252,7 @@ last_reviewed_on: 2022-11-23
         <h4 class="govuk-heading-s">How to implement</h4>
         <p>Use proper HTML markup for headings (&lt;h1&gt; through &lt;h6&gt; elements).</p>
         <p>Each page should have a H1 which describes the overall purpose of the page.</p>
-        <p>This should be similar to the Title of the page (see 2.4.2).</p>
+        <p>This should be similar to the Title of the page (see <a href="/accessibility/understanding-wcag/operable.html#2-4-2">2.4.2 - Page title</a>).</p>
         <p>Do not skip heading levels or use multiple H1s on a page if you can avoid it.</p>
         <p>If you cannot use semantic headings, use the ARIA heading role and aria-level attribute to provide heading structure to the page. This is a last resort.</p>
         <h4 class="govuk-heading-s">How to test</h4>
@@ -275,6 +280,7 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
 
         <h3 class="govuk-heading-m" id="1-3-1d">1.3.1d - Info and relationships - Form fields</h3>
+         <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>All form fields have an associated visible label. Where this isn’t possible a non-visible label must be present.</p>
         <p>Sets of radio buttons or checkboxes must be grouped together so that assistive technology users can understand the relationship between these controls.</p>
         <p>Where specific format or input requirements need to be met, hint text linked to the form fields is provided.</p>
@@ -287,7 +293,7 @@ last_reviewed_on: 2022-11-23
         <p>If you cannot use &lt;fieldset&gt; and &lt;legend&gt;, use the radiogroup and radio ARIA roles and associated attributes for radio buttons. Use the group and checkbox ARIA roles and associated attributes for checkboxes. This is a last resort.</p>
         <p>Use aria-describedby to reference hint text from the form control if specific format or input requirements need to be met by users.</p>
         <p>Ensure information on entry format isn’t given by placeholders alone and that this is available to screen reader users.</p>
-        <p>If you cannot use visible labels, follow the requirements of 4.1.2 - Name, Role, Value.</p>
+        <p>If you cannot use visible labels, follow the requirements of <a href="/accessibility/understanding-wcag/robust.html#4-1-2">4.1.2 - Name, Role, Value</a>.</p>
         <h4 class="govuk-heading-s">How to test with a quick check</h4>
         <p>The following quick check will show you if this requirement has been implemented. It will not necessarily show you if it’s failed. If this check doesn’t work then complete the other manual code checks.</p>
         <ul class="govuk-list govuk-list--bullet">
@@ -327,6 +333,7 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
 
         <h3 class="govuk-heading-m" id="1-3-1e">1.3.1e - Info and relationship - Landmarks</h3>
+         <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>Content sections within a page should have an appropriate HTML5 section element or ARIA landmark role defined.</p>
         <p>
             <a   target="_blank" rel="noopener noreferrer" href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships">Understanding Success Criterion 1.3.1: Info and Relationships</a>
@@ -354,6 +361,7 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
 
         <h3 class="govuk-heading-m" id="1-3-2">1.3.2 - Meaningful sequence</h3>
+         <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>When the order of content is important, the content order must be preserved no matter how it is presented to the user.</p>
         <p>This ensures that the order of content is meaningful whether someone is looking at it, listening to it with a screen reader, or has stripped out visual styling using a browser plugin.</p>
         <p>
@@ -376,6 +384,7 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
 
         <h3 class="govuk-heading-m" id="1-3-3">1.3.3 - Sensory Characteristics</h3>
+         <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>Instructions must not depend on sensory characteristics like shape, size, colour, or location. This ensures that instructions can be understood by users who are unable to see or recognise information communicated using sensory characteristics.</p>
         <p>
             <a   target="_blank" rel="noopener noreferrer" href="https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics">Understanding Success Criterion 1.3.3: Sensory Characteristics</a>
@@ -388,6 +397,7 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
 
         <h3 class="govuk-heading-m" id="1-3-4">1.3.4 - Orientation</h3>
+         <strong class="govuk-tag govuk-tag--yellow">Level AA</strong> 
         <p>A page view must not be locked to either horizontal or vertical views only, unless this is essential.</p>
         <p>
             <a   target="_blank" rel="noopener noreferrer" href="https://www.w3.org/WAI/WCAG21/Understanding/orientation">Understanding Success Criterion 1.3.4: Orientation</a>
@@ -411,6 +421,8 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
 
         <h3 class="govuk-heading-m" id="1-3-5">1.3.5 - Identify Input Purpose</h3>
+
+         <strong class="govuk-tag govuk-tag--yellow">Level AA</strong> 
         <p>In an input  field, the purpose of each input field that collects information about the user can be understood by assistive technologies and browsers by using autocomplete.</p>
         <p>
             <a   target="_blank" rel="noopener noreferrer" href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose">Understanding Success Criterion 1.3.5: Identify Input Purpose</a>
@@ -425,6 +437,7 @@ last_reviewed_on: 2022-11-23
 
         <h2  class="govuk-heading-l">Distinguishable</h2>
         <h3 class="govuk-heading-m" id="1-4-1">1.4.1 - Use of colour</h3>
+        <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>Information conveyed with colour must also be identifiable from context, labelling, or alternative forms</p>
         <p>
             <a   target="_blank" rel="noopener noreferrer" href="https://www.w3.org/WAI/WCAG21/Understanding/use-of-color">Understanding Success Criterion 1.4.1: Use of Color</a>
@@ -444,6 +457,8 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
 
         <h3 class="govuk-heading-m" id="1-4-2">1.4.2 - Audio control</h3>
+
+         <strong class="govuk-tag govuk-tag--red">Level A</strong> 
         <p>Audio/video must not play automatically unless the user is pre-warned and can control the audio</p>
         <p>
             <a   target="_blank" rel="noopener noreferrer" href="https://www.w3.org/WAI/WCAG21/Understanding/audio-control">Understanding Success Criterion 1.4.2: Audio Control</a>
@@ -460,7 +475,7 @@ last_reviewed_on: 2022-11-23
 
         <%= partial "p-top" %>
 
-        <h3 class="govuk-heading-m" id="1-4-3">1.4.3 - Contrast</h3>
+        <h3 class="govuk-heading-m" id="1-4-3">1.4.3 - Contrast</h3>         <strong class="govuk-tag govuk-tag--yellow">Level AA</strong> 
         <p>There should be enough difference (contrast) between a background and the foreground content so that user can easily differentiate the two.</p>
         <p>
             <a   target="_blank" rel="noopener noreferrer" href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum">Understanding Success Criterion 1.4.3: Contrast (Minimum)</a>
@@ -488,6 +503,7 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
 
         <h3 class="govuk-heading-m" id="1-4-4">1.4.4 - Resize text</h3>
+         <strong class="govuk-tag govuk-tag--yellow">Level AA</strong> 
         <p>Users should be able to resize text up to 200% without any problems with the presentation and structure of the page (for example truncated text, overlaps or missing items).</p>
         <p>
             <a   target="_blank" rel="noopener noreferrer" href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text">Understanding Success Criterion 1.4.4: Resize text</a>
@@ -510,6 +526,7 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
 
         <h3 class="govuk-heading-m" id="1-4-5">1.4.5 - Images of text</h3>
+         <strong class="govuk-tag govuk-tag--yellow">Level AA</strong> 
         <p>Meaningful text must not be presented as part of an image because it cannot be resized, it deteriorates in quality when magnified and is not customisable by the end user.</p>
         <p>Meaningful text is anything which is used to aid understanding for users.</p>
         <p>
@@ -525,6 +542,7 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
 
         <h3 class="govuk-heading-m" id="1-4-10">1.4.10 - Reflow</h3>
+         <strong class="govuk-tag govuk-tag--yellow">Level AA</strong> 
         <p>Users should be able to magnify the page up to 400% and content should reflow - move into one column - and not add horizontal scroll bars (exemptions apply).</p>
         <p>Content should not be cut off or omitted entirely when magnified.</p>
         <p>
@@ -546,6 +564,7 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
 
         <h3 class="govuk-heading-m" id="1-4-11">1.4.11 - Non text contrast</h3>
+         <strong class="govuk-tag govuk-tag--yellow">Level AA</strong> 
         <p>Interactive controls, keyboard focus, icons and content required for understanding e.g. charts and infographics must have enough contrast (at least 3:1) with adjacent colours.</p>
         <p>
             <a   target="_blank" rel="noopener noreferrer" href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast">Understanding Success Criterion 1.4.11: Non-text Contrast</a>
@@ -571,6 +590,7 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
 
         <h3 class="govuk-heading-m" id="1-4-12">1.4.12 - Text spacing</h3>
+         <strong class="govuk-tag govuk-tag--yellow">Level AA</strong> 
         <p>For regular HTML page content, no loss of content or functionality happens when a user changes line height, letter or word spacing.</p>
         <p>
             <a   target="_blank" rel="noopener noreferrer" href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing">Understanding Success Criterion 1.4.12: Text Spacing</a>
@@ -590,6 +610,7 @@ last_reviewed_on: 2022-11-23
         <%= partial "p-top" %>
 
         <h3 class="govuk-heading-m" id="1-4-13">1.4.13 - Content on hover or focus</h3>
+         <strong class="govuk-tag govuk-tag--yellow">Level AA</strong> 
         <p>Ensuring that extra content eg tooltips:</p>
         <ul class="govuk-list govuk-list--bullet">
             <li>can be viewed easily</li>

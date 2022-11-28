@@ -10,7 +10,9 @@ phase:
 # Links to show on right-hand-side of header
 header_links:
   Contact Design Ops: /contact.html
-  Feedback: https://forms.gle/WfLUr8K6SDVERwzbA
+  Feedback: /feedback.html
+  Roadmap: /roadmap.html
+  Accessibility: /accessibility-statement.html
 
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
@@ -40,3 +42,5 @@ github_repo: DFE-Digital/design-in-dfe
 
 redirects:
   /branding.html: /design-system/branding-guidelines/
+  /ways-of-working/joining-user-journeys-with-gov-uk.html: /content-guidelines/joining-services-to-govuk.html
+  /ways-of-working/publishing-content-on-gov-uk.html: /content-guidelines/publishing-content-on-govuk.html
