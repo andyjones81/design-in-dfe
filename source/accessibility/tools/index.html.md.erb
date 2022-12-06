@@ -18,10 +18,16 @@ last_reviewed_on: 2022-09-08
 </div>
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
+  <div class="govuk-grid-column-two-thirds">
 
 
-<p>These tools and resources will help you uncover problems in services and websites.</p>
+<h2 class="govuk-heading-l">Understanding who your users are</h2>
+<p>These tools and resources can help you uncover problems in your services and websites. You should use these tools to understand what problems or barriers you may be introducing to your services. </p>
+
+<p>During Discovery, you must understand the types of people who may be using your service. This includes users who have access needs, permanent or situational impairments and who may be using assisitive technologies.</p>
+
+<%= example_panel("Tools and resources","Use this online service to <a href='https://how-many.herokuapp.com/' target='_blank'>Estimate how many people using your website might be disabled</a>. This will help you consider the types of people who may be using your service and who you should be testing with.")%>
+
 
 <h2 class="govuk-heading-l">Colour tools</h2>
 
@@ -36,6 +42,8 @@ last_reviewed_on: 2022-09-08
   <li><a target="_blank" href="https://github.com/Altreus/colourblind">Colorblind</a> is another simulation tool similar to Daltonize, but with more options (protanopia, protanomaly, deuteranopia, deuteranomaly, tritanopia, tritanomaly, achromatopsia, and achromatomaly) in a single bookmarklet.</li>
   <li><a target="_blank" href="https://github.com/btholt/postcss-colorblind">postcss-colorblind</a> is a CSS build tool that modifies colors in your CSS to simulate <a href="https://github.com/skratchdot/color-blind#color-blindness-table">four common impairment groups</a>.</li>
 </ul>
+
+
 
 <h2 class="govuk-heading-l">Auditing</h2>
 
@@ -76,15 +84,26 @@ last_reviewed_on: 2022-09-08
 <h2 class="govuk-heading-l">Testing</h2>
 
 
-<p><a href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles" target="_blank">User profiles</a> whcih demonstrate common barrieirs users face when using services.</p>
+<p><a href="https://www.gov.uk/government/publications/understanding-disabilities-and-impairments-user-profiles" target="_blank">User profiles</a> you can use to configure a device, which demonstrate common barrieirs users face when using services.</p>
+<p>These should not be used as the only method to test your service works for users with access needs.</p>
 
 
 <h2 class="govuk-heading-l">Browser tools</h2>
 
 <ul class="govuk-list  govuk-list--spaced">
   <li><a target="_blank"  href="https://accessibilityinsights.io/">Accessibility Insights</a> - Browser plugin for Chrome and Edge, Android and Windows applications for automated and guided manual testing.</li>
-<li><a target="_blank" href="https://wave.webaim.org/">WAVE</a> is an accessibility auditor and browser extension with document inspection features.</li>
-<li><a href="https://dorward.uk/software/disablecss"  target="_blank" rel="noopener noreferrer">Disable CSS</a> bookmarklet to test content is readable with styles disables.</li>
+<li><a target="_blank" href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse</a> is an accessibility and best practice tester, it's built in to Chrome and Edge browsers through the Inspect panel.</li>
+<li><a href="https://www.deque.com/axe/browser-extensions/" target="_blank">axe</a> browser plugin to test accessibility for Chrome and Edge</li>
+</ul>
+
+<h2 class="govuk-heading-l">Bookmarklets</h2>
+<p>To use bookmarkets, either, drag the link to your favourites bar or right click and add to bookmarks / favourites. You can then click on them in your bookmarks bar to run them against a page.<p>
+<ul class="govuk-list  govuk-list--spaced">
+<li><a href="javascript:if(window.a11yHeadings)window.a11yHeadings.run();else{(function(){var%20link=document.createElement('link');link.rel='stylesheet';link.type='text/css';link.href='https://accessibility-bookmarklets.org/build/styles.css';document.getElementsByTagName('head')[0].appendChild(link);var%20script=document.createElement('script');script.type='text/javascript';script.src='https://accessibility-bookmarklets.org/build/headings.js';document.getElementsByTagName('head')[0].appendChild(script);})();}">Headings</a> - highlights the headings on a page to allow you to check nesting and order</li>
+<li><a href="https://dorward.uk/software/disablecss"  target="_blank" rel="noopener noreferrer">Disable CSS</a> to test content is readable with styles disabled.</li>
+<li><a href="javascript:if(window.a11yLists)window.a11yLists.run();else{(function(){var%20link=document.createElement('link');link.rel='stylesheet';link.type='text/css';link.href='https://accessibility-bookmarklets.org/build/styles.css';document.getElementsByTagName('head')[0].appendChild(link);var%20script=document.createElement('script');script.type='text/javascript';script.src='https://accessibility-bookmarklets.org/build/lists.js';document.getElementsByTagName('head')[0].appendChild(script);})();}">Lists</a> - Identify lists on a page to check they are the correct type</li>
+<li><a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/pauljadam/bookmarklets@master/aria.js';var iframes=document.getElementsByTagName('iframe');for(i=0;i<iframes.length;i++) {iframes[i].contentDocument.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/pauljadam/bookmarklets@master/aria.js';}})();">ARIA</a> - identify ARIA labelling on a page</li>
+<li><a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/pauljadam/bookmarklets@master/images.js';var iframes=document.getElementsByTagName('iframe');for(i=0;i<iframes.length;i++) {iframes[i].contentDocument.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/pauljadam/bookmarklets@master/images.js';}})();">Images</a> - identify images on a page</li>
 </ul>
 
   </div>
