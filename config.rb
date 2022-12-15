@@ -7,6 +7,7 @@ require "lib/example_panel_extension"
 require "lib/basic_panel_extension"
 require "lib/hero_extension"
 require "lib/fullCTA_extension"
+require "lib/top_extension"
 
 activate :external_link
 activate :signpost_link
@@ -16,6 +17,7 @@ activate :example_panel
 activate :basic_panel
 activate :hero
 activate :fullCta
+activate :top
 
 
 config[:host] = "https://design.education.gov.uk"

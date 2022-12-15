@@ -1,0 +1,123 @@
+---
+title: Understanding Web Content Accessibility Guidelines (WCAG)
+weight: 500
+description: A guide for understanding WCAG in the context of users of Department for Education services.
+last_reviewed_on: 2022-11-22
+---
+
+<%= partial "ga" %>
+<% @p =JSON.load File.read("./source/javascripts/perceivable.json") %>
+<% @o =JSON.load File.read("./source/javascripts/operable.json") %>
+<% @u =JSON.load File.read("./source/javascripts/understandable.json") %>
+<% @r =JSON.load File.read("./source/javascripts/robust.json") %>
+
+<div class="dfe-hero">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+    <a href="/accessibility/" class="dfe-hero-back">Accessibility and inclusive design</a>
+            <h1 class="govuk-heading-xl govuk-!-font-size-48"><%=current_page.data.title%></h1>
+            <p class="govuk-body-l"><%=current_page.data.description%></p>
+            <p class="govuk-body-s meta-content">Last reviewed: <%=current_page.data.last_reviewed_on.strftime('%d %B %Y')%></p>
+        </div>
+    </div>
+</div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-three-quarters">
+
+  <p>These standards apply regardless of who the user is, internal to DfE (employees and contractors) or external (the public, local authorities, teachers etc).</p>
+
+  <p><a href="https://www.legislation.gov.uk/uksi/2022/1097/made" target="_blank">The Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018</a> was amended on 26 October 2022 and now states that as a public body, we are required to conform to the latest version of WCAG, currently 2.1.</p>
+
+  <p>All guidelines for Level A and Level AA for the latest published version (2.1) are included. We have also made available the draft <a href="/accessibility/understanding-wcag/draft-2-2/">WCAG 2.2 guidelines</a> to start to understand their impact on services you may be building now.</p>
+
+  <div class="govuk-inset-text">
+<strong class="govuk-tag">Download</strong>
+<p class="govuk-!-font-weight-bold"><a href="/wcag-checklist-december-2022.xlsx">Supporting checklist to use with these guidelines</a> (Excel - 82kb)</p>
+<p class="govuk-body-s">Last updated: 24 November 2022</p>
+</div>
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">Perceivable</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header govuk-!-width-one-third"> Guideline</th>
+        <th scope="col" class="govuk-table__header">Guidance</th>
+    </tr>
+  </thead>
+    <tbody class="govuk-table__body">
+
+    <% @p.each do |g| %>
+    <tr class="govuk-table__row">
+          <td class="govuk-table__cell"><a href="/accessibility/understanding-wcag/perceivable.html#<%= g['ref']%>"><%= g['guideline'].html_safe%></a>
+          </td>
+          <td class="govuk-table__cell"><%= g['guidance'].html_safe %></td>
+        </tr>
+    <% end %>
+
+    </tbody>
+  </table>
+
+  <table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">Operable</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header govuk-!-width-one-third"> Guideline</th>
+        <th scope="col" class="govuk-table__header">Guidance</th>
+    </tr>
+  </thead>
+    <tbody class="govuk-table__body">
+    <% @o.each do |g| %>
+    <tr class="govuk-table__row">
+          <td class="govuk-table__cell"><a href="/accessibility/understanding-wcag/operable.html#<%= g['ref']%>"><%= g['guideline'].html_safe%></a>
+          </td>
+          <td class="govuk-table__cell"><%= g['guidance'].html_safe %></td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+
+  <table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">Understandable</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header govuk-!-width-one-third"> Guideline</th>
+        <th scope="col" class="govuk-table__header">Guidance</th>
+    </tr>
+  </thead>
+    <tbody class="govuk-table__body">
+    <% @u.each do |g| %>
+    <tr class="govuk-table__row">
+          <td class="govuk-table__cell"><a href="/accessibility/understanding-wcag/understandable.html#<%= g['ref']%>"><%= g['guideline'].html_safe%></a>
+          </td>
+          <td class="govuk-table__cell"><%= g['guidance'].html_safe %></td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+
+  <table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">Robust</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header govuk-!-width-one-third"> Guideline</th>
+        <th scope="col" class="govuk-table__header">Guidance</th>
+    </tr>
+  </thead>
+    <tbody class="govuk-table__body">
+    <% @r.each do |g| %>
+    <tr class="govuk-table__row">
+          <td class="govuk-table__cell"><a href="/accessibility/understanding-wcag/robust.html#<%= g['ref']%>"><%= g['guideline'].html_safe%></a>
+          </td>
+          <td class="govuk-table__cell"><%= g['guidance'].html_safe %></td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+
+
+  </div>
+
+</div>
+ 

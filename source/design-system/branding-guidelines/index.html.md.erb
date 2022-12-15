@@ -1,0 +1,307 @@
+---
+title: Branding guidelines
+weight: 510
+description: Make sure your service follows the required standards for branding so you don't confuse users.
+last_reviewed_on: 2022-10-21
+---
+
+<%= partial "ga" %>
+
+<div class="dfe-hero">
+   <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+      <a href="/design-system/" class="dfe-hero-back">Design System</a>
+      <h1 class="govuk-heading-xl govuk-!-font-size-48"><%=current_page.data.title%></h1>
+      <p class="govuk-body-l"><%=current_page.data.description%></p>
+      <p class="govuk-body-s meta-content">Last reviewed: <%=current_page.data.last_reviewed_on.strftime('%d %B %Y')%></p>
+      </div>
+   </div>
+</div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <h2 class="govuk-heading-l">DfE blue department branding</h2>
+  </div>
+
+
+ <div class="govuk-grid-column-full">
+  <div class="govuk-tabs" data-module="govuk-tabs">
+   <h2 class="govuk-tabs__title"> Contents </h2>
+   <ul class="govuk-tabs__list">
+    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+     <a class="govuk-tabs__tab" href="#dfe"> Guidance </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+     <a class="govuk-tabs__tab" href="#dfe-code"> Code </a>
+    </li>
+   </ul>
+   <div class="govuk-tabs__panel" id="dfe">
+    <div class="govuk-grid-row">
+     <div class="govuk-grid-column-two-thirds">
+      <h3 class="govuk-heading-m">When to use this style</h3>
+      <ul class="govuk-list govuk-list--bullet">
+       <li>if the service is provided on the education.gov.uk domain (internal or external users)</li>
+       <li>if it is an internal service such as an admin or caseworking service</li>
+       <li>if it falls outside the <a href="https://www.gov.uk/government/publications/govuk-proposition/govuk-proposition" target="_blank">GOV.UK Proposition</a> criteria </li>
+      </ul>
+     <h3 class="govuk-heading-m">Do</h3>
+      <ul class="govuk-list govuk-list--bullet">
+       <li>use the departmental crest logo (Lion and Unicorn)</li>
+       <li>use Department for Education as the organisation name</li>
+       <li>use a cross-platform compatible font-stack</li>
+       <li>preferably use the departmental blue color scheme</li>
+      </ul>
+     <h3 class="govuk-heading-m">Don't</h3>
+      <ul class="govuk-list govuk-list--bullet">
+       <li>use the GOV.UK logotype</li>
+       <li>use the crown in the header</li>
+       <li>use the GDS Transport typeface (it's not licensed for use outside GOV.UK)</li>
+      </ul>
+       <h3 class="govuk-heading-m">Prototyping guidance</h3>
+    <p>If using the GOV.UK Prototype Kit <a class="govuk-link" href="#dfe-code">code section of the DFE blue department branding</a> guidance.</p>
+
+     </div>
+     <div class="govuk-grid-column-one-third">
+      <div class="DosAndDontsstyled__SectionStyled" style="width: 100%">
+       <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_do">
+        <img src="/images/header-do.png" alt="Mockup of the DfE styling">
+       </div>
+      </div>
+      <p>
+       <a href="https://forms.gle/WfLUr8K6SDVERwzbA" target="_blank">Tell us</a> if you're using this branding in your service.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="dfe-code">
+
+<div class="govuk-inset-text">
+  We are working on a DfE component to implement this as a single package. For now, use the following style overrides.
+</div>
+
+<img src="/images/header.png" alt="Image of the DfE header">
+
+<h3 class="govuk-heading-m">HTML</h3>
+
+<p>If you are using the GOV.UK Prototype Kit, replace the contents inside the <code>{% block header %} {% endblock %}</code> in the _layout.html file with the following HTML.</p>
+
+<pre><code  class="language-html">&lt;header class=&quot;govuk-header app-header&quot; role=&quot;banner&quot; data-module=&quot;govuk-header&quot;&gt;
+  &lt;div class=&quot;govuk-header__container govuk-width-container&quot;&gt;
+   &lt;div class=&quot;govuk-header__logo&quot;&gt;
+     &lt;a href=&quot;/&quot; class=&quot;govuk-header__link govuk-header__link--homepage&quot;&gt;
+     &lt;span class=&quot;govuk-header__logotype&quot;&gt;
+      &lt;img src=&quot;/public/images/crest.png&quot; alt=&quot;Department for Education homepage&quot; class=&quot;govuk-header__logotype-crown-fallback-image&quot;&gt;
+        &lt;span class=&quot;govuk-header__logotype-text&quot;&gt;
+          Department for Education |
+        &lt;/span&gt;
+      &lt;/span&gt;
+      &lt;span class=&quot;govuk-header__product-name&quot;&gt;
+        {{serviceName}}
+      &lt;/span&gt;
+     &lt;/a&gt;     
+   &lt;/div&gt;
+   &lt;div class=&quot;govuk-header__content&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;govuk-header__menu-button govuk-js-header-toggle&quot; aria-controls=&quot;navigation&quot; aria-label=&quot;Show or hide navigation menu&quot;&gt;Menu&lt;/button&gt;
+    &lt;nav&gt;
+      &lt;ul id=&quot;navigation&quot; class=&quot;govuk-header__navigation &quot; aria-label=&quot;Navigation menu&quot;&gt;
+        &lt;li class=&quot;govuk-header__navigation-item&quot;&gt;
+          &lt;a class=&quot;govuk-header__link&quot; href=&quot;#4&quot;&gt;
+            Sign out
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+
+ <h3 class="govuk-heading-m">Font stack</h3>
+
+ <div class="govuk-inset-text">
+  Add this to the top of your application scss or css file
+</div>
+ 
+ <p>This font stack has been designed to be compatible across browsers and platforms including mobiles and other devices.</p>
+<pre><code  class="language-css">body, p, h1, h2, h3, h4, h5, h6, a, span, div, table, th, td, blockquote, li, tr {
+    font-family: 
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        'Helvetica Neue',
+        sans-serif !important;
+}
+</code></pre>
+
+ <h3 class="govuk-heading-m">Header style</h3>
+
+ <div class="govuk-inset-text">
+  Add this to your scss file. If using CSS, you'll need to replace the variables with the color codes in the individual styles.
+</div>
+
+<pre><code  class="language-css">$dfe-blue: #003a69;
+$accent: #347ca9;
+
+.dfe-template__body {
+
+    .govuk-header {
+        background-color: $dfe-blue;
+    }
+    
+    .govuk-header__container {
+        position: relative;
+        margin-bottom: -10px;
+        padding-top: 25px;
+        padding-bottom: 15px;
+        border-bottom: 10px solid $accent;
+    }
+    
+    .govuk-header__product-name, 
+    .govuk-header__logotype-text,
+    .govuk-header__content {
+        line-height: 2.5rem !important;
+        font-size: 1.2rem;
+    }
+    
+    .govuk-header__logotype-crown-fallback-image {
+        height: 45px; 
+        width: 45px;
+    }
+    
+    .govuk-header__logotype {
+        margin-right: 0;
+    }
+    
+    .govuk-header__logo {
+        @include mq ($from: desktop) {
+          width: 70%;
+        }
+      }
+      
+    .govuk-header__content {
+        @include mq ($from: desktop) {
+            width: 30%;
+            float: right;
+        }
+    }
+    
+    .govuk-header nav {
+        display: inline-block;
+        float: right;
+    }
+}</code></pre>
+
+
+
+### Crest logo (Lion and unicorn)
+
+You must not use the GOV.UK Crown logotype on services not provided on GOV.UK or services.gov.uk. Instead, use the department crest.
+
+If using the GOV.UK Prototype Kit, download the following crest file and save it to your <code>/app/assets/images</code> folder, and make sure it's named <code>crest.png</code>
+
+The crest image is white on a transparent background, so for display purposes is shown on the blue background.
+
+<a href="/images/crest.png" target="_blank">
+
+<img src="/images/crest.png" style="background: #003a69; padding: 20px; height: 100px; width: 100px;" alt="crest logo">
+
+Image will open in a new tab to save.
+
+</a>
+
+  </div>
+  </div>
+ </div>
+
+
+<div class="govuk-grid-column-full govuk-!-margin-top-7">
+  <h2 class="govuk-heading-l">GOV.UK styles</h2>
+</div>
+<div class="govuk-grid-column-full">
+<div class="govuk-tabs" data-module="govuk-tabs">
+<h2 class="govuk-tabs__title"> Contents </h2>
+<ul class="govuk-tabs__list">
+<li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+<a class="govuk-tabs__tab" href="#gov"> Guidance </a>
+</li>
+<li class="govuk-tabs__list-item">
+<a class="govuk-tabs__tab" href="#gov-code"> Code </a>
+</li>
+</ul>
+<div class="govuk-tabs__panel" id="gov">
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+<h3 class="govuk-heading-m">When to use this style</h3>
+<ul class="govuk-list govuk-list--bullet">
+<li>if the service is public facing and transactional</li>
+<li>provided on gov.uk or service.gov.uk</li>
+</ul>
+<h3 class="govuk-heading-m">Do</h3>
+<ul class="govuk-list govuk-list--bullet">
+<li>use the GOV.UK page template</li>
+<li>use the crown logo, GOV.UK logotype and GDS Transport typeface</li>
+<li>use GOV.UK colors and styles</li>
+</ul>
+<h3 class="govuk-heading-m">Prototyping guidance</h3>
+<p>This style used in the GOV.UK Prototype Kit. You can change it to the DfE blue by following the instructions in the <a class="govuk-link" href="#dfe-code">code section of the DFE blue department branding</a> guidance.</p>
+</div>
+<div class="govuk-grid-column-one-third">
+<div class="DosAndDontsstyled__SectionStyled" style="width: 100%">
+<div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_do">
+<img src="/images/header-dont.png" alt="mockup of the GOV.UK styling">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="gov-code">
+<h3 class="govuk-heading-m">Use the GOV.UK Design System</h3>
+<p>You can find the styles, components and patterns in the GOV.UK Design System</p>
+<%= signpost_link("https://design-system.service.gov.uk/", "GOV.UK Design System", true)%>
+<%= signpost_link("https://design-system.service.gov.uk/get-started/production/", "Implementing GOV.UK Frontend in your service", true)%>
+</div>
+</div>
+</div>
+
+
+
+<div class="govuk-grid-column-full govuk-!-margin-top-7">
+ <h2 class="govuk-heading-l">Campaign and Independent sites</h2>
+</div>
+<div class="govuk-grid-column-full">
+<div class="govuk-tabs" data-module="govuk-tabs">
+<h2 class="govuk-tabs__title"> Contents </h2>
+<ul class="govuk-tabs__list">
+<li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+<a class="govuk-tabs__tab" href="#campaign"> Guidance </a>
+</li>
+</ul>
+<div class="govuk-tabs__panel" id="campaign">
+<div class="govuk-grid-row">
+ <div class="govuk-grid-column-two-thirds">
+ <h3 class="govuk-heading-m">When to use campaign sites</h3>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>a marketing or informational site</li>
+      <li>public-facing and exempt from using GOV.UK styles</li>
+      <li>public-facing and on the education.gov.uk domain</li>
+    </ul>
+    <p>You may be able to use independent styling but will need to speak to DigiComms and GDS Campaign Team</p>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <div class="DosAndDontsstyled__SectionStyled" style="width: 100%">
+      <div class="DosAndDontsstyled__DosAndDontsColoredBoxStyled DosAndDontsstyled__DosAndDontsColoredBoxStyled_do">
+        <img src="/images/teaching.png" alt="Image of the get into teaching website">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+

@@ -1,95 +1,219 @@
 ---
 title: Principles
+description: Our design principles demonstrate our commitment to good design. They empower us to design the right things, the right way, consistently.
 weight: 100
-description: The principles we work towards across the design profession to work together and design and build trusted, joined-up, user-centred services and outcomes.
+last_reviewed_on: 2022-10-21
 ---
 
 <%= partial "ga" %>
 
-<%= hero(current_page.data.title,current_page.data.description)%>
-
-<div class="dfe-section-grey">
-  <h2 class="govuk-heading-m">Our principles</h2>
-  
-<div class="cards top-text">
-  <ul>
-    <li class="card">
-        <div class="text">
-            <h3><a href="/principles/1.html">1. Understand ALL users; needs, behaviours and pain points</a></h3>
+<div class="dfe-hero">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl govuk-!-font-size-48"><%=current_page.data.title%></h1>
+            <p class="govuk-body-l"><%=current_page.data.description%></p>
+            <p class="govuk-body-s meta-content">Last reviewed: <%=current_page.data.last_reviewed_on.strftime('%d %B %Y')%></p>
         </div>
-    </li>  
-    <li class="card">
-        <div class="text">
-            <h3><a href="/principles/2.html">2. Design accessibly</a></h3>
-        </div>
-    </li> 
-    <li class="card">
-        <div class="text">
-            <h3><a href="/principles/3.html">3. Follow Gestalt laws</a></h3>
-        </div>
-    </li> 
-      <li class="card">
-        <div class="text">
-            <h3><a href="/principles/4.html">4. Reduce cognitive load</a></h3>
-        </div>
-    </li>  
-    <li class="card">
-        <div class="text">
-            <h3><a href="/principles/5.html">5. Support and prevent users making mistakes</a></h3>
-        </div>
-    </li> 
-    <li class="card">
-        <div class="text">
-            <h3><a href="/principles/6.html">6. Make users do less</a></h3>
-        </div>
-    </li> 
-
-      <li class="card">
-        <div class="text">
-            <h3><a href="/principles/7.html">7. Consider context</a></h3>
-        </div>
-    </li>  
-    <li class="card">
-        <div class="text">
-            <h3><a href="/principles/8.html">8. Design a seamless experience</a></h3>
-        </div>
-    </li> 
-    <li class="card">
-        <div class="text">
-            <h3><a href="/principles/9.html">9. Design with data and design logic</a></h3>
-        </div>
-    </li> 
-      <li class="card">
-        <div class="text">
-            <h3><a href="/principles/10.html">10. Content has a purpose</a></h3>
-        </div>
-    </li> 
-
-      <li class="card">
-        <div class="text">
-            <h3><a href="/principles/11.html">11. Content is accessible</a></h3>
-        </div>
-    </li> 
-      <li class="card">
-        <div class="text">
-            <h3><a href="/principles/12.html">12. Content needs to change over time</a></h3>
-        </div>
-    </li> 
-
-      <li class="card">
-        <div class="text">
-            <h3><a href="/principles/13.html">13. More content is not always the right solution</a></h3>
-        </div>
-    </li> 
-
-      <li class="card">
-        <div class="text">
-            <h3><a href="/principles/14.html">14. Content starts with an audit</a></h3>
-        </div>
-    </li> 
-  </ul>
+    </div>
 </div>
 
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-l">Be accessible from the start</h2>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+        <p>Accessibility must never be an afterthought or a task to do once you've got <abbr title="Minimum Viable Product">MVP</abbr> out the door. You should be considering how you ensure services are accessible right from the start and throughout the design and delivery lifecycle.</p>
+        <p>Designers creating user interactions and writing content, must consider who may be using the service, or may do in the future. If you know the service has a low number of disabled users than the national average, this may change in future, don't just design for now.</p>
+        <p>Allowing our users to use services which are not accessible, makes the service harder to use, wastes time and money fixing problems in the future, and exposes us to unnecessary risk.</p>
+    </div>
+    <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-s">Resources</h3>
+        <ul class="govuk-list govuk-list--spaced">
+            <li>
+                <a href="https://how-many.herokuapp.com/" target="_blank">Estimate how many people using your website might be disabled</a>
+            </li>
+             <li>
+                <a href="/accessibility/understanding-wcag/">Checklist, guidace for WCAG implementation and testing of each guideline</a>
+            </li>
+            
+        </ul>
+        <h3 class="govuk-heading-s">Guidance</h3>
+        <ul class="govuk-list govuk-list--spaced">
+            <li>
+                <a href="/accessibility/">Accessible and inclusive design guidance</a>
+            </li>
+            <li>
+                <a href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction" target="_blank">Making your service accessible: an introduction</a>
+            </li>
+            <li>
+                <a href="https://www.nngroup.com/articles/inclusive-design/" target="_blank">Inclusive Design on Nielsen Norman Group</a>
+            </li>
+        </ul>
+    </div>
+    <div class="govuk-grid-column-full">
+        <hr class="govuk-section-break govuk-section-break--visible dfe-bar-thick">
+    </div>
+</div>
 
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-l">Design consistently</h2>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+        <p>Everything you are looking to design has probably already been designed elsewhere already, so make use of existing patterns and components.</p>
+        <p>You should aim to design to established, industry best practices - users spend most of their time on other sites, so users will expect our services to work the same way as other sites they already use. </p>
+        <p>Using and improving existing GOV.UK Design System components, enables you to create services which will feel familiar to users who use other government services.</p>
+        <p>When designs behave the same, users won't have to learn something new, they know what to expect based on a familiar experience. Users will trust a service that feels familiar, even if what they are doing is nothing like another service or task they do elsewhere.</p>
 
+    </div>
+    <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-s">Resources</h3>
+        <ul class="govuk-list govuk-list--spaced">
+
+            <li>
+                <a href="/design-system/">DfE Design System</a>
+            </li>
+            <li><a href="https://github.com/ctdesign/gov-design-systems-list">Design systems from other government departments</a></li>
+            <li>
+                <a href="https://design-system.service.gov.uk/" target="_blank">GOV.UK Design System</a>
+            </li>
+            <li>
+                <a href="https://github.com/alphagov/govuk-design-system-backlog/projects/1" target="_blank">GOV.UK Design System Backlog</a>
+            </li>
+        </ul>
+        <h3 class="govuk-heading-s">Guidance</h3>
+        <ul class="govuk-list govuk-list--spaced">
+            <li>
+                <a href="https://lawsofux.com/jakobs-law/" target="_blank">Jakobs Law</a>
+            </li>
+        </ul>
+    </div>
+    <div class="govuk-grid-column-full">
+        <hr class="govuk-section-break govuk-section-break--visible dfe-bar-thick">
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-l">Design for less</h2>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+        <p>Start designing with just content. Iterate design to make it more usability, not more complex.</p>
+        <p>Overloading a page with components and different elements, can make it overwhelming and cause cognitive overload. Make best use of whitespace and headers to make things easier to understand, navigate and use. </p>
+        <p>Some things in design are functional, others purely aesthetic. If they aren't adding to the overall experience, then remove it - reduce the design to the necessary features for the user to complete their task.</p>
+        <p>When writing content, write only what you need to. Make the main thing on a page, the most important thing the user needs to do or understand.</p>
+    </div>
+    <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-s">Resources</h3>
+        <ul class="govuk-list govuk-list--spaced">
+
+            <li>
+                <a href="https://www.gov.uk/service-manual/design/form-structure" target="_blank">Start with one thing per page</a>
+            </li>
+            <li>
+                <a href="https://www.nngroup.com/articles/simplicity-vs-choice/" target="_blank">Simplicity Wins over Abundance of Choice</a>
+            </li>
+        </ul>
+        <h3 class="govuk-heading-s">Guidance</h3>
+        <ul class="govuk-list govuk-list--spaced">
+            <li>
+                <a href="https://lawsofux.com/hicks-law/" target="_blank">Hicks Law</a>
+            </li>
+        </ul>
+    </div>
+    <div class="govuk-grid-column-full">
+        <hr class="govuk-section-break govuk-section-break--visible dfe-bar-thick">
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-l">Design with context</h2>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+        <p>You should be designing service interactions, touchpoints and content based on knowlege of how and where the users of the service will use them. This is a key principle, applied through <a href="https://apply-the-service-standard.education.gov.uk/service-standard/1-understand-user-needs.html" target="_blank"> Service Standard at Point 1 - Understand users and their needs</a>
+        </p>
+        <p>Put the most important or frequent thing a user needs to do, high up on a page, or make it the main thing on the page.</p>
+        <p>Understanding users' circumstances, culture, language, abilities and capabilities, helps us to design services and content that works for everyone.</p>
+        <p>This doesn't only enable us to design inclusive services, it also enables us to mitigate biases we may design into our service unintentionally.</p>
+        <p>Provide information and functionality in context - at the point the user is most likely to need it. Save the user from having to hunt for it, or missing it altogether.</p>
+    </div>
+    <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-s">Case study</h3>
+        <ul class="govuk-list govuk-list--spaced">
+
+            <li>
+                <a href="https://medium.muz.li/why-ux-designers-should-learn-about-cross-cultural-design-19b8e019542#e441" target="_blank">Why users in India didn't use Amazon search</a>
+            </li>
+
+        </ul>
+        <h3 class="govuk-heading-s">Resources</h3>
+        <ul class="govuk-list govuk-list--spaced">
+            <li>
+                <a href="https://www.interaction-design.org/literature/topics/cognitive-biases?gclid=CjwKCAjw8JKbBhBYEiwAs3sxN9TGi9mBOG_nJNSbH65DQW6G6Z7r-h4uKvWahqZhY6eDZHr_pZJfoRoCJ8QQAvD_BwE" target="_blank">Cognitive Biases - IXD Foundation</a>
+            </li>
+            <li>
+                <a href="https://xd.adobe.com/ideas/principles/design-systems/what-is-inclusive-design-principles-and-examples/" target="_blank">Inclusive design principles - Adobe</a>
+            </li>
+        </ul>
+    </div>
+    <div class="govuk-grid-column-full">
+        <hr class="govuk-section-break govuk-section-break--visible dfe-bar-thick">
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-l">Write for your audience</h2>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+    <p>Content design makes things easier for people to understand and use. Using data, research and testing to understand what people need and then design content to meet those needs.</p>
+        <p>Write in plain English and explain complex words and abbreviations.</p>
+        <p>Consider what your words mean or how they can be interpreted or translated, think about users whose first language isn't English.</p>
+    </div>
+    <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-s">Guidance</h3>
+        <ul class="govuk-list govuk-list--spaced">
+            <li>
+                <a href="/content-guidelines/language-we-use.html">Words we use</a>
+            </li>
+             <li>
+                <a href="/content-guidelines/">Content guidelines</a>
+            </li>
+             <li>
+                <a href="https://www.gov.uk/guidance/content-design/writing-for-gov-uk" target="_blank">GOV.UK Content Design: planning and writing content</a>
+            </li>
+        </ul>
+    </div>
+    <div class="govuk-grid-column-full">
+        <hr class="govuk-section-break govuk-section-break--visible dfe-bar-thick">
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-l">Make it efficient</h2>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+        <p>The best user experience comes from services that react quickly, prevent mistakes and enable users to do what they need to, quickly.</p>
+        <p>Friction in services makes things harder to use, understand and cause frustration.</p>
+        <p>Think about how your design works for different user groups. Some users may be novice so need extra help, others proficient. Can you give users shortcuts to make their use of the same service easier?</p>
+        <p>Avoid making service interactions complicated, its better to spread a process out over multiple pages rather than put a lot of things on one page.</p>
+        <p><a href="https://www.gov.uk/guidance/government-design-principles#do-the-hard-work-to-make-it-simple" target="_blank">Do the hard work to make it simple</a>. This applies for the user's benefit, but also iterating design and content. Its much easier to change a simple page, than one that has lots of elements or logic on it, or where it appears in a journey.</p>
+    </div>
+    <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-s">Related</h3>
+        <ul class="govuk-list govuk-list--spaced">
+            <li>
+                <a href="https://lawsofux.com/doherty-threshold/" target="_blank">Doherty Threshold</a>
+
+            </li>
+            <li>
+            <a href="https://www.nngroup.com/articles/flexibility-efficiency-heuristic/" target="_blank">Flexibility and Efficiency of Use</a>
+            </li>
+        </ul>
+    </div>
+    <div class="govuk-grid-column-full">
+        <hr class="govuk-section-break govuk-section-break--visible dfe-bar-thick">
+    </div>
 </div>
