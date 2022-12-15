@@ -1843,12 +1843,14 @@ h2+.cards {
     >li {
         display: inline-block;
         margin-bottom: 0;
+        padding-right: 10px;
+        margin-bottom: 15px;
 
         >a {
-            margin-right: 15px;
+            margin-right: 0px;
             text-decoration: underline;
             font-size: 1rem;
-            padding: 5px;
+            padding: 10px;
         }
     }
 }

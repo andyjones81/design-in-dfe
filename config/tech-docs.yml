@@ -39,8 +39,9 @@ show_contribution_banner: true
 
 github_repo: DFE-Digital/design-in-dfe
 
-
 redirects:
   /branding.html: /design-system/branding-guidelines/
   /ways-of-working/joining-user-journeys-with-gov-uk.html: /content-guidelines/joining-services-to-govuk.html
   /ways-of-working/publishing-content-on-gov-uk.html: /content-guidelines/publishing-content-on-govuk.html
+  /content-design/: /content-guidelines/
+  /design-histories.html: /design-histories/
