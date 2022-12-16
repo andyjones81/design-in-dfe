@@ -1,0 +1,15 @@
+[
+    {
+        "ref": "4-1-1",
+        "guideline": "4.1.1 - Parsing",
+        "guidance": "The code of the page must not cause browser or assistive technology conflicts.\n\nThis ensures that content and functionality is presented in a way that works reliably across all supported browsers and assistive technologies."
+    },{
+        "ref": "4-1-2",
+        "guideline": "4.1.2 - Name, Role, Value",
+        "guidance": "All interactive components must have an accessible name and role, and the state of the component must be communicated to assistive technologies."
+    },{
+        "ref": "4-1-3",
+        "guideline": "4.1.3 - Status messages",
+        "guidance": "There are different situations where a page needs to dynamically display a status message.\n\nThese messages need to be conveyed to assistive technology users, even when they don’t receive focus.\n\nWhere possible, you should avoid disturbing the user’s place in a page."
+    }
+]

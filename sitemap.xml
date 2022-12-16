@@ -2,331 +2,307 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://design.education.gov.uk/search/index.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/content-design/other-resources.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/design-system/branding-guidelines/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/content-design/agile-content-design.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/design-system/patterns/select-a-school/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/content-design/preparing-for-assessments.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/design-system/patterns/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/content-design/index.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/design-system/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/design-critiques.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/design-system/components/design-criteria/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/community/index.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/design-system/components/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/branding.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/content-guidelines/publishing-content-on-govuk.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/googlefacf5ebcd086d0a0.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/content-guidelines/language-we-use.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/working-in-dfe/index.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/content-guidelines/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/contribute.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/content-guidelines/joining-services-to-govuk.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/inclusive-design.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/training/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/design-histories.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/understanding-wcag/understandable.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/9.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/understanding-wcag/robust.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/8.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/understanding-wcag/draft-2-2/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/13.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/understanding-wcag/operable.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/7.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/understanding-wcag/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/11.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/understanding-wcag/perceivable.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/12.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/inclusive-design/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/6.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/roles/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/2.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/statement-templates/full-html.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/14.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/statement-templates/notmet-html.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/10.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/statement-templates/notmet-html-raw.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/3.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/statement-templates/partial-html.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/5.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/statement-templates/full-md-raw.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/accessibility/alternative-meaning.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/statement-templates/notmet-md-raw.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/accessibility/color.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/statement-templates/full-html-raw.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/accessibility/tab-stop.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/statement-templates/partial-md-raw.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/accessibility/minimum-contrast.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/statement-templates/partial-html-raw.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/accessibility/navigation.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/accessibility/controls.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/tools/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/accessibility/focus.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/laws/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/accessibility/headings.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility/accessibility-statements/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/accessibility/labels.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/roadmap.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/accessibility/feedback.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/design-histories/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/1.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/contact.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/principles/4.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://design.education.gov.uk/principles/index.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://design.education.gov.uk/about.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://design.education.gov.uk/patterns-and-components/index.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://design.education.gov.uk/prototyping/types-of-prototyping.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://design.education.gov.uk/prototyping/code-snippets.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://design.education.gov.uk/prototyping/tools-and-templates.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/prototyping/code-snippets/redirect.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://design.education.gov.uk/prototyping/kit.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://design.education.gov.uk/prototyping/tools-and-templates.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://design.education.gov.uk/prototyping/index.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/component-design.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/prototyping/github-and-heroku.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://design.education.gov.uk/prototyping/code-snippets.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://design.education.gov.uk/index.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/ways-of-working/publishing-content-on-gov-uk.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/assurance/design-board/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/ways-of-working/content-ways-of-working.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/assurance/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/ways-of-working/being-an-interaction-designer.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/accessibility-statement.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/ways-of-working/joining-user-journeys-with-gov-uk.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/professions-and-community/community.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/ways-of-working/interaction-design-artefacts-and-documents.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/professions-and-community/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/ways-of-working/working-as-a-team.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/professions-and-community/heads-of-profession.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/ways-of-working/index.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/principles/index.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://design.education.gov.uk/ways-of-working/stages-of-interaction-design.html</loc>
-    <lastmod>2022-11-29T16:52:40+00:00</lastmod>
+    <loc>https://design.education.gov.uk/feedback.html</loc>
+    <lastmod>2022-12-16T16:01:28+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

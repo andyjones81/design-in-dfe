@@ -1,0 +1,87 @@
+[
+    {
+        "ref": "2-1-1",
+        "guideline": "2.1.1 - Keyboard accessible",
+        "guidance": "It must be possible for someone using a keyboard to complete all tasks in a service. \n\nThis approach will also ensure that users on touch devices that are running assistive technology will also have access to all parts of a service."
+    },
+    {
+        "ref": "2-1-2",
+        "guideline": "2.1.2 - No keyboard trap",
+        "guidance": "No item traps the keyboard focus; upon reaching any item on the page, it is possible to move to the item that precedes or follows it using the keyboard."
+    },
+    {
+        "ref": "2-1-4",
+        "guideline": "2.1.4 - Character key shortcuts",
+        "guidance": "If single character key shortcuts have been set up within a page, the user can switch them off or remap them. \n\nCharacter keys should only work where keyboard focus is on the component the key relates to."
+    },
+    {
+        "ref": "2-2-1",
+        "guideline": "2.2.1 - Timing adjustable",
+        "guidance": "When a time limit, like a session timeout, is set ensure a user is informed,especially if this may result in a loss of data. It must be possible for the user to define the length of the timeout (e.g. in settings), turn it off, delay it, or extend the length of time."
+    },
+    {
+        "ref": "2-2-2",
+        "guideline": "2.2.2 - Pause, stop, hide",
+        "guidance": "Avoid moving or animated content on pages. \n\nWhen content moves (is animated, blinks or scrolls) automatically for more than five seconds, or when content automatically updates on the page, it must be possible for users to pause, stop or hide it."
+    },
+    {
+        "ref": "2-3-1",
+        "guideline": "2.3.1 - Three flashes or below",
+        "guidance": "A page must not contain content that flashes more than three times a second."
+    },
+    {
+        "ref": "2-4-1",
+        "guideline": "2.4.1 - Bypass blocks",
+        "guidance": "When there is repeated content (like a header) at the top of the page, there must be a way for keyboard users to move focus directly to the start of the main content area of the page. \n\nConsider including shortcuts to allow the user to jump between other parts of the content on long pages"
+    },
+    {
+        "ref": "2-4-2",
+        "guideline": "2.4.2 - Page title",
+        "guidance": "Each page must have a unique title that indicates its topic or purpose."
+    },
+    {
+        "ref": "2-4-3",
+        "guideline": "2.4.3 - Focus order",
+        "guidance": "It must be possible to navigate through content in a way that makes sense."
+    },
+    {
+        "ref": "2-4-4",
+        "guideline": "2.4.4 - Link purpose in context",
+        "guidance": "Link text should make it clear what the link is i.e. where the links goes. Links should make sense out of context e.g. when using a links list."
+    },
+    {
+        "ref": "2-4-5",
+        "guideline": "2.4.5 - Multiple ways",
+        "guidance": "Unless the service is a series of steps, there must be different ways for people to locate and navigate content."
+    },
+    {
+        "ref": "2-4-6",
+        "guideline": "2.4.6 - Headings and labels",
+        "guidance": "Headings must indicate the topic or purpose of the content in that section of the page, and labels must indicate the purpose of the field they relate to."
+    },
+    {
+        "ref": "2-4-7",
+        "guideline": "2.4.7 - Focus visible",
+        "guidance": "It must be easy to tell which element has keyboard focus."
+    },
+    {
+        "ref": "2-5-1",
+        "guideline": "2.5.1 - Pointer gestures",
+        "guidance": "Any functionality which requires a multipoint or path based gestures has an alternative single pointer, non path-based gesture."
+    },
+    {
+        "ref": "2-5-2",
+        "guideline": "2.5.2 - Pointer cancellation",
+        "guidance": "Any script triggering must be done on the ‘up’ event – not the ‘down’ event."
+    },
+    {
+        "ref": "2-5-3",
+        "guideline": "2.5.3 - Label in name",
+        "guidance": "For user interface components with labels that include text or images of text, the Accessible name contains the text that is presented visually."
+    },
+    {
+        "ref": "2-5-4",
+        "guideline": "2.5.4 - Motion actuation",
+        "guidance": "Any functionality that is initiated by tilting or shaking (etc) a device, must be able to be intiated by a button, or other control. \n\nUsers must be able to switch off motion acutation."
+    }
+]
